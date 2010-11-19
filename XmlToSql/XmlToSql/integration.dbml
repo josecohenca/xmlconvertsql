@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="orders" Class="integrationDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=orders;Integrated Security=True" SettingsObjectName="XmlToSql.My.MySettings" SettingsPropertyName="ordersConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.orders" Member="orders">
+    <Type Name="order">
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pickup" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="deliver" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="deliverdate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="created" AutoSync="Never" Type="System.DateTime" DbType="DateTime NOT NULL" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="order_item" Member="items" ThisKey="OrderId" OtherKey="OrderId" Type="item" />
+    </Type>
+  </Table>
+  <Table Name="dbo.items" Member="items">
+    <Type Name="item">
+      <Column Name="ItemId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="created" AutoSync="Never" Type="System.DateTime" DbType="DateTime NOT NULL" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="order_item" Member="order" ThisKey="OrderId" OtherKey="OrderId" Type="order" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

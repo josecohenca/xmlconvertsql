@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "XmlToSql", "XmlToSql.vbproj", "{1C30ABB7-28DB-48D3-995C-BABA02D2644E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C30ABB7-28DB-48D3-995C-BABA02D2644E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C30ABB7-28DB-48D3-995C-BABA02D2644E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C30ABB7-28DB-48D3-995C-BABA02D2644E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C30ABB7-28DB-48D3-995C-BABA02D2644E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

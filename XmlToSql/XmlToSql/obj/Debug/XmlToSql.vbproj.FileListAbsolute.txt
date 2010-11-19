@@ -1,0 +1,1 @@
+F:\xml2sql\XmlToSql\XmlToSql\bin\Debug\XmlToSql.exe.config

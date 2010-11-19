@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+    <order number="8675301">
+        <pickup>ABC123</pickup>
+        <deliver>JAX5</deliver>
+        <deliverdate>9/28/2008</deliverdate>
+        <items>
+            <item>
+                <code>grammy</code>
+                <description>One of those statue things</description>
+                <quantity>1</quantity>
+            </item>
+        </items>
+    </order>
+    <order number="8675302">
+        <pickup>103</pickup>
+        <deliver>200</deliver>
+        <deliverdate>2/16/2009</deliverdate>
+        <items>
+            <item>
+                <code>AC1</code>
+                <description>Anna Claires, 1 pound</description>
+                <quantity>100</quantity>
+            </item>
+            <item>
+                <code>TMBR</code>
+                <description>dog food, 20#</description>
+                <quantity>5</quantity>
+            </item>
+        </items>
+    </order>
+</orders>

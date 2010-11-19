@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="orders">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="order">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pickup" type="xs:string" />
+                            <xs:element name="deliver" type="xs:string" />
+                            <xs:element name="deliverdate" type="xs:string" />
+                            <xs:element name="items">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="item">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="code" type="xs:string" />
+                                                    <xs:element name="description" type="xs:string" />
+                                                    <xs:element name="quantity" type="xs:unsignedByte" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="number" type="xs:unsignedInt" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

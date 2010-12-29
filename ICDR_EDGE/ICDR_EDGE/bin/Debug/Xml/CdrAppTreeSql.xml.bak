@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <ICDR Id="1" AppName="chargingID-datavolumeFBCUplink" SqlString="SELECT chargingID,sum(datavolumeFBCUplink) as 统计时间流量 FROM SI group by chargingID order by 2 desc" />
+  <ICDR Id="2" AppName="serviceIdentifier-datavolumeFBCUplink" SqlString="SELECT serviceIdentifier,sum(datavolumeFBCUplink) as 统计时间流量 FROM SI group by serviceIdentifier order by 2 desc" />
+
+</DocumentElement>

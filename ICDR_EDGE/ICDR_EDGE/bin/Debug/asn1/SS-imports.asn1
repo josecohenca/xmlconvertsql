@@ -1,0 +1,46 @@
+-- *************************
+-- * uniGone modifications :
+-- *************************
+-- the modifications made by uniGone are prefixed by "uniGone"
+--
+-- in order to minimize the number of types, IMPORTed modules have been locally
+-- defined see CMIP-imports.asn1 - in no way ASN.1 definitions have been modified
+--
+-- Module is extracted from SS-DataTypes {ccitt identified-organization (4) etsi (0) mobileDomain (0) gsm-Access (2) modules (3) ss-DataTypes (2) version6 (6)}
+--                          definitions (ETSI 124.080 v4)
+-- Module Object Identifier has been removed to indicate this is not the 'standard' module.           
+--
+
+SS-DataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+-- The parameter locationMethod shall be included if and only if the molr-Type is set to value
+-- deCipheringKeys or assistanceData.
+-- The parameter gpsAssistanceData shall be included if and only if the molr-Type is set to value
+-- assistanceData and LocationMethod is set to value assistedGPS.
+MOLR-Type::= ENUMERATED
+{
+	locationEstimate (0),
+	assistanceData (1),
+	deCipheringKeys (2),
+	...
+}
+
+-- exception handling:
+-- an unrecognized value shall be rejected by the receiver with a return error cause of
+-- unexpected data value.
+LocationMethod::= ENUMERATED
+{
+	msBasedEOTD (0),
+	msAssistedEOTD (1),
+	assistedGPS (2),
+	...
+}
+-- exception handling:
+-- an unrecognized value shall be rejected by the receiver with a return error cause of
+-- unexpected data value.
+
+END
+

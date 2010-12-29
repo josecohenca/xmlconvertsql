@@ -1,0 +1,42 @@
+-- *************************
+-- * uniGone modifications :
+-- *************************
+-- the modifications made by uniGone are prefixed by "uniGone"
+--
+-- in order to minimize the number of types, IMPORTed modules have been locally
+-- defined - in no way ASN.1 definitions have been modified
+--
+-- Module is extracted from Attribute-ASN1Module {joint-iso-itu-t ms(9) smi(3) part2(2) asn1Module(2) 1}
+--                          definitions (X721 standard from ITU-T)
+-- Module Object Identifiers has been removed to indicate this is not the 'standard' module.           
+--
+
+Attribute-ASN1Module
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+DMI-TYPE-IDENTIFIER ::= CLASS
+{
+	&id     OBJECT IDENTIFIER UNIQUE,
+    &Value  
+}
+WITH SYNTAX
+{
+	TYPE &Value
+    ID &id
+}
+
+DMI-EXTENSION ::= DMI-TYPE-IDENTIFIER
+
+ManagementExtension ::= SEQUENCE
+{
+  identifier    DMI-EXTENSION.&id({ManagementExtensionSet}),
+  significance  [1]  BOOLEAN DEFAULT FALSE,
+  information   [2]  DMI-EXTENSION.&Value({ManagementExtensionSet}{@.identifier})
+}
+
+ManagementExtensionSet DMI-EXTENSION ::= {...}
+
+END
+

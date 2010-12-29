@@ -1,0 +1,10 @@
+L:\研究\和网卡号绑定注册号\注册机\bin\Debug\注册机.exe
+L:\研究\和网卡号绑定注册号\注册机\bin\Debug\注册机.pdb
+L:\研究\和网卡号绑定注册号\注册机\bin\Release\注册机.exe
+L:\研究\和网卡号绑定注册号\注册机\bin\Release\注册机.pdb
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\ResolveAssemblyReference.cache
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\注册机.Form1.resources
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\注册机.Properties.Resources.resources
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\序列号生成器.csproj.GenerateResource.Cache
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\注册机.exe
+L:\研究\和网卡号绑定注册号\注册机\obj\Release\注册机.pdb

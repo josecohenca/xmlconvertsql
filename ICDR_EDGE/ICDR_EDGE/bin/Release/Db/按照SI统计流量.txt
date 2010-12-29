@@ -1,0 +1,20 @@
+//drop table SI
+;
+create table SI(datavolumeFBCUplink Text(50), datavolumeFBCDownlink Text(50), serviceIdentifier Text(50),chargingID Text(50))
+ ;
+insert into SI select  datavolumeFBCUplinkA AS datavolumeFBCUplink, datavolumeFBCDownlinkA AS datavolumeFBCDownlink, serviceIdentifierA AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkA<>'' or datavolumeFBCDownlinkA<>''
+ ;
+insert into SI select  datavolumeFBCUplinkB AS datavolumeFBCUplink, datavolumeFBCDownlinkB AS datavolumeFBCDownlink, serviceIdentifierB AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkB<>'' or datavolumeFBCDownlinkB<>''
+ ;
+insert into SI select  datavolumeFBCUplinkC AS datavolumeFBCUplink, datavolumeFBCDownlinkC AS datavolumeFBCDownlink, serviceIdentifierC AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkC<>'' or datavolumeFBCDownlinkC<>''
+ ;
+insert into SI select  datavolumeFBCUplinkD AS datavolumeFBCUplink, datavolumeFBCDownlinkD AS datavolumeFBCDownlink, serviceIdentifierD AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkD<>'' or datavolumeFBCDownlinkD<>''
+ ;
+insert into SI select  datavolumeFBCUplinkE AS datavolumeFBCUplink, datavolumeFBCDownlinkE AS datavolumeFBCDownlink, serviceIdentifierE AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkE<>'' or datavolumeFBCDownlinkE<>''
+ ;
+insert into SI select  datavolumeFBCUplinkF AS datavolumeFBCUplink, datavolumeFBCDownlinkF AS datavolumeFBCDownlink, serviceIdentifierF AS serviceIdentifier,chargingID from ggsnpdp where  datavolumeFBCUplinkF<>'' or datavolumeFBCDownlinkF<>''
+;
+SELECT chargingID,sum(datavolumeFBCUplink) FROM SI group by chargingID order by 2 desc
+;
+SELECT serviceIdentifier,sum(datavolumeFBCUplink) FROM SI group by serviceIdentifier order by 2 desc
+;

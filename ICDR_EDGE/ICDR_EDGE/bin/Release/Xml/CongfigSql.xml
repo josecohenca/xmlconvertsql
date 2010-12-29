@@ -1,0 +1,8 @@
+<?xml   version="1.0"?>   
+  <Action>   
+  <Definition>  
+      <Variable   strSever="CHINA-556518BD3"   strUser="ICDR" strPass="1"/>  
+      <Variable   type="string"   name="strUser"/>   
+      <Variable   type="string"   name="strPass"/>   
+  </Definition>    
+  </Action>

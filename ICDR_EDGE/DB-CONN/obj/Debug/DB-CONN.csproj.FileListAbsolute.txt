@@ -1,0 +1,8 @@
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\bin\Debug\DB-CONN.exe
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\bin\Debug\DB-CONN.pdb
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\ResolveAssemblyReference.cache
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\DB_CONN.frmDBCONN.resources
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\DB_CONN.Properties.Resources.resources
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\DB-CONN.csproj.GenerateResource.Cache
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\DB-CONN.exe
+F:\项目开发进度2009年1月18日\ICDR_EDGE\DB-CONN\obj\Debug\DB-CONN.pdb

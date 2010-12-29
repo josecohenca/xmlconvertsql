@@ -1,0 +1,198 @@
+--
+-- The ASN.1 syntax has been extracted from 3GPP TS 32.225 V5.B.0 (2006-03)
+--
+
+TS32225-DataTypes {itu-t (0) identified-organization (4) etsi (0) mobileDomain (0) umts-Operation-Maintenance (3) ts-32-225 (225) informationModel (0) asn1Module (2) version1 (1)}
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+-- Exports everything
+
+IMPORTS
+
+TimeStamp, ManagementExtensions, CallEventRecordType -- uniGone added 
+FROM TS32205-DataTypes {itu-t (0) identified-organization (4) etsi(0) mobileDomain (0) umts-Operation-Maintenance (3) ts-32-205 (205) informationModel (0) asn1Module (2) version1 (1)};
+
+IMSRecord ::= SET
+{
+	-- Fields used by several multimedia Record types ("Common fields"):
+	-- (which field is used in which record type is defined in section 5.2.3)
+	recordType                       [0] CallEventRecordType,
+	retransmission                   [1] NULL OPTIONAL,
+	sIP-Method                       [2] SIP-Method OPTIONAL,
+	role-of-Node                     [3] Role-of-Node OPTIONAL,
+	nodeAddress                      [4] NodeAddress OPTIONAL,
+	session-Id                       [5] Session-Id OPTIONAL,
+	calling-Party-Address            [6] InvolvedParty OPTIONAL,
+	called-Party-Address             [7] InvolvedParty OPTIONAL,
+	privateUserID                    [8] GraphicString OPTIONAL,
+	serviceRequestTimeStamp          [9] TimeStamp OPTIONAL,
+	serviceDeliveryStartTimeStamp    [10] TimeStamp OPTIONAL,
+	serviceDeliveryEndTimeStamp      [11] TimeStamp OPTIONAL,
+	recordOpeningTime                [12] TimeStamp OPTIONAL,
+	recordClosureTime                [13] TimeStamp OPTIONAL,
+	interOperatorIdentifiers         [14] InterOperatorIdentifiers OPTIONAL,
+	localRecordSequenceNumber        [15] LocalRecordSequenceNumber OPTIONAL,
+	recordSequenceNumber             [16] INTEGER OPTIONAL,
+	causeForRecordClosing            [17] CauseForRecordClosing OPTIONAL,
+	incomplete-CDR-Indication        [18] Incomplete-CDR-Indication OPTIONAL,
+	iMS-Charging-Identifier          [19] IMS-Charging-Identifier OPTIONAL,
+	sDP-Session-Description          [20] SEQUENCE OF GraphicString OPTIONAL, -- uniGone GraphisString used
+	list-Of-SDP-Media-Components     [21] SEQUENCE OF Media-Components-List OPTIONAL,
+	gGSNaddress                      [22] NodeAddress OPTIONAL,
+	serviceDeliveryFailureReason     [23] ServiceDeliveryFailureReason OPTIONAL,
+	list-Of-Message-Bodies           [24] SEQUENCE OF MessageBody OPTIONAL,
+	recordExtensions                 [25] ManagementExtensions OPTIONAL,
+	-- Space left for further "common fields"
+
+	-- Fields particular used in the S-CSCF-recordType:
+	applicationServersInformation    [40] SEQUENCE OF ApplicationServersInformation OPTIONAL,
+
+	-- Fields particular used in the P-CSCF-recordType:
+--	servedPartyIPAress               [50] ServedPartyIPAddress OPTIONAL, uniGone removed
+	-- < ServedPartyIPAddress to be defined >
+
+	-- Fields particular used in the I-CSCF-recordType:
+	transactionTimestamp             [60] TimeStamp OPTIONAL,
+	s-CSCF-Information               [61] S-CSCF-Information OPTIONAL,
+
+	-- Fields particular used in the MRFC-recordType:
+--	service-Id                       [70] Service-Id OPTIONAL,uniGone removed
+	-- <Service-Id to be defined>
+
+	-- Fields particular used in the MGCF-recordType:
+	trunkGroupID                     [80] TrunkGroupID OPTIONAL,
+	bearerService                    [81] TransmissionMedium OPTIONAL,
+
+	-- Fields particular used in the BGCF-RecordType (start with tag 90):
+	-- <empty so far>
+
+	-- Fields particular used in the AS-RecordType:
+	serviceSpecificData              [100] OCTET STRING OPTIONAL
+}
+
+ACRInterimLost ::= ENUMERATED 
+{
+	no (0),
+	yes (1),
+	unknown (2)
+}
+
+ApplicationServersInformation ::= SEQUENCE 
+{
+	applicationServersInvolved       [0] GraphicString OPTIONAL, -- SIP URL refer to rfc3261
+	applicationProvidedCalledParties [1] SEQUENCE OF InvolvedParty OPTIONAL
+}
+
+CauseForRecordClosing ::= ENUMERATED 
+{
+	serviceDeliveryEndSuccessfully (0),
+	unSuccessfulServiceDelivery    (1),
+	timeLimit                      (3),
+	serviceChange                  (4), -- e.g. change in media due to Re-Invite
+	managementIntervention         (5), 
+	maxChangeCond                  (6)  -- e.g. number in ‘List of Message Bodies’ exceeeded 
+-- partial record generation reasons to be added
+--  Additional codes are for further study
+}
+
+
+IMS-Charging-Identifier ::= OCTET STRING
+
+Incomplete-CDR-Indication ::= SET 
+{
+	aCRStartLost [0] BOOLEAN, -- TRUE if ACR[Start] was lost, FALSE otherwise
+	aCRInterimLost [1] ACRInterimLost,
+	aCRStopLost [2] BOOLEAN -- TRUE if ACR[Stop] was lost, FALSE otherwise
+} 
+
+InterOperatorIdentifiers ::= SEQUENCE 
+{ 
+	originatingIOI [0] GraphicString OPTIONAL,
+	terminatingIOI [1] GraphicString OPTIONAL
+}
+
+InvolvedParty ::= CHOICE 
+{
+	sIP-URI [0] GraphicString, -- refer to rfc3261
+	tEL-URL [1] GraphicString  -- refer to rfc3261
+}
+
+IPAddress ::= CHOICE 
+{
+	ipV4Addr [0] GraphicString, -- "dot" notation is used
+	ipV6Addr [1] GraphicString  -- "dot" notation is used
+}
+
+LocalRecordSequenceNumber ::= INTEGER (0..2147483647)
+-- A unique number assigned by the CCF and supplied to all CDRs. The value range
+-- limits the field to a maximum 4 octet INTEGER.
+
+Media-Components-List ::= SEQUENCE 
+{
+	sIP-Request-Timestamp  [0] TimeStamp OPTIONAL,
+	sIP-Response-Timestamp [1] TimeStamp OPTIONAL,
+	sDP-Media-Components   [2] SDP-Media-Components OPTIONAL,
+	mediaInitiatorFlag     [3] NULL OPTIONAL,
+	authorized-QoS         [4] GraphicString OPTIONAL
+}
+
+MessageBody ::= SEQUENCE 
+{
+	content-Type          [0] GraphicString OPTIONAL, -- uniGone lower letter for names
+	content-Disposition   [1] GraphicString OPTIONAL,
+	content-Length        [2] INTEGER OPTIONAL,
+	originator            [3] InvolvedParty OPTIONAL
+}
+
+NodeAddress ::= CHOICE 
+{
+	iPAddress  [0] IPAddress,
+	domainName [1] GraphicString
+}
+
+S-CSCF-Information ::=  SEQUENCE
+{
+	mandatoryCapabilities  [0] SEQUENCE OF GraphicString OPTIONAL,
+	optionalCapabilities	 [1] SEQUENCE OF GraphicString OPTIONAL,
+	serverName 			 [2] GraphicString OPTIONAL
+}
+
+Role-of-Node ::= ENUMERATED 
+{
+	originating (0),
+	terminating (1),
+	proxy       (2),
+	b2bua       (3)
+}
+
+SDP-Media-Components ::= SEQUENCE 
+{
+	sDP-Media-Name         [0] GraphicString OPTIONAL,
+	sDP-Media-Descriptions [1] SEQUENCE OF GraphicString OPTIONAL,
+	gPRS-Charging-Id       [2] INTEGER OPTIONAL
+}
+
+ServiceDeliveryFailureReason ::= GraphicString
+-- holds the SIP error code as received via a SIP Final response (4xx, 5xx or 6xx)
+
+Session-Id ::= GraphicString
+-- rfc3261: example for SIP Call-ID: f81d4fae-7dec-11d0-a765-00a0c91e6bf6@foo.bar.com 
+
+SIP-Method ::= GraphicString -- uniGone renamed SIP-Method instead of Sip-Method
+
+TransmissionMedium ::= SEQUENCE {
+	-- Transmission Medium Required, refer to ITU-T Q.763:
+	tMR [0] OCTET STRING (SIZE (1)) OPTIONAL,
+	-- Transmission Medium USED, refer to ITU-T Q.763:
+	tMU [1] OCTET STRING (SIZE (1)) OPTIONAL
+}
+
+TrunkGroupID ::= CHOICE {
+	incoming [0] GraphicString,
+	outgoing [1] GraphicString
+}
+
+END

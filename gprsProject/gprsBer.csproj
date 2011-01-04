@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{718BAD30-FDB5-4253-9B8C-53719CF1A876}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gprsBer</RootNamespace>
+    <AssemblyName>gprsBer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BinaryNotes, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dist\lib\.net\Debug\BinaryNotes.dll</HintPath>
+    </Reference>
+    <Reference Include="csUnit, Version=2.1.1.6855, Culture=neutral, PublicKeyToken=6871f04765cca910, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BinaryNotes.NET\Tests\bin\Debug\csUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abc\AccessPointNameNI.cs" />
+    <Compile Include="abc\AccessPointNameOI.cs" />
+    <Compile Include="abc\AddressString.cs" />
+    <Compile Include="abc\APNSelectionMode.cs" />
+    <Compile Include="abc\CallDuration.cs" />
+    <Compile Include="abc\CallDurationC.cs" />
+    <Compile Include="abc\CallEventRecord.cs" />
+    <Compile Include="abc\CallEventRecordType.cs" />
+    <Compile Include="abc\CauseForRecClosing.cs" />
+    <Compile Include="abc\CellId.cs" />
+    <Compile Include="abc\ChangeCondition.cs" />
+    <Compile Include="abc\ChangeLocation.cs" />
+    <Compile Include="abc\ChangeOfCharCondition.cs" />
+    <Compile Include="abc\ChangeOfCharConditionC.cs" />
+    <Compile Include="abc\ChargingID.cs" />
+    <Compile Include="abc\CmccGPRSber130.cs" />
+    <Compile Include="abc\ConsolidationResult.cs" />
+    <Compile Include="abc\DataVolumeGPRS.cs" />
+    <Compile Include="abc\Diagnostics.cs" />
+    <Compile Include="abc\DynamicAddressFlag.cs" />
+    <Compile Include="abc\ETSIAddress.cs" />
+    <Compile Include="abc\GGSNPDPRecord.cs" />
+    <Compile Include="abc\GSNAddress.cs" />
+    <Compile Include="abc\IMEI.cs" />
+    <Compile Include="abc\IMSI.cs" />
+    <Compile Include="abc\IPAddress.cs" />
+    <Compile Include="abc\IPBinaryAddress.cs" />
+    <Compile Include="abc\IPTextRepresentedAddress.cs" />
+    <Compile Include="abc\ListOfTrafficVolumesC.cs" />
+    <Compile Include="abc\LocalSequenceNumber.cs" />
+    <Compile Include="abc\LocationAreaCode.cs" />
+    <Compile Include="abc\main.cs" />
+    <Compile Include="abc\ManagementExtension.cs" />
+    <Compile Include="abc\ManagementExtensions.cs" />
+    <Compile Include="abc\MessageReference.cs" />
+    <Compile Include="abc\MSISDN.cs" />
+    <Compile Include="abc\MSNetworkCapability.cs" />
+    <Compile Include="abc\NetworkInitiatedPDPContext.cs" />
+    <Compile Include="abc\NodeID.cs" />
+    <Compile Include="abc\PDPAddress.cs" />
+    <Compile Include="abc\PDPType.cs" />
+    <Compile Include="abc\QoSDelay.cs" />
+    <Compile Include="abc\QoSInformation.cs" />
+    <Compile Include="abc\QoSMeanThroughput.cs" />
+    <Compile Include="abc\QoSPeakThroughput.cs" />
+    <Compile Include="abc\QoSPrecedence.cs" />
+    <Compile Include="abc\QoSReliability.cs" />
+    <Compile Include="abc\RecordingEntity.cs" />
+    <Compile Include="abc\RecordNumber.cs" />
+    <Compile Include="abc\RECORDSequenceNumber.cs" />
+    <Compile Include="abc\RoutingAreaCode.cs" />
+    <Compile Include="abc\SGSNChange.cs" />
+    <Compile Include="abc\SGSNMMRecord.cs" />
+    <Compile Include="abc\SGSNPDPRecord.cs" />
+    <Compile Include="abc\SGSNSMORecord.cs" />
+    <Compile Include="abc\SGSNSMTRecord.cs" />
+    <Compile Include="abc\SMSResult.cs" />
+    <Compile Include="abc\TimeStamp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

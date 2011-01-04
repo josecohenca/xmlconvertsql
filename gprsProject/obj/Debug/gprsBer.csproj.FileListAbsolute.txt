@@ -1,0 +1,9 @@
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\obj\Debug\ResolveAssemblyReference.cache
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\bin\Debug\gprsBer.exe
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\bin\Debug\gprsBer.pdb
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\bin\Debug\BinaryNotes.dll
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\bin\Debug\csUnit.dll
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\bin\Debug\BinaryNotes.pdb
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\obj\Debug\gprsBer.exe
+D:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\obj\Debug\gprsBer.pdb
+F:\cdr开发相关\BinaryNotes1.5.1-all\gprsBer\obj\Debug\gprsBer.exe

@@ -1,0 +1,7 @@
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\bin\Debug\AltovaXML.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\bin\Debug\AltovaXML.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\bin\Debug\Altova.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\bin\Debug\Altova.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\obj\Debug\ResolveAssemblyReference.cache
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\obj\Debug\AltovaXML.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\AltovaXML\obj\Debug\AltovaXML.pdb

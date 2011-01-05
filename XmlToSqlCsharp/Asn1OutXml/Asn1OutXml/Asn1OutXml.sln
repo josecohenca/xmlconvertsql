@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asn1OutXml", "Asn1OutXml.csproj", "{9E50D0F4-0B6B-F34D-B640-E608634EC5BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altova", "..\Altova\Altova.csproj", "{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltovaXML", "..\AltovaXML\AltovaXML.csproj", "{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E50D0F4-0B6B-F34D-B640-E608634EC5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E50D0F4-0B6B-F34D-B640-E608634EC5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E50D0F4-0B6B-F34D-B640-E608634EC5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E50D0F4-0B6B-F34D-B640-E608634EC5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

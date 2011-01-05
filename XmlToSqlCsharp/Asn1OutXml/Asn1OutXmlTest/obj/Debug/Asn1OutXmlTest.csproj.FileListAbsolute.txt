@@ -1,0 +1,11 @@
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Asn1OutXmlTest.exe
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Asn1OutXmlTest.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Altova.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\AltovaXML.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Asn1OutXml.dll
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Asn1OutXml.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\AltovaXML.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\bin\Debug\Altova.pdb
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\obj\Debug\ResolveAssemblyReference.cache
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\obj\Debug\Asn1OutXmlTest.exe
+G:\xmlconvertsql\XmlToSqlCsharp\Asn1OutXml\Asn1OutXmlTest\obj\Debug\Asn1OutXmlTest.pdb

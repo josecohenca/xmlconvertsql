@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<DBConfig><DB>
+    <DBName>sql2000</DBName>
+    <DBType>MSSQLServer</DBType>
+    <Server>(local)</Server>
+    <UserName>sa</UserName>
+    <Password>0482D10DD4C7DF91</Password>
+    <DataBase>master</DataBase>
+    <Port></Port>
+  </DB>
+  
+</DBConfig>

@@ -1,0 +1,2018 @@
+I-Logix-RPY-Archive version 8.5.2 * 1159120
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 111;
+	- value = "d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\aboutfrm.cpp" 10.4.2008::3:42:58
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\aboutfrm.h" 10.4.2008::3:49:14
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billconfig.cpp" 7.23.2007::3:58:8
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billconfig.h" 11.2.2007::10:47:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billconfigfrm.cpp" 10.4.2008::3:42:58
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billconfigfrm.h" 10.4.2008::3:44:38
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfield.cpp" 12.29.2007::13:14:34
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfield.h" 1.11.2008::13:16:26
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfile.cpp" 3.14.2008::9:44:32
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfile.h" 10.4.2008::3:52:28
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfilefrm.cpp" 7.24.2007::11:56:52
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billfilefrm.h" 7.23.2007::12:16:16
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billformatfrm.cpp" 11.2.2007::11:20:34
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billformatfrm.h" 11.2.2007::11:19:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billrecord.cpp" 6.28.2007::0:11:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billrecord.h" 7.4.2007::15:2:12
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billsearchthread.cpp" 8.21.2007::16:4:32
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\billsearchthread.h" 8.22.2007::10:50:8
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\cpuinfo.h" 7.22.2007::9:28:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\dbconfig.cpp" 7.9.2007::0:35:52
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\dbconfig.h" 7.9.2007::0:35:54
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\dbconfigfrm.cpp" 6.26.2007::12:42:36
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\dbconfigfrm.h" 6.24.2007::8:50:20
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editdbfrm.cpp" 9.1.2007::1:3:16
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editdbfrm.h" 6.24.2007::9:12:8
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editfilterfrm.cpp" 6.29.2007::2:32:38
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editfilterfrm.h" 6.29.2007::2:32:36
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editftpfrm.cpp" 9.1.2007::0:56:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editftpfrm.h" 6.13.2007::6:59:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editreadactionfrm.cpp" 6.24.2007::14:34:18
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editreadactionfrm.h" 6.24.2007::14:34:18
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editreplacerulefrm.cpp" 6.29.2007::3:9:58
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editreplacerulefrm.h" 6.29.2007::3:9:52
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editsearchparamfrm.cpp" 7.21.2007::13:28:54
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\editsearchparamfrm.h" 7.21.2007::8:18:4
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\edittransfrm.cpp" 6.16.2007::9:27:6
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\edittransfrm.h" 6.16.2007::9:14:48
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttodbfrm.cpp" 10.7.2007::7:48:0
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttodbfrm.h" 7.21.2007::6:38:50
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttofilefrm.cpp" 7.16.2007::10:3:4
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttofilefrm.h" 7.16.2007::2:52:26
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttofilethread.cpp" 7.16.2007::9:54:0
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\exporttofilethread.h" 7.13.2007::12:7:0
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\fieldfrm.cpp" 11.2.2007::6:39:4
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\fieldfrm.h" 7.22.2007::14:52:20
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\filterrptfrm.cpp" 7.4.2007::14:58:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\filterrptfrm.h" 6.27.2007::14:22:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\folderbrowsedialog.cpp" 6.26.2007::2:38:56
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\folderbrowsedialog.h" 6.26.2007::2:27:56
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\folderbrowserdialog.cpp" 6.26.2007::2:13:36
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpconfig.cpp" 7.20.2007::9:59:50
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpconfig.h" 7.20.2007::9:59:0
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpconfigfrm.cpp" 6.30.2007::23:55:12
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpconfigfrm.h" 6.26.2007::8:0:56
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpfile.cpp" 7.20.2007::0:45:50
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpfile.h" 7.20.2007::0:45:14
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpwatchthread.cpp" 6.30.2007::15:22:26
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ftpwatchthread.h" 6.30.2007::12:25:20
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\ibill.cpp" 12.29.2007::13:52:14
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\mainfrm.cpp" 12.29.2007::14:17:54
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\mainfrm.h" 12.29.2007::14:1:54
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\monitorfrm.cpp" 1.17.2007::2:8:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\monitorfrm.h" 1.17.2007::0:6:40
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\opendialogfrm.cpp" 7.23.2007::12:2:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\opendialogfrm.h" 7.23.2007::12:0:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openfilethread.cpp" 7.20.2007::1:0:18
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openfilethread.h" 7.13.2007::11:51:12
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openftpdialogfrm.cpp" 7.19.2007::14:20:4
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openftpdialogfrm.h" 6.28.2007::11:55:34
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openingfilefrm.cpp" 7.20.2007::1:13:58
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\openingfilefrm.h" 7.16.2007::3:54:4
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\oprnftpdialogfrm.h" 1.22.2007::11:36:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\optionfrm.cpp" 7.22.2007::12:50:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\optionfrm.h" 7.22.2007::12:49:22
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\processingfrm.cpp" 7.12.2007::13:11:12
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\processingfrm.h" 7.12.2007::12:6:8
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\public.cpp" 1.12.2008::10:38:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\public.h" 10.4.2008::3:45:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\recorddetailfrm.cpp" 11.2.2007::6:22:40
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\recorddetailfrm.h" 11.2.2007::6:17:50
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\recordfilterfrm.cpp" 6.29.2007::2:25:36
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\recordfilterfrm.h" 6.29.2007::2:25:30
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\registerfrm.cpp" 7.24.2007::8:37:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\registerfrm.h" 7.22.2007::12:57:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\replacerulefrm.cpp" 7.22.2007::15:4:40
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\replacerulefrm.h" 7.22.2007::15:1:38
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\replacerultfrm.cpp" 6.16.2007::2:23:38
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\replacerultfrm.h" 6.16.2007::1:10:12
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\searchfilefrm.cpp" 6.27.2007::1:43:8
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\searchfilefrm.h" 6.27.2007::1:43:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\searchfrm.cpp" 10.5.2007::12:50:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\searchfrm.h" 8.22.2007::13:7:56
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\selbillnamefrm.cpp" 6.28.2007::0:58:20
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\selbillnamefrm.h" 6.28.2007::1:17:28
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadconvertfordb.cpp" 10.4.2008::3:47:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadconvertfordb.h" 7.16.2007::11:44:36
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadexporttoora.cpp" 10.4.2008::3:48:30
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadexporttoora.h" 1.15.2007::12:7:52
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadsubmittodb.cpp" 10.6.2007::8:32:38
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\threadsubmittodb.h" 1.19.2007::4:42:44
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\txtdatafrm.cpp" 7.4.2007::14:38:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\txtdatafrm.h" 7.4.2007::14:38:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\utilcls.h" 8.21.2007::15:22:48
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\valuetransfrm.cpp" 10.4.2008::3:48:30
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\valuetransfrm.h" 7.22.2007::15:1:46
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\viewbillfrm.cpp" 11.2.2007::6:25:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\viewbillfrm.h" 7.25.2007::2:31:42
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\vieworidatafrm.cpp" 7.6.2007::2:12:24
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\ibill_source\\vieworidatafrm.h" 7.6.2007::2:12:28
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\maindefaultcomponent.cpp" 9.25.2009::16:44:51
+	"d:\\powerbill\Ë\Ä\´\¨\µ\ç\Ð\Å\×\¨\Ó\Ã\°\æ\±\¾\\maindefaultcomponent.h" 9.25.2009::16:44:51
+	
+}
+- size = 211;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDispWrapper";
+	- _name = "T";
+	- _id = GUID 04c6e05a-9e11-435d-9039-77d1381d4c9c;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TVariantInParam";
+	- _id = GUID 2b470d0c-d8ac-4638-bbf0-441771bdc38b;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\XMLIntf";
+	- _id = GUID a7f8ac75-6aa1-4b4f-8f96-132cd9b75af7;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\WCDESComp";
+	- _id = GUID 72eed915-b5e9-4e42-ad5d-85131aa7bc5f;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ActnList";
+	- _id = GUID f529c9b7-47cb-48d4-b5d5-3adecfbd5360;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ExtCtrls";
+	- _id = GUID ec67e54a-dcbe-4a07-8baa-142bab020b6d;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ALStatusBar";
+	- _id = GUID d117ca26-04a3-4f01-9fe0-a13ea9cd6a87;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Classes";
+	- _id = GUID 76243f13-686f-49b3-8fad-2c0653afbfc6;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\shlobj";
+	- _id = GUID b6a81114-8796-485f-9672-255798dbe556;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "CoClassCreator";
+	- _id = GUID 7a33e999-48ca-48cb-808a-ef60f708d5eb;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TPtrBase";
+	- _name = "T";
+	- _id = GUID 05c5893e-53a4-4588-95fc-180af1cb39f1;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzBtnEdt";
+	- _id = GUID 6c4b441b-5767-4845-ae71-d9c9b5ce93cd;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TForm1";
+	- _id = GUID 62bd5ac2-8868-4e50-9607-3ad1e9eb862b;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TOleString";
+	- _id = GUID 49a66b19-24f7-41a3-a30c-f542d3713682;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Graphics";
+	- _id = GUID b10ff64a-ccf8-4bc9-8be2-273e7552f577;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TThreadSubmitToDB";
+	- _id = GUID c38765ca-9d6d-4d6b-8382-3fc5be67ebda;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TCoClassCreatorT";
+	- _name = "INTF";
+	- _id = GUID 55efbc6b-3e37-47d3-b829-c9e2507dd308;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmOpenDialog";
+	- _id = GUID 576f1714-821a-444a-b7e2-55fc87303630;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ComCtrls";
+	- _id = GUID 9a3a88f9-60a1-4d17-be2a-bd1fd6c9b0b8;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TFTPWatchThread";
+	- _id = GUID 21a92136-a498-4f8b-88d5-40ce9613d78a;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmExportToFile";
+	- _id = GUID ad1f8686-5188-4b2e-9e04-ca6fde111fe6;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TComInterface";
+	- _name = "DISPINTF";
+	- _id = GUID dd1aee7b-a8ec-4092-964b-1c5896373a77;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TInitOleT";
+	- _name = "T";
+	- _id = GUID a9278b26-490f-4009-93f2-decc75ba8305;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TFTPFile";
+	- _id = GUID 871a5811-1cfe-45e2-9956-fdb01df30ba6;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Externals.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Externals";
+	- _id = GUID fb6a5d94-3b5f-4a52-a538-d2b256b82048;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBinBillFile";
+	- _id = GUID 5a6258a0-2cfb-4245-a554-f85524f0d397;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditFTP";
+	- _id = GUID ae9fe57d-2882-4846-bf20-817db3231fe4;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Math";
+	- _id = GUID 691cf818-f3be-4855-9b20-c01b612b3597;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TPtrBase";
+	- _id = GUID 48413a06-8f14-44e0-a1c5-564ce182cf1d;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\stdarg";
+	- _id = GUID 65a2302e-2b3b-479e-989e-a3e781dd1a15;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\StrUtils";
+	- _id = GUID be66dad9-d716-4492-8aa5-06878bb07f9a;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmRecordFilter";
+	- _id = GUID 73d22807-201c-4ac1-9764-9b06f439aacc;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditSearchParam";
+	- _id = GUID f021b575-6e47-46ab-a4e7-36d094ee53ec;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IStringsDisp";
+	- _id = GUID d16dce63-ed31-4a16-84b5-53aba440b505;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\SkyParser";
+	- _id = GUID 7ee21b54-4054-43d5-8d61-b9a6342242d3;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\cguid";
+	- _id = GUID 705211ec-2f7c-403f-aba8-e8597abf2680;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TEventDispatcher";
+	- _name = "ThisClass";
+	- _id = GUID 427b5feb-050c-420f-8c83-04af690ab4fb;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzGroupBar";
+	- _id = GUID 6089cf43-1566-4b1e-929c-f44082ae3c9d;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TAutoDriverBase";
+	- _name = "DISPINTF";
+	- _id = GUID c00a91a9-e3be-4720-88a1-67caaf038260;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TAutoArgs";
+	- _id = GUID b07402c1-c317-47b4-9e3a-45a9176031ac;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 1902010c-8f76-4d1d-9670-036de503df99;
+}
+- genTime = 9.25.2009::16:46:32;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\wbemidl";
+	- _id = GUID 857e9b13-3990-4b71-a5d0-7c100c8ee1f2;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\dcOutPanel";
+	- _id = GUID 99d1dbc6-7a02-4b19-9deb-e309612a225e;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmProcessing";
+	- _id = GUID 06daed8c-dff6-4543-b432-2fa1fa8950d4;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TFTPConfig";
+	- _id = GUID ea017569-ed32-44aa-8023-b8d27471a5c7;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TVariantT";
+	- _id = GUID 74c54496-3514-47c3-adbc-bd6d5df0a772;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmMonitor";
+	- _id = GUID 58e222c3-5101-4792-9508-e82a981cee44;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\msxmldom";
+	- _id = GUID 9a757ff1-1bb6-4720-bc78-cc57db6ababa;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBillRecord";
+	- _id = GUID f37c7bd9-3fb4-41aa-bdb4-d6a7f87cf244;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "T";
+	- _id = GUID 63454fbd-68f0-407c-b9fb-be17df0ea62b;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IdFTP";
+	- _id = GUID 834ebe9e-ab11-4035-8bb1-c7b1beff5b46;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDllStdProc2";
+	- _name = "P1";
+	- _id = GUID 73111523-d251-4148-90d4-8877d6b01679;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ImgList";
+	- _id = GUID e968df9a-e865-48b1-946e-aa8d01a2bb4a;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\sysopen";
+	- _id = GUID b8648400-829b-40d6-bb52-c85a0ad8463c;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TAutoDriver";
+	- _name = "DISPINTF";
+	- _id = GUID 201bc079-69a7-462d-85f0-e08ba7cc6190;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDllProc2";
+	- _id = GUID 3f3a30f2-96c3-482a-ab27-0105b4fafb42;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\olectl";
+	- _id = GUID 5e236af2-530b-41fb-986e-8bd787520b4e;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmBillFile";
+	- _id = GUID 1738cdda-899a-4939-bf1b-49cc8bafb2a5;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\tchar";
+	- _id = GUID 392b75fd-baa7-4dce-8dbf-a43d9335c567;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ADODB";
+	- _id = GUID 6a9c6b9e-6888-4eaa-af96-731f421c41c7;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDispatchDelegate";
+	- _id = GUID 2aa71554-f582-4b7a-b158-badf4722b36e;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\SkyEdit";
+	- _id = GUID 869a4116-484f-4169-b6ed-cae75c5cae08;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\jpeg";
+	- _id = GUID ea26a504-068c-4fd8-9f12-952b994756fd;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\ToolWin";
+	- _id = GUID db1fdf3b-2846-4a10-b6f2-c41474554cc7;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDBConfig";
+	- _id = GUID 15de4532-0a5c-4c66-8fe3-9203fc81c763;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmAbout";
+	- _id = GUID c2b3f68b-f46c-4eb4-a2ab-8bf87d8b61ec;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditTrans";
+	- _id = GUID 1d15e975-9501-4d3b-b048-ce66329e52be;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TCoClassCreatorT";
+	- _id = GUID 03047a89-76e8-499f-b6b4-c7b89a42cf35;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "TThread";
+	- _id = GUID 2f7cbb80-d2ec-4e9e-a304-a281075061c3;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmBillFormat";
+	- _id = GUID a9c1e0f1-e027-49d7-afa6-35e30b6f6149;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzStatus";
+	- _id = GUID af59143c-96b3-4023-a3f5-e9ccbb477b59;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\stdlib";
+	- _id = GUID 2de216d7-2953-46e9-8900-95f2d486b01b;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDllProc1";
+	- _name = "P1";
+	- _id = GUID ae333bd6-b11e-4bee-ad4c-8b9e842a3b8b;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "CCPUInfo";
+	- _id = GUID 0be6fb6a-eb38-4527-baf3-7f25394e4db5;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDllProc2";
+	- _name = "P2";
+	- _id = GUID d43fd152-d0ec-4217-90eb-9aa21bf7b773;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmSearchFile";
+	- _id = GUID 4884121d-1d95-492b-9e04-ec7578ddceed;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TAPtr";
+	- _name = "T";
+	- _id = GUID 793d7041-e59e-484c-9f05-017018237216;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmSearch";
+	- _id = GUID 4b0bfacd-7505-423e-81c6-4112c1f987bf;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\comdef";
+	- _id = GUID a7c47b88-3b83-4057-b2d4-fa0710e36113;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\math";
+	- _id = GUID 51b7e2e9-2ddb-4c1c-bef4-36b396698a26;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\xmldom";
+	- _id = GUID 77d9475e-be50-4310-865a-501a0c790325;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Controls";
+	- _id = GUID 4706b3e2-677a-42b5-8f8f-861de939aabd;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmSelBillName";
+	- _id = GUID f88e9722-ea28-4e7f-bce0-45c6fd54279b;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\FileCtrl";
+	- _id = GUID 30feee4d-7299-4f04-b6fb-279f6f028e39;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TVariantInParamT";
+	- _name = "T";
+	- _id = GUID 56fcd668-e052-448f-87b8-fa062c89e39f;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IComponent";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent";
+	- _id = GUID 031c199b-4669-40c9-bd10-8f92b4c08e68;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmViewOriData";
+	- _id = GUID 7d4db562-a713-4167-bf8e-b14f6030d139;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IdTCPConnection";
+	- _id = GUID 3109dc18-7b42-4c8f-b6e5-0b328c4efa56;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzTabs";
+	- _id = GUID ecd7d6b0-ac68-4285-9a4c-1b6ba6ee8fed;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmField";
+	- _id = GUID 1aa5e103-2bde-4f7c-aa85-e19ae51dc315;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\DB";
+	- _id = GUID 2a681259-ca54-49a6-bdf1-7bdea7e8223a;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TAutoDriverBase";
+	- _id = GUID a3c4a37a-b787-4496-919c-d8590c2219c0;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "VARIANTOBJ";
+	- _id = GUID 5a690da9-527e-4253-9546-e71ab85bb764;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TSearchResultBillFile";
+	- _id = GUID 2798a6d0-91a0-466f-9cb8-102f6ad69585;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TTxtBillFile";
+	- _id = GUID 5c906ab9-a9e6-4eb5-866f-8aefa0cb4573;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBaseVariantT";
+	- _id = GUID 3db31677-5daa-476c-b3c5-bebc6837fc7c;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmViewBill";
+	- _id = GUID 5caf6027-9a59-4328-a93e-c0c218ddf37e;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TComInterfaceBase";
+	- _name = "INTF";
+	- _id = GUID 7da6d622-71bd-4fc4-937e-964a470e2648;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzDTP";
+	- _id = GUID 21d46334-5618-479d-ab6b-7216b9b4b150;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzPrgres";
+	- _id = GUID 17c418c6-8764-46bc-bee0-7411d3036968;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TVariant";
+	- _id = GUID 54096479-01b9-4dbc-b122-dd4815672137;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TStringConverter";
+	- _id = GUID 68325032-6750-4944-a563-0ee12430949c;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzFilSys";
+	- _id = GUID c8e33a22-a6aa-42bb-aedf-582f4eaaffdc;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzListVw";
+	- _id = GUID 412ea5d2-aefe-4015-b56a-8901747adbf7;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzTreeVw";
+	- _id = GUID 60625b34-373a-44c8-8b43-4a22ccb7b416;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDebugHlpr";
+	- _id = GUID 8dd754b1-dad2-4b8c-9af5-ea97e6cbc457;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBillSearchThread";
+	- _id = GUID 7b082e81-d0df-4ce5-a641-f56dc6207e13;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzShellCtrls";
+	- _id = GUID 73f8445c-b922-49e5-83e2-ef1d0a472cae;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDllProc1";
+	- _id = GUID 23c69a24-f6bd-469a-9005-435d4ac72561;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IdTCPClient";
+	- _id = GUID 63c63f8a-a5f3-4c99-b15a-fc4f0c75a5ce;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TComInterfaceBase";
+	- _id = GUID 6dc5e876-b1fb-45eb-b341-e91b673b6301;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\CWGIFImage";
+	- _id = GUID 77b55580-0656-4b7a-bd81-05c0ea51e93a;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Menus";
+	- _id = GUID 4676e71c-2e06-48e3-b617-890bca8992e0;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmFTPConfig";
+	- _id = GUID 690f9551-fa5a-49e0-9ab8-607937702132;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzRadChk";
+	- _id = GUID ad0539d4-0921-4c68-875b-23b25280f8d9;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TInitOle";
+	- _id = GUID e07891e7-2b8f-4390-b272-7b09110e7f02;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmOpenFTPDialog";
+	- _id = GUID bc5897df-b538-41c6-a4d2-41b600c321df;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TAutoArgsBase";
+	- _id = GUID 0a6236b8-5989-412e-a9f3-c02db19c0d04;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Dialogs";
+	- _id = GUID 6de43f5f-86ce-47af-8b27-e417a09a2be7;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDllStdProc2";
+	- _id = GUID b8b9c135-41f8-41b1-ab2b-073ae45a5c9f;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TOLEBOOL";
+	- _id = GUID 25c9bbd8-769d-4580-a768-3416e0ebdc9d;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Stdvcl.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "Stdvcl";
+	- _id = GUID a0d3c052-9e95-4e5e-9eed-d93f67f9b38e;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDispId";
+	- _id = GUID 67478aea-a8a2-438f-9284-8b0a445fa003;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IniFiles";
+	- _id = GUID d6d0c87a-3e2a-4762-a878-9522cb342539;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TComInterface";
+	- _name = "T";
+	- _id = GUID fef9c526-e678-4f1e-9e0b-a38d2c331a30;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDispWrapper";
+	- _id = GUID 3e6d30d6-972e-4480-881c-b023e554befe;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmExportToDB";
+	- _id = GUID f38a9ffb-2859-46ac-8bae-303cda3fa18c;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TComInterface";
+	- _name = "ANOTHERINTF";
+	- _id = GUID 5316aa11-bed4-4b1f-ad13-8d805b8c7091;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IdBaseComponent";
+	- _id = GUID 5fec82e5-d1fd-474d-befd-8fde3ebc9d7c;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TExportToFileThead";
+	- _id = GUID 0dd6c501-bb11-4e58-840d-8d24a2df70a4;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Forms";
+	- _id = GUID 42110cbd-b4b8-4b4a-95a0-70f874118a7c;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\OleCtrls";
+	- _id = GUID d00c45cf-153d-4821-a4db-e63a44b5a2e5;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmRegister";
+	- _id = GUID e6c81416-f588-4786-bab5-27291f31f327;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TBaseVariantT";
+	- _name = "T";
+	- _id = GUID 4c6cdf00-d303-48b5-9c0b-cb58837bf4a7;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IProviderDisp";
+	- _id = GUID 93d64218-fe97-4ce1-b13f-0130e942e276;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\StdCtrls";
+	- _id = GUID 1bc51a7e-fba2-461e-ac01-c0dd24e6534e;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmOpeningFile";
+	- _id = GUID 138d26b9-d177-4a34-9aad-382b905c8e34;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TCOMCriticalSection";
+	- _name = "Lock";
+	- _id = GUID d8303e23-5be7-43f2-8627-33110e19ca41;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDllProc2";
+	- _name = "P1";
+	- _id = GUID e42f141a-a246-409c-aeb6-e21ca72a41d7;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IDispatch";
+	- _id = GUID 1f134411-8712-42f0-bc05-bbfc9f0c395a;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDll";
+	- _id = GUID dd6a8915-2671-4f14-b765-e674039878f9;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TCOMCriticalSection";
+	- _id = GUID 598210c6-61a4-4ff8-bb05-abbba8c094f1;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TEventDispatcher";
+	- _name = "BASE";
+	- _id = GUID 4e5b6ec1-044d-4d31-a585-f7acea1132d8;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TFakeComponentBase";
+	- _id = GUID 0c54d7e0-96b9-4491-9414-f022d62122d1;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\DateUtils";
+	- _id = GUID d31dea82-b356-44bf-9cd8-fc53f2027060;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzButton";
+	- _id = GUID 429a632d-5593-40fa-a43f-e3cd1d18ff29;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditDB";
+	- _id = GUID 3e1003c9-c228-4f41-8e08-d884c09d7e6d;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TPtr";
+	- _id = GUID c5c487d7-ff1b-4720-86ad-00420193c7fa;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IDataBrokerDisp";
+	- _id = GUID 1355e400-678c-422c-b8d0-ae6b7b825e37;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmDBConfig";
+	- _id = GUID f6aedec5-c136-430f-a0e4-7b71653fb631;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TBaseVariantT";
+	- _name = "TYPE";
+	- _id = GUID a303545b-fda3-4f46-9fe9-37d129c74fa8;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "ibill_source";
+	- _id = GUID 93d06a07-a1f0-4d7a-80c9-eb9136c5615f;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\stdio";
+	- _id = GUID a51758a9-f0e1-4677-bfbb-b3d2ffff2b47;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmRecordDetail";
+	- _id = GUID c14f5d5e-b4d6-44bc-b031-065198539701;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "FolderBrowseDialog";
+	- _id = GUID ee9f994a-d25f-4dd9-a9d3-e92c6415b145;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TVariantInParamT";
+	- _id = GUID 4374d4c4-0836-4f70-aca0-0ed1072f19c9;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDebugHlpr";
+	- _name = "T";
+	- _id = GUID 6728185a-123f-45e4-b2f8-4b54445aa98d;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzPanel";
+	- _id = GUID c65c6b2e-e26b-4aef-ba45-e6e867fa53ec;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmFilterRpt";
+	- _id = GUID 7e835d45-7075-4f14-b9bb-fc2e5e7a17f2;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzEdit";
+	- _id = GUID a2e0dc8e-9d37-43bd-a5df-4d1d41967bdb;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TAPtr";
+	- _id = GUID 80e978ad-27e8-4b69-91b5-f85902b74893;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDllProc";
+	- _id = GUID e99dd6e9-76b3-41b3-a0f9-a3b11a131645;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\MSScriptControl_OCX";
+	- _id = GUID 162dfc3e-8551-44b2-80e5-90e6998c02dc;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmOption";
+	- _id = GUID f6bd90a1-4f51-4f91-bab6-6ea09ddff92e;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Mask";
+	- _id = GUID b0fd8ff0-cfa0-4ff9-b08f-7d6cebf75878;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TInitOleT";
+	- _id = GUID 2e9b0de6-53f5-46e4-b48d-bc5b081b2038;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TEventDispatcher";
+	- _name = "T";
+	- _id = GUID 27b7ce7e-222f-4838-832a-13c364fe62b3;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzSpnEdt";
+	- _id = GUID 885e40a9-800e-4adb-aee7-08b109d2f877;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TPtr";
+	- _name = "T";
+	- _id = GUID 62813a12-4bd9-45a4-a2f2-48ef6812288d;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "TForm";
+	- _id = GUID f0027d41-6525-4a84-abad-3019afc8b453;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TStringConverter";
+	- _name = "T";
+	- _id = GUID 11e12239-2d11-499b-9bef-f41345eb97a5;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\IdComponent";
+	- _id = GUID c6edcf57-995c-492a-b5ff-04c97d837911;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmMain";
+	- _id = GUID 056328d7-1105-4257-8802-8edf2a81c3fb;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TCharBuff";
+	- _id = GUID 09ec42f4-8ce2-4fe8-9547-5965870428d4;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDispWrapper";
+	- _name = "_TDispID";
+	- _id = GUID 2bd65745-1955-48a1-b58e-da0c4fa2f1b5;
+}
+- genTime = 9.25.2009::16:44:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IProvider";
+	- _id = GUID da8025a8-42af-46bc-9da6-9d53bdcaba11;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IDataBroker";
+	- _id = GUID 27bf9338-a101-4403-8184-692030e7b4ba;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmReplaceRule";
+	- _id = GUID 27e0a175-cad6-4b58-af83-3cca1b4afff8;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\windows";
+	- _id = GUID adaf97a6-14b5-49ee-80c8-173ff3cd282b;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TVariantT";
+	- _name = "T";
+	- _id = GUID 8df706e2-8db8-4582-bf05-5101b1002820;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmOprnFTPDialog";
+	- _id = GUID dcc4123c-9d9f-4e44-951d-6ce4191cb1f1;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TDefLCID";
+	- _id = GUID e3d4048b-4a97-426a-9692-b7a94fd587a2;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDllStdProc2";
+	- _name = "P2";
+	- _id = GUID b6eb106f-e3ab-4bd6-8501-ed2327309c48;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditFilter";
+	- _id = GUID 09c7d2e6-456e-439e-a9e7-87d746d02a3f;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TAutoDriver";
+	- _id = GUID 1cefd495-3da7-44a0-940e-4749e9f0fb17;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Buttons";
+	- _id = GUID 45a707c7-9ae9-49ca-8a94-5f6ad1db1687;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzLabel";
+	- _id = GUID 1e152efc-d840-4334-8e8a-28763043f2d3;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\XMLDoc";
+	- _id = GUID ba976fca-91e6-4035-91e5-7524bff3eee2;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TCoClassCreatorT";
+	- _name = "TOBJ";
+	- _id = GUID 96afdd90-5d9f-49fb-a739-729f87baa75d;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TComInterface";
+	- _id = GUID bec5dacb-3d2f-4eda-b412-1792cc31da09;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\oleauto";
+	- _id = GUID b529030d-926a-4e83-928d-967afb10ba11;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\Clipbrd";
+	- _id = GUID b19998ce-7b80-49fc-b2de-287e5efc9048;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmValueTrans";
+	- _id = GUID 0437bd82-9d1c-42b7-ab62-766470ba1a4b;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDispatchDelegate";
+	- _name = "T";
+	- _id = GUID 42c684d6-538f-4c45-84e1-5a2d7485c1bc;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TNoParam";
+	- _id = GUID b91cc0c9-9677-4d91-a31f-957fcf65ad7c;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmBillConfig";
+	- _id = GUID 40126b75-68c2-4c0b-895e-3fe338abb6bb;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\vcl";
+	- _id = GUID 25216def-e3c5-4e6d-9f55-48aa22098e15;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "TDispId";
+	- _name = "DISPINTF";
+	- _id = GUID a0c13890-4775-43af-b561-50c7833a981e;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzCmboBx";
+	- _id = GUID ff575606-729c-4821-9696-97599519c39c;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "CoClassCreator";
+	- _name = "INTF";
+	- _id = GUID 8f247b66-3e69-4261-b1b8-50ab40057e27;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TThreadExportToOra";
+	- _id = GUID cb84cc12-d922-4d3c-8dd4-2a392314c9c7;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\RzSplit";
+	- _id = GUID 8c60b8a1-790a-49be-bfb0-17bdbed3b05c;
+}
+- genTime = 9.25.2009::16:41:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TfrmEditReplaceRule";
+	- _id = GUID 7ee1f1a2-3d0c-4b4c-92ad-7239dba70431;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Externals.sbs";
+	- _subsystem = "Externals";
+	- _class = "";
+	- _name = "IStrings";
+	- _id = GUID c5536433-61af-487b-90f9-cd0b4d498b7b;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TEventDispatcher";
+	- _id = GUID 9aaa9cda-a74f-4799-bbbf-fd1eb87d5780;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TOpenFileThread";
+	- _id = GUID fb5ac7ab-60e1-4192-b742-80dc92eef98d;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TThreadConvertForDB";
+	- _id = GUID f2392b11-dd27-4e16-846e-18b775d70ae3;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBillField";
+	- _id = GUID f4ff4ff1-42fa-491a-b6d6-9f80b9c88b9a;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBillFile";
+	- _id = GUID 02bc372f-0685-4874-82c8-61023c621574;
+}
+- genTime = 9.25.2009::16:44:51;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Files\\objbase";
+	- _id = GUID eca4d7e3-5635-480f-a0bb-a2aa7aeebefe;
+}
+- genTime = 9.25.2009::16:41:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ibill_source.sbs";
+	- _subsystem = "ibill_source";
+	- _class = "";
+	- _name = "TBillConfig";
+	- _id = GUID 11238a79-5abb-45a4-9946-23d7627bd687;
+}
+- genTime = 9.25.2009::16:44:51;
+

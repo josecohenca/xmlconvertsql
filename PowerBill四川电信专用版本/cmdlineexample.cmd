@@ -1,0 +1,1 @@
+ibill.exe files="F:\我的数据\我的程序\ibill\localexample.lst" tempdir=z:\ db=mysql table=hdhd_cc08 maxdberrors=0 billname="二进制文件_中兴123字节话单" silent=1 trans=1 log="C:\Documents and Settings\Administrator\桌面\cc08.log"

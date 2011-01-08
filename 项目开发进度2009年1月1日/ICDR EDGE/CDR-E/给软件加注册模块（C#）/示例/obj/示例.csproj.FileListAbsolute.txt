@@ -1,0 +1,6 @@
+L:\研究\和网卡号绑定注册号\示例\obj\Release\ResolveAssemblyReference.cache
+L:\研究\和网卡号绑定注册号\示例\obj\Release\示例.Form1.resources
+L:\研究\和网卡号绑定注册号\示例\obj\Release\示例.Properties.Resources.resources
+L:\研究\和网卡号绑定注册号\示例\obj\Release\示例.csproj.GenerateResource.Cache
+L:\研究\和网卡号绑定注册号\示例\obj\Release\示例.exe
+L:\研究\和网卡号绑定注册号\示例\obj\Release\示例.pdb

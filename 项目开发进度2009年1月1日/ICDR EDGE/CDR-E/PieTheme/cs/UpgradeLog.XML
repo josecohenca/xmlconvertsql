@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PieTheme">
+</Property><Property Name="解决方案文件" Value="D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\PieTheme.sln">
+</Property><Property Name="Date" Value="2008年12月1日">
+</Property><Property Name="Time" Value="18:02:24">
+</Property></Properties><Event ErrorLevel="0" Project="PieTheme" Source="PieTheme.csproj" Description="项目文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\PieTheme.csproj">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="MapForm1.cs" Description="文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\MapForm1.cs">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="App.config" Description="文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="App.ico" Description="文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="MapForm1.resx" Description="文件已成功备份为 D:\Program Files\MapInfo\MapXtreme\6.6\Samples\VisualStudio2005\Desktop\Features\PieTheme\cs\Backup\MapForm1.resx">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="PieTheme.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="PieTheme" Source="PieTheme.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PieTheme" Source="PieTheme.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

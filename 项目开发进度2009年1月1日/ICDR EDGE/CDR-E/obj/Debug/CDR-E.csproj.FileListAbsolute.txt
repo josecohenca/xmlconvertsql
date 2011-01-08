@@ -1,0 +1,16 @@
+E:\90\CDR-E\CDR-E\obj\Debug\ResolveAssemblyReference.cache
+E:\90\CDR-E\CDR-E\obj\Debug\CDR_E.frmCDR.resources
+E:\90\CDR-E\CDR-E\obj\Debug\CDR_E.Properties.Resources.resources
+E:\90\CDR-E\CDR-E\obj\Debug\CDR-E.csproj.GenerateResource.Cache
+E:\90\CDR-E\CDR-E\bin\Debug\CDR-E.exe
+E:\90\CDR-E\CDR-E\bin\Debug\CDR-E.pdb
+E:\90\CDR-E\CDR-E\obj\Debug\CDR-E.exe
+E:\90\CDR-E\CDR-E\obj\Debug\CDR-E.pdb
+D:\ICDR EDGE\CDR-E\bin\Debug\CDR-E.exe
+D:\ICDR EDGE\CDR-E\bin\Debug\CDR-E.pdb
+D:\ICDR EDGE\CDR-E\obj\Debug\ResolveAssemblyReference.cache
+D:\ICDR EDGE\CDR-E\obj\Debug\CDR_E.frmCDR.resources
+D:\ICDR EDGE\CDR-E\obj\Debug\CDR_E.Properties.Resources.resources
+D:\ICDR EDGE\CDR-E\obj\Debug\CDR-E.csproj.GenerateResource.Cache
+D:\ICDR EDGE\CDR-E\obj\Debug\CDR-E.exe
+D:\ICDR EDGE\CDR-E\obj\Debug\CDR-E.pdb

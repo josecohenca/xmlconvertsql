@@ -1,0 +1,4 @@
+E:\90\CDR-E\CDR-E\Comm\LipingShare\LCLib\bin\Release\LipingShare.LCLib.dll
+E:\90\CDR-E\CDR-E\Comm\LipingShare\LCLib\bin\Release\LipingShare.LCLib.xml
+E:\90\CDR-E\CDR-E\Comm\LipingShare\LCLib\obj\Release\ResolveAssemblyReference.cache
+E:\90\CDR-E\CDR-E\Comm\LipingShare\LCLib\obj\Release\LipingShare.LCLib.dll

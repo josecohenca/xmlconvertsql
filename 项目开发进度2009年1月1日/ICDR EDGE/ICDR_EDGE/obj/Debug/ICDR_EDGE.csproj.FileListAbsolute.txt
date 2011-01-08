@@ -1,0 +1,12 @@
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\ICDR_EDGE.exe
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\ICDR_EDGE.pdb
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\LAY3-R.exe
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\Uninstall.exe
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\LAY3-R.pdb
+D:\ICDR EDGE\ICDR_EDGE\bin\Debug\Uninstall.pdb
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ResolveAssemblyReference.cache
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ICDR.ICDR_EDGE.resources
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ICDR.Properties.Resources.resources
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ICDR_EDGE.csproj.GenerateResource.Cache
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ICDR_EDGE.exe
+D:\ICDR EDGE\ICDR_EDGE\obj\Debug\ICDR_EDGE.pdb

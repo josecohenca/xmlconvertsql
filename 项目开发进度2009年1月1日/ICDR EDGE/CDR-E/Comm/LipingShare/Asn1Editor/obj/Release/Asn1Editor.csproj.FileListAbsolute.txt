@@ -1,0 +1,11 @@
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\bin\Release\Asn1Editor.exe
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\bin\Release\LipingShare.LCLib.dll
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\bin\Release\LipingShare.LCLib.xml
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\ResolveAssemblyReference.cache
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\LipingShare.Asn1Editor.About.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\LipingShare.Asn1Editor.FormDerEditor.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\LipingShare.Asn1Editor.FormNodeContentEditor.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\LipingShare.Asn1Editor.FormViewText.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\LipingShare.Asn1Editor.HexViewer.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\Asn1Editor.csproj.GenerateResource.Cache
+E:\90\CDR-E\CDR-E\Comm\LipingShare\Asn1Editor\obj\Release\Asn1Editor.exe

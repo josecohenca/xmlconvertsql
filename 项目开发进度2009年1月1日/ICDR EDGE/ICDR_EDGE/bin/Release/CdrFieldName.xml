@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Action>
+	<CdrFieldName>
+		<GsnFieldName AsnTag="ERRICSSON GGSN" Id="21" HexFormat="ERRICSSON GGSN" FieldName="ERRICSSON GGSN" AsnContent="ERRICSSON GGSN" XmlValue="ERRICSSON GGSN"/>
+		<GsnFieldName AsnTag="21context0" Id="0" HexFormat="hextodec" FieldName="recordType" AsnContent="13" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="21context1" Id="1" HexFormat="hextohex" FieldName="networkInitiation" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_1"/>
+		<GsnFieldName AsnTag="21context3" Id="3" HexFormat="hextoimsi" FieldName="servedIMSI" AsnContent="64008064234157F7" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_3"/>
+		<GsnFieldName AsnTag="21context4" Id="4" HexFormat="hextoip" FieldName="ggsnAddress" AsnContent="DDB14CF2" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_4&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="21context5" Id="5" HexFormat="hextodec" FieldName="chargingID" AsnContent="304D5C9F" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_5"/>
+		<GsnFieldName AsnTag="21context6" Id="6" HexFormat="hextoip" FieldName="sgsnAddress" AsnContent="DDB14CCD" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_6&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="21context7" Id="7" HexFormat="hextostr" FieldName="accessPointNameNI" AsnContent="636D776170" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_7"/>
+		<GsnFieldName AsnTag="21context8" Id="8" HexFormat="hextohex" FieldName="pdpType" AsnContent="0121" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_8"/>
+		<GsnFieldName AsnTag="21context9" Id="9" HexFormat="hextoip" FieldName="servedPDPAddress" AsnContent="0AD8BE7E" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_9&gt;CONTEXT_0&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="21context11" Id="11" HexFormat="hextohex" FieldName="dynamicAddressFlag" AsnContent="FF" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_11"/>
+		<GsnFieldName AsnTag="21context12" Id="12" HexFormat="hextohex" FieldName="listOfTrafficVolumes" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12"/>
+		<GsnFieldName AsnTag="21context13" Id="13" HexFormat="hextotime" FieldName="recordOpeningTime" AsnContent="0801091539472B0800" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_13"/>
+		<GsnFieldName AsnTag="21context14" Id="14" HexFormat="hextodec" FieldName="duration" AsnContent="00" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_14"/>
+		<GsnFieldName AsnTag="21context15" Id="15" HexFormat="hextodec" FieldName="causeForRecClosing" AsnContent="12" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_15"/>
+		<GsnFieldName AsnTag="21context16" Id="16" HexFormat="hextohex" FieldName="diagnostics" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_16"/>
+		<GsnFieldName AsnTag="21context17" Id="17" HexFormat="hextohex" FieldName="recordSequenceNumber" AsnContent="01" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_17"/>
+		<GsnFieldName AsnTag="21context18" Id="18" HexFormat="hextostr" FieldName="nodeID" AsnContent="4747534E475A3036" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_18"/>
+		<GsnFieldName AsnTag="21context19" Id="19" HexFormat="hextohex" FieldName="recordExtensions" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_19"/>
+		<GsnFieldName AsnTag="21context20" Id="20" HexFormat="hextodec" FieldName="localSequenceNumber" AsnContent="7EC00EBB" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_20"/>
+		<GsnFieldName AsnTag="21context21" Id="21" HexFormat="hextohex" FieldName="apnSelectionMode" AsnContent="00" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_21"/>
+		<GsnFieldName AsnTag="21context22" Id="22" HexFormat="hextomsdn" FieldName="servedMSISDN" AsnContent="91683128480587F1" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_22"/>
+		<GsnFieldName AsnTag="21context23" Id="23" HexFormat="hextohex" FieldName="chargingCharacteristics" AsnContent="0800" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_23"/>
+		<GsnFieldName AsnTag="21context24" Id="24" HexFormat="hextohex" FieldName="chChSelectionMode" AsnContent="03" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_24"/>
+		<GsnFieldName AsnTag="21context25" Id="25" HexFormat="hextohex" FieldName="iMSsignalingContext" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_25"/>
+		<GsnFieldName AsnTag="21context26" Id="26" HexFormat="hextohex" FieldName="externalChargingID" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_26"/>
+		<GsnFieldName AsnTag="21context27" Id="27" HexFormat="hextohex" FieldName="sgsnPLMNIdentifier" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_27"/>
+		<GsnFieldName AsnTag="21context29" Id="12" HexFormat="hextoqos" FieldName="qosNegotiated" AsnContent="021B621F7396406874631040" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12&gt;SEQUENCE&gt;CONTEXT_2"/>
+		<GsnFieldName AsnTag="21context30" Id="12" HexFormat="hextodec" FieldName="dataVolumeGPRSUplink" AsnContent="34C3" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12&gt;SEQUENCE&gt;CONTEXT_3"/>
+		<GsnFieldName AsnTag="21context31" Id="12" HexFormat="hextodec" FieldName="dataVolumeGPRSDownlink" AsnContent="5AB2" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12&gt;SEQUENCE&gt;CONTEXT_4"/>
+		<GsnFieldName AsnTag="21context32" Id="12" HexFormat="hextohex" FieldName="changeCondition" AsnContent="2" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12&gt;SEQUENCE&gt;CONTEXT_5"/>
+		<GsnFieldName AsnTag="21context33" Id="12" HexFormat="hextotime" FieldName="changeTime" AsnContent="0801091433372B0800" XmlValue="message&gt;CONTEXT_21&gt;CONTEXT_12&gt;SEQUENCE&gt;CONTEXT_6"/>
+		<GsnFieldName AsnTag="ERRICSSON SGSN" Id="20" HexFormat="ERRICSSON SGSN" FieldName="ERRICSSON SGSN" AsnContent="ERRICSSON SGSN" XmlValue="ERRICSSON SGSN"/>
+		<GsnFieldName AsnTag="20context0" Id="0" HexFormat="hextodec" FieldName="recordType" AsnContent="12" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="20context1" Id="1" HexFormat="hextohex" FieldName="networkInitiation" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_1"/>
+		<GsnFieldName AsnTag="20context3" Id="3" HexFormat="hextoimsi" FieldName="servedIMSI" AsnContent="64001084121452F9" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_3"/>
+		<GsnFieldName AsnTag="20context4" Id="4" HexFormat="hextohex" FieldName="servedIMEI" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_4"/>
+		<GsnFieldName AsnTag="20context5" Id="5" HexFormat="hextoip" FieldName="sgsnAddress" AsnContent="DDB14CC4" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_5&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="20context6" Id="6" HexFormat="hextootectstr1" FieldName="msNetworkCapability" AsnContent="F4" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_6"/>
+		<GsnFieldName AsnTag="20context7" Id="7" HexFormat="hextohex" FieldName="routingArea" AsnContent="1" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_7"/>
+		<GsnFieldName AsnTag="20context8" Id="8" HexFormat="hextootectstr2" FieldName="locationAreaCode" AsnContent="2605" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_8"/>
+		<GsnFieldName AsnTag="20context9" Id="9" HexFormat="hextootectstr2" FieldName="cellIdentifier" AsnContent="4001" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_9"/>
+		<GsnFieldName AsnTag="20context10" Id="10" HexFormat="hextodec" FieldName="chargingID" AsnContent="30486BC2" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_10"/>
+		<GsnFieldName AsnTag="20context11" Id="11" HexFormat="hextoip" FieldName="ggsnAddressUsed" AsnContent="DDB14CF3" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_11&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="20context12" Id="12" HexFormat="hextostr" FieldName="accessPointNameNI" AsnContent="05636D776170" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_12"/>
+		<GsnFieldName AsnTag="20context13" Id="13" HexFormat="hextohex" FieldName="pdpType" AsnContent="F121" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_13"/>
+		<GsnFieldName AsnTag="20context14" Id="14" HexFormat="hextoip" FieldName="servedPDPAddress" AsnContent="0AD95292" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_14&gt;CONTEXT_0&gt;CONTEXT_0"/>
+		<GsnFieldName AsnTag="20context15" Id="15" HexFormat="hextohex" FieldName="listOfTrafficVolumes" AsnContent="0000001F0000000000000000" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15"/>
+		<GsnFieldName AsnTag="20context16" Id="16" HexFormat="hextotime" FieldName="recordOpeningTime" AsnContent="0801091430262B0800" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_16"/>
+		<GsnFieldName AsnTag="20context17" Id="17" HexFormat="hextodec" FieldName="duration" AsnContent="00BE" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_17"/>
+		<GsnFieldName AsnTag="20context18" Id="18" HexFormat="hextohex" FieldName="sgsnChange" AsnContent="1" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_18"/>
+		<GsnFieldName AsnTag="20context19" Id="19" HexFormat="hextodec" FieldName="causeForRecClosing" AsnContent="12" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_19"/>
+		<GsnFieldName AsnTag="20context20" Id="20" HexFormat="hextohex" FieldName="diagnostics" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_20"/>
+		<GsnFieldName AsnTag="20context21" Id="21" HexFormat="hextohex" FieldName="recordSequenceNumber" AsnContent="1" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_21"/>
+		<GsnFieldName AsnTag="20context22" Id="22" HexFormat="hextostr" FieldName="nodeID" AsnContent="475A5347534E3034424572" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_22"/>
+		<GsnFieldName AsnTag="20context23" Id="23" HexFormat="hextohex" FieldName="recordExtensions" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_23"/>
+		<GsnFieldName AsnTag="20context24" Id="24" HexFormat="hextodec" FieldName="localSequenceNumber" AsnContent="032802A8" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_24"/>
+		<GsnFieldName AsnTag="20context25" Id="25" HexFormat="hextohex" FieldName="apnSelectionMode" AsnContent="0" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_25"/>
+		<GsnFieldName AsnTag="20context26" Id="26" HexFormat="hextostr" FieldName="accessPointNameOI" AsnContent="066D6E63303030066D63633436300467707273" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_26"/>
+		<GsnFieldName AsnTag="20context27" Id="27" HexFormat="hextomsdn" FieldName="servedMSISDN" AsnContent="91683117115254F7" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_27"/>
+		<GsnFieldName AsnTag="20context28" Id="28" HexFormat="hextohex" FieldName="chargingCharacteristics" AsnContent="0" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_28"/>
+		<GsnFieldName AsnTag="20context29" Id="29" HexFormat="hextohex" FieldName="systemType" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_29"/>
+		<GsnFieldName AsnTag="20context30" Id="30" HexFormat="hextohex" FieldName="cAMELInformationPDP" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_30"/>
+		<GsnFieldName AsnTag="20context31" Id="31" HexFormat="hextohex" FieldName="rNCUnsentDownlinkVolume" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_31"/>
+		<GsnFieldName AsnTag="20context32" Id="32" HexFormat="hextohex" FieldName="chChSelectionMode" AsnContent="3" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_32"/>
+		<GsnFieldName AsnTag="20context33" Id="33" HexFormat="hextohex" FieldName="dynamicAddressFlag" AsnContent="1" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_33"/>
+		<GsnFieldName AsnTag="20context34" Id="15" HexFormat="hextoqos" FieldName="qosRequested" AsnContent="0000001F0000000000000000" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_1"/>
+		<GsnFieldName AsnTag="20context35" Id="15" HexFormat="hextoqos" FieldName="qosNegotiated" AsnContent="021B621F7396406874631040" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_2"/>
+		<GsnFieldName AsnTag="20context36" Id="15" HexFormat="hextodec" FieldName="dataVolumeGPRSUplink" AsnContent="34C3" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_3"/>
+		<GsnFieldName AsnTag="20context37" Id="15" HexFormat="hextodec" FieldName="dataVolumeGPRSDownlink" AsnContent="5AB2" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_4"/>
+		<GsnFieldName AsnTag="20context38" Id="15" HexFormat="hextohex" FieldName="changeCondition" AsnContent="2" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_5"/>
+		<GsnFieldName AsnTag="20context39" Id="15" HexFormat="hextotime" FieldName="changeTime" AsnContent="0801091433372B0800" XmlValue="message&gt;CONTEXT_20&gt;CONTEXT_15&gt;SEQUENCE&gt;CONTEXT_6"/>
+	</CdrFieldName>
+</Action>

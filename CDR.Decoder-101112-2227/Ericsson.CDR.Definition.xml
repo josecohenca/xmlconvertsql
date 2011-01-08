@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CDRDefinition Version="Ericsson 100313-1505">
+  <!--
+  Signature (first byte in HEX) to verify first record.
+
+  <Signature>
+    <HexSignature>E1</HexSignature>
+    <HexSignature>...</HexSignature>
+    ...
+  </Signature>
+  -->
+  <Signature>
+    <HexSignature>A0</HexSignature>
+  </Signature>
+  <Schema Name="CompositeCallDataRecord" Default="true">
+    <Element Tag="0" Name="UMTSGSMPLMNCallDataRecord" Parselet="">
+      <Element Tag="0" Name="transit" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="calledSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="8" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="9" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="10" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="11" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="13" Name="timeFromRegisterSeizureToStartOfCharging" Parselet="esn_TimeParselet"/>
+        <Element Tag="14" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="15" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="16" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="17" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="18" Name="numberOfMeterPulses" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="20" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="21" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="22" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="23" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="25" Name="iNMarkingOfMS" Parselet="INMarkingOfMS"/>
+        <Element Tag="26" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="27" Name="eosInfo" Parselet="IntegerParselet"/>
+        <Element Tag="28" Name="internalCauseAndLoc" Parselet="InternalCauseAndLoc"/>
+        <Element Tag="29" Name="originalCalledNumber" Parselet="esn_AddressString"/>
+        <Element Tag="30" Name="redirectingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="31" Name="redirectionCounter" Parselet="IntegerParselet"/>
+        <Element Tag="34" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="35" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="36" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="37" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="38" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="39" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="40" Name="relatedCallNumber" Parselet="IntegerParselet"/>
+        <Element Tag="41" Name="faultCode" Parselet="IntegerParselet"/>
+        <Element Tag="42" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="43" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="44" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="45" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="46" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="47" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="48" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="49" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="50" Name="translatedNumber" Parselet="esn_AddressString"/>
+        <Element Tag="51" Name="bCSMTDPData1" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="52" Name="bCSMTDPData2" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="53" Name="bCSMTDPData3" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="54" Name="bCSMTDPData4" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="55" Name="bCSMTDPData5" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="56" Name="bCSMTDPData6" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="57" Name="bCSMTDPData7" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="58" Name="bCSMTDPData8" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="59" Name="bCSMTDPData9" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="60" Name="bCSMTDPData10" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="61" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="67" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+        <Element Tag="24" Name="originatedCode" Parselet="OriginatedCode"/>
+        <Element Tag="121" Name="reroutingIndicator" Parselet=""/>
+      </Element>
+
+      <Element Tag="1" Name="mSOriginating" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="callingSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="6" Name="callingSubscriberIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="8" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="9" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="10" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="11" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="13" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="14" Name="timeFromRegisterSeizureToStartOfCharging" Parselet="esn_TimeParselet"/>
+        <Element Tag="15" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="16" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="17" Name="chargingCase" Parselet="IntegerParselet"/>
+        <Element Tag="18" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="20" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="21" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="22" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="23" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="24" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="25" Name="originatingLocationNumber" Parselet="esn_AddressString"/>
+        <Element Tag="26" Name="timeForTCSeizureCalling" Parselet="esn_TimeParselet"/>
+        <Element Tag="27" Name="firstCallingLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="28" Name="lastCallingLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="29" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="30" Name="bearerServiceCode" Parselet="BearerServiceCode"/>
+        <Element Tag="31" Name="transparencyIndicator" Parselet="TransparencyIndicator"/>
+        <Element Tag="32" Name="firstRadioChannelUsed" Parselet="FirstRadioChannelUsed"/>
+        <Element Tag="33" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="34" Name="eosInfo" Parselet="IntegerParselet"/>
+        <Element Tag="35" Name="internalCauseAndLoc" Parselet="InternalCauseAndLoc"/>
+        <Element Tag="36" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="37" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="38" Name="numberOfMeterPulses" Parselet="IntegerParselet"/>
+        <Element Tag="42" Name="gSMApplicationIndicator" Parselet="ApplicationIndicator"/>
+        <Element Tag="43" Name="rFPowerClassCalling" Parselet="RFPowerclass"/>
+        <Element Tag="44" Name="dTMFUsed" Parselet=""/>
+        <Element Tag="45" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="46" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="47" Name="iNMarkingOfMS" Parselet="INMarkingOfMS"/>
+        <Element Tag="48" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="49" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="50" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="51" Name="cUGIndex" Parselet="IntegerParselet"/>
+        <Element Tag="52" Name="cUGOutgoingAccessUsed" Parselet=""/>
+        <Element Tag="53" Name="cUGOutgoingAccessIndicator" Parselet=""/>
+        <Element Tag="54" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="55" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="56" Name="sSCode" Parselet="SSCode"/>
+        <Element Tag="57" Name="channelAllocationPriorityLevel" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="58" Name="radioChannelProperty" Parselet="RadioChannelProperty"/>
+        <Element Tag="59" Name="faultCode" Parselet="IntegerParselet"/>
+        <Element Tag="60" Name="intermediateRate" Parselet="IntermediateRate"/>
+        <Element Tag="61" Name="firstAssignedSpeechCoderVersion" Parselet="SpeechCoderVersion"/>
+        <Element Tag="62" Name="speechCoderPreferenceList" Parselet="SpeechCoderPreferenceList"/>
+        <Element Tag="63" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="64" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="65" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="67" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="68" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="69" Name="frequencyBandSupported" Parselet="FrequencyBandSupported"/>
+        <Element Tag="70" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="71" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="72" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="73" Name="accountCode" Parselet="TbcdStringParselet"/>
+        <Element Tag="74" Name="translatedNumber" Parselet="esn_AddressString"/>
+        <Element Tag="75" Name="bCSMTDPData1" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="76" Name="bCSMTDPData2" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="77" Name="bCSMTDPData3" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="78" Name="bCSMTDPData4" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="79" Name="bCSMTDPData5" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="80" Name="bCSMTDPData6" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="81" Name="bCSMTDPData7" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="82" Name="bCSMTDPData8" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="83" Name="bCSMTDPData9" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="84" Name="bCSMTDPData10" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="85" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="86" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="87" Name="eMLPPPriorityLevel" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="88" Name="positionAccuracy" Parselet="PositionAccuracy"/>
+        <Element Tag="89" Name="userTerminalPosition" Parselet="UserTerminalPosition"/>
+        <Element Tag="90" Name="acceptableChannelCodings" Parselet="ChannelCodings"/>
+        <Element Tag="91" Name="incomingAssignedRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="92" Name="channelCodingUsed" Parselet="ChannelCodings"/>
+        <Element Tag="93" Name="rANAPCauseCode" Parselet="IntegerParselet"/>
+        <Element Tag="94" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        <Element Tag="95" Name="fNURRequested" Parselet="FixedNetworkUserRate"/>
+        <Element Tag="96" Name="aIURRequested" Parselet="AirInterfaceUserRate"/>
+        <Element Tag="97" Name="numberOfChannelsRequested" Parselet="NumberOfChannels"/>
+        <Element Tag="98" Name="bSSMAPCauseCode" Parselet="BSSMAPCauseCode"/>
+        <Element Tag="99" Name="multimediaCall" Parselet=""/>
+        <Element Tag="100" Name="guaranteedBitRate" Parselet="GuaranteedBitRate"/>
+        <Element Tag="101" Name="trafficClass" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+        <Element Tag="103" Name="rNCidOfFirstRNC" Parselet="TargetRNCid"/>
+        <Element Tag="104" Name="maxBitRateDownlink" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="105" Name="maxBitRateUplink" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="106" Name="transferDelay" Parselet="IntegerParselet"/>
+        <Element Tag="107" Name="deliveryOfErroneousSDU1" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="108" Name="deliveryOfErroneousSDU2" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="109" Name="deliveryOfErroneousSDU3" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="110" Name="residualBitErrorRatio1" Parselet="IntegerParselet"/>
+        <Element Tag="111" Name="residualBitErrorRatio2" Parselet="IntegerParselet"/>
+        <Element Tag="112" Name="residualBitErrorRatio3" Parselet="IntegerParselet"/>
+        <Element Tag="113" Name="sDUErrorRatio1" Parselet="IntegerParselet"/>
+        <Element Tag="114" Name="sDUErrorRatio2" Parselet="IntegerParselet"/>
+        <Element Tag="115" Name="sDUErrorRatio3" Parselet="IntegerParselet"/>
+        <Element Tag="66" Name="originatedCode" Parselet="OriginatedCode"/>
+        <Element Tag="121" Name="reroutingIndicator" Parselet=""/>
+        <Element Tag="122" Name="invocationOfCallHold" Parselet=""/>
+        <Element Tag="123" Name="retrievalOfHeldCall" Parselet=""/>
+      </Element>
+
+      <Element Tag="2" Name="roamingCallForwarding" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="calledSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="mobileStationRoamingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="8" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="9" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="10" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="11" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="13" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="14" Name="timeFromRegisterSeizureToStartOfCharging" Parselet="esn_TimeParselet"/>
+        <Element Tag="15" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="16" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="17" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="18" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="19" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="20" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="21" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="22" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="23" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="24" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="25" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="26" Name="eosInfo" Parselet="IntegerParselet"/>
+        <Element Tag="27" Name="internalCauseAndLoc" Parselet="InternalCauseAndLoc"/>
+        <Element Tag="28" Name="originalCalledNumber" Parselet="esn_AddressString"/>
+        <Element Tag="29" Name="redirectingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="30" Name="redirectionCounter" Parselet="IntegerParselet"/>
+        <Element Tag="31" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="32" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="33" Name="numberOfMeterPulses" Parselet="IntegerParselet"/>
+        <Element Tag="37" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="38" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="39" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="40" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="41" Name="relatedCallNumber" Parselet="IntegerParselet"/>
+        <Element Tag="42" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="43" Name="cUGOutgoingAccessIndicator" Parselet=""/>
+        <Element Tag="44" Name="presentationAndScreeningIndicator" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="45" Name="faultCode" Parselet="IntegerParselet"/>
+        <Element Tag="46" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="48" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="49" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="50" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="51" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="52" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="53" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="54" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+        <Element Tag="121" Name="reroutingIndicator" Parselet=""/>
+      </Element>
+
+      <Element Tag="3" Name="callForwarding" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="originalCalledNumber" Parselet="esn_AddressString"/>
+        <Element Tag="7" Name="redirectingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="8" Name="redirectionCounter" Parselet="IntegerParselet"/>
+        <Element Tag="9" Name="redirectingSPN" Parselet="esn_AddressString"/>
+        <Element Tag="10" Name="redirectingIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="11" Name="mobileStationRoamingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="12" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="13" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="14" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="15" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="16" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="17" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="18" Name="timeFromRegisterSeizureToStartOfCharging" Parselet="esn_TimeParselet"/>
+        <Element Tag="19" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="20" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="21" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="22" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="23" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="24" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="25" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="26" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="27" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="28" Name="originatingLocationNumber" Parselet="esn_AddressString"/>
+        <Element Tag="29" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="30" Name="eosInfo" Parselet="IntegerParselet"/>
+        <Element Tag="31" Name="internalCauseAndLoc" Parselet="InternalCauseAndLoc"/>
+        <Element Tag="32" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="33" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="34" Name="numberOfMeterPulses" Parselet="IntegerParselet"/>
+        <Element Tag="38" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="39" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="40" Name="iNMarkingOfMS" Parselet="INMarkingOfMS"/>
+        <Element Tag="41" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="42" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="43" Name="relatedCallNumber" Parselet="IntegerParselet"/>
+        <Element Tag="44" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="45" Name="cUGIndex" Parselet="IntegerParselet"/>
+        <Element Tag="46" Name="cUGOutgoingAccessUsed" Parselet=""/>
+        <Element Tag="47" Name="cUGOutgoingAccessIndicator" Parselet=""/>
+        <Element Tag="48" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="49" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="50" Name="presentationAndScreeningIndicator" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="51" Name="faultCode" Parselet="IntegerParselet"/>
+        <Element Tag="52" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="53" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="54" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="56" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="57" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="58" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="59" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="60" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="61" Name="translatedNumber" Parselet="esn_AddressString"/>
+        <Element Tag="62" Name="cAMELInitiatedCallForwarding" Parselet=""/>
+        <Element Tag="63" Name="bCSMTDPData1" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="64" Name="bCSMTDPData2" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="65" Name="bCSMTDPData3" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="66" Name="bCSMTDPData4" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="67" Name="bCSMTDPData5" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="68" Name="bCSMTDPData6" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="69" Name="bCSMTDPData7" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="70" Name="bCSMTDPData8" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="71" Name="bCSMTDPData9" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="72" Name="bCSMTDPData10" Parselet="CAMELTDPData">
+          <Element Tag="0" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="1" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        </Element>
+        <Element Tag="73" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="74" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+        <Element Tag="55" Name="originatedCode" Parselet="OriginatedCode"/>
+        <Element Tag="121" Name="reroutingIndicator" Parselet=""/>
+      </Element>
+
+      <Element Tag="4" Name="mSTerminating" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="calledSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="calledSubscriberIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="8" Name="mobileStationRoamingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="9" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="10" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="11" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="13" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="14" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="15" Name="timeFromRegisterSeizureToStartOfCharging" Parselet="esn_TimeParselet"/>
+        <Element Tag="16" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="17" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="18" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="20" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="21" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="22" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="23" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="24" Name="channelAllocationPriorityLevel" Parselet=""/>
+        <Element Tag="25" Name="terminatingLocationNumber" Parselet="esn_AddressString"/>
+        <Element Tag="26" Name="timeForTCSeizureCalled" Parselet="esn_TimeParselet"/>
+        <Element Tag="27" Name="firstCalledLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="28" Name="lastCalledLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="29" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="30" Name="bearerServiceCode" Parselet="BearerServiceCode"/>
+        <Element Tag="31" Name="transparencyIndicator" Parselet="TransparencyIndicator"/>
+        <Element Tag="32" Name="firstRadioChannelUsed" Parselet="FirstRadioChannelUsed"/>
+        <Element Tag="33" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="34" Name="eosInfo" Parselet="IntegerParselet"/>
+        <Element Tag="35" Name="internalCauseAndLoc" Parselet="InternalCauseAndLoc"/>
+        <Element Tag="36" Name="originalCalledNumber" Parselet="esn_AddressString"/>
+        <Element Tag="37" Name="redirectingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="38" Name="redirectionCounter" Parselet="IntegerParselet"/>
+        <Element Tag="39" Name="gSMApplicationIndicator" Parselet="ApplicationIndicator"/>
+        <Element Tag="40" Name="rFPowerClassCalled" Parselet="RFPowerclass"/>
+        <Element Tag="41" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="42" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="43" Name="dTMFUsed" Parselet=""/>
+        <Element Tag="44" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="45" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="46" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="47" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="48" Name="relatedCallNumber" Parselet="IntegerParselet"/>
+        <Element Tag="49" Name="acceptanceOfCallWaiting" Parselet=""/>
+        <Element Tag="50" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="51" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="52" Name="cUGIndex" Parselet="IntegerParselet"/>
+        <Element Tag="53" Name="cUGIncomingAccessUsed" Parselet=""/>
+        <Element Tag="54" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="55" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="56" Name="sSCode" Parselet="SSCode"/>
+        <Element Tag="57" Name="presentationAndScreeningIndicator" Parselet=""/>
+        <Element Tag="58" Name="radioChannelProperty" Parselet="RadioChannelProperty"/>
+        <Element Tag="59" Name="faultCode" Parselet="IntegerParselet"/>
+        <Element Tag="60" Name="intermediateRate" Parselet="IntermediateRate"/>
+        <Element Tag="61" Name="firstAssignedSpeechCoderVersion" Parselet="SpeechCoderVersion"/>
+        <Element Tag="62" Name="speechCoderPreferenceList" Parselet="SpeechCoderPreferenceList"/>
+        <Element Tag="63" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="64" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="65" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="66" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="67" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="68" Name="frequencyBandSupported" Parselet="FrequencyBandSupported"/>
+        <Element Tag="69" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="70" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="71" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="72" Name="accountCode" Parselet="TbcdStringParselet"/>
+        <Element Tag="73" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="74" Name="eMLPPPriorityLevel" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="75" Name="positionAccuracy" Parselet="PositionAccuracy"/>
+        <Element Tag="76" Name="userTerminalPosition" Parselet="UserTerminalPosition"/>
+        <Element Tag="77" Name="acceptableChannelCodings" Parselet="ChannelCodings"/>
+        <Element Tag="78" Name="outgoingAssignedRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="79" Name="channelCodingUsed" Parselet="ChannelCodings"/>
+        <Element Tag="80" Name="multimediaCall" Parselet=""/>
+        <Element Tag="81" Name="gsmSCFAddress" Parselet="esn_AddressString"/>
+        <Element Tag="82" Name="fNURRequested" Parselet="FixedNetworkUserRate"/>
+        <Element Tag="83" Name="aIURRequested" Parselet="AirInterfaceUserRate"/>
+        <Element Tag="84" Name="numberOfChannelsRequested" Parselet="NumberOfChannels"/>
+        <Element Tag="85" Name="bSSMAPCauseCode" Parselet="BSSMAPCauseCode"/>
+        <Element Tag="86" Name="guaranteedBitRate" Parselet="GuaranteedBitRate"/>
+        <Element Tag="87" Name="trafficClass" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="88" Name="rANAPCauseCode" Parselet="IntegerParselet"/>
+        <Element Tag="89" Name="rNCidOfFirstRNC" Parselet="TargetRNCid"/>
+        <Element Tag="90" Name="maxBitRateDownlink" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="91" Name="maxBitRateUplink" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="92" Name="transferDelay" Parselet="IntegerParselet"/>
+        <Element Tag="93" Name="deliveryOfErroneousSDU1" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="94" Name="deliveryOfErroneousSDU2" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="95" Name="deliveryOfErroneousSDU3" Parselet="DeliveryOfErroneousSDU"/>
+        <Element Tag="96" Name="residualBitErrorRatio1" Parselet="IntegerParselet"/>
+        <Element Tag="97" Name="residualBitErrorRatio2" Parselet="IntegerParselet"/>
+        <Element Tag="98" Name="residualBitErrorRatio3" Parselet="IntegerParselet"/>
+        <Element Tag="99" Name="sDUErrorRatio1" Parselet="IntegerParselet"/>
+        <Element Tag="100" Name="sDUErrorRatio2" Parselet="IntegerParselet"/>
+        <Element Tag="101" Name="sDUErrorRatio3" Parselet="IntegerParselet"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+        <Element Tag="121" Name="reroutingIndicator" Parselet=""/>
+        <Element Tag="122" Name="invocationOfCallHold" Parselet=""/>
+        <Element Tag="123" Name="retrievalOfHeldCall" Parselet=""/>
+      </Element>
+
+      <Element Tag="5" Name="mSOriginatingSMSinMSC" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="callingSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="6" Name="callingSubscriberIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="8" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="9" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="10" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="11" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="12" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="13" Name="incomingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="14" Name="firstCallingLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="15" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="16" Name="serviceCentreAddress" Parselet="esn_AddressString"/>
+        <Element Tag="17" Name="gSMApplicationIndicator" Parselet="ApplicationIndicator"/>
+        <Element Tag="18" Name="rFPowerClassCalling" Parselet="RFPowerclass"/>
+        <Element Tag="19" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="20" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="21" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="22" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="23" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="24" Name="channelAllocationPriorityLevel" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="25" Name="frequencyBandSupported" Parselet="FrequencyBandSupported"/>
+        <Element Tag="26" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="27" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="28" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="29" Name="positionAccuracy" Parselet="PositionAccuracy"/>
+        <Element Tag="30" Name="userTerminalPosition" Parselet="UserTerminalPosition"/>
+        <Element Tag="31" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="32" Name="destinationAddress" Parselet="AddressStringExtended"/>
+        <Element Tag="33" Name="messageReference" Parselet="IntegerParselet"/>
+        <Element Tag="34" Name="messageTypeIndicator" Parselet="MessageTypeIndicator"/>
+        <Element Tag="35" Name="rNCidOfFirstRNC" Parselet="TargetRNCid"/>
+        <Element Tag="36" Name="bCSMTDPData1" Parselet="CAMELTDPData"/>
+        <Element Tag="37" Name="cAMELCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="38" Name="cAMELDestinationAddress" Parselet="AddressStringExtended"/>
+        <Element Tag="39" Name="cAMELSMSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="40" Name="defaultSMSHandling" Parselet="DefaultSMS-Handling"/>
+        <Element Tag="41" Name="freeFormatData" Parselet=""/>
+        <Element Tag="42" Name="sMSResult" Parselet="SMSResult"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType "/>
+      </Element>
+
+      <Element Tag="6" Name="mSOriginatingSMSinSMS-IWMSC" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="4" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="5" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="6" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="7" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="8" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="9" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="10" Name="serviceCentreAddress" Parselet="esn_AddressString"/>
+        <Element Tag="11" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="12" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="13" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="14" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="15" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="7" Name="mSTerminatingSMSinMSC" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="4" Name="calledSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="5" Name="calledSubscriberIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="6" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="7" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="8" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="9" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="10" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="11" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="12" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="13" Name="firstCalledLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="14" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="15" Name="serviceCentreAddress" Parselet="esn_AddressString"/>
+        <Element Tag="16" Name="gSMApplicationIndicator" Parselet="ApplicationIndicator"/>
+        <Element Tag="17" Name="rFPowerClassCalled" Parselet="RFPowerclass"/>
+        <Element Tag="18" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="19" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="20" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="21" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="22" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="23" Name="channelAllocationPriorityLevel" Parselet="IMPLICIT"/>
+        <Element Tag="24" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="25" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="26" Name="frequencyBandSupported" Parselet="FrequencyBandSupported"/>
+        <Element Tag="27" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="28" Name="numberOfShortMessages" Parselet="IntegerParselet"/>
+        <Element Tag="29" Name="lastCalledLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="30" Name="positionAccuracy" Parselet="PositionAccuracy"/>
+        <Element Tag="31" Name="userTerminalPosition" Parselet="UserTerminalPosition"/>
+        <Element Tag="32" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="33" Name="originatingAddress" Parselet="AddressStringExtended"/>
+        <Element Tag="34" Name="messageTypeIndicator" Parselet="MessageTypeIndicator"/>
+        <Element Tag="35" Name="rNCidOfFirstRNC" Parselet="TargetRNCid"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="8" Name="mSTerminatingSMSinSMS-GMSC" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="4" Name="calledSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="5" Name="mobileStationRoamingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="7" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="8" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="9" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="10" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="11" Name="teleServiceCode" Parselet="TeleServiceCode"/>
+        <Element Tag="12" Name="serviceCentreAddress" Parselet="esn_AddressString"/>
+        <Element Tag="13" Name="mSCNumber" Parselet="esn_AddressString"/>
+        <Element Tag="14" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="15" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="16" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="17" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="18" Name="numberOfShortMessages" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="9" Name="sSProcedure" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="callingSubscriberIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="6" Name="callingSubscriberIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="8" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="9" Name="originForCharging" Parselet="IntegerParselet"/>
+        <Element Tag="10" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="11" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="12" Name="firstCallingLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="13" Name="gSMApplicationIndicator" Parselet="ApplicationIndicator"/>
+        <Element Tag="14" Name="rFPowerClassCalling" Parselet="RFPowerclass"/>
+        <Element Tag="15" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="16" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="17" Name="sSCode" Parselet="SSCode"/>
+        <Element Tag="18" Name="sSRequest" Parselet="SSRequest"/>
+        <Element Tag="19" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="20" Name="regionalServiceUsed" Parselet="RegionalServiceUsed"/>
+        <Element Tag="21" Name="regionDependentChargingOrigin" Parselet="IntegerParselet"/>
+        <Element Tag="22" Name="relatedCallNumber" Parselet="IntegerParselet"/>
+        <Element Tag="23" Name="uSSDApplicationIdentifier" Parselet="IntegerParselet"/>
+        <Element Tag="24" Name="uSSDServiceCode" Parselet="TbcdStringParselet"/>
+        <Element Tag="25" Name="uSSDProcedureCode" Parselet="TbcdStringParselet"/>
+        <Element Tag="26" Name="networkInitiatedUSSDOperations" Parselet="IntegerParselet"/>
+        <Element Tag="27" Name="uSSDOperationIdentifier" Parselet="IntegerParselet.Hex"/>
+        <Element Tag="28" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="29" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="30" Name="frequencyBandSupported" Parselet="FrequencyBandSupported"/>
+        <Element Tag="31" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="32" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="33" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="34" Name="positionAccuracy" Parselet="PositionAccuracy"/>
+        <Element Tag="35" Name="userTerminalPosition" Parselet="UserTerminalPosition"/>
+        <Element Tag="36" Name="rNCidOfFirstRNC" Parselet="TargetRNCid"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="13" Name="transitINOutgoingCall" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="4" Name="subscriptionType" Parselet="SubscriptionType"/>
+        <Element Tag="5" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="6" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="7" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="8" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="9" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="10" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="11" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="12" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="13" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="14" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="15" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="16" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="17" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="18" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="20" Name="c7ChargingMessage" Parselet="C7ChargingMessage"/>
+        <Element Tag="21" Name="c7FirstCHTMessage" Parselet="C7CHTMessage"/>
+        <Element Tag="22" Name="c7SecondCHTMessage" Parselet="C7CHTMessage"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="14" Name="iNIncomingCall" Parselet="">
+        <Element Tag="0" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="1" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="3" Name="iNServiceTrigger" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="sSFChargingCase" Parselet="IntegerParselet"/>
+        <Element Tag="5" Name="triggerData0" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="6" Name="triggerData1" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="7" Name="triggerData2" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="8" Name="triggerData3" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="9" Name="triggerData4" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="10" Name="triggerData5" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="11" Name="triggerData6" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="12" Name="triggerData7" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="13" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="14" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="15" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="16" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="17" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="18" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="20" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="21" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="22" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="23" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="24" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="25" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="15" Name="iNOutgoingCall" Parselet="">
+        <Element Tag="0" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="1" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="3" Name="iNServiceTrigger" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="sSFChargingCase" Parselet="IntegerParselet"/>
+        <Element Tag="5" Name="triggerData0" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="6" Name="triggerData1" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="7" Name="triggerData2" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="8" Name="triggerData3" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="9" Name="triggerData4" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="10" Name="triggerData5" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="11" Name="triggerData6" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="12" Name="triggerData7" Parselet="TriggerData">
+          <Element Tag="0" Name="triggerDetectionPoint" Parselet="TriggerDetectionPoint"/>
+          <Element Tag="1" Name="serviceKey" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="2" Name="co-located" Parselet=""/>
+          <Element Tag="3" Name="pointCodeAndSubSystemNumber" Parselet="PointCodeAndSubSystemNumber"/>
+          <Element Tag="4" Name="globalTitle" Parselet="GlobalTitle"/>
+          <Element Tag="5" Name="globalTitleAndSubSystemNumber" Parselet="GlobalTitleAndSubSystemNumber"/>
+        </Element>
+        <Element Tag="13" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="14" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="15" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="16" Name="incompleteCompositeCDRIndicator" Parselet=""/>
+        <Element Tag="17" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="18" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="19" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="20" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="21" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="22" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="23" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="24" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="25" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="17" Name="iSDNOriginating" Parselet="">
+        <Element Tag="0" Name="trafficActivityCode" Parselet="TrafficActivityCode"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="chargedCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="7" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="8" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="9" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="10" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="11" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="13" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="14" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="15" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="16" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="17" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="18" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="19" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="20" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="21" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="22" Name="cUGIndex" Parselet="IntegerParselet"/>
+        <Element Tag="23" Name="presentationAndScreeningIndicator" Parselet=""/>
+        <Element Tag="24" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="25" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="26" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="27" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="28" Name="causeCode" Parselet="IntegerParselet"/>
+        <Element Tag="29" Name="locationCode" Parselet="IntegerParselet"/>
+        <Element Tag="30" Name="networkProvidedCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="32" Name="callingPartyNumberSpecialArrangementInd" Parselet=""/>
+        <Element Tag="33" Name="userProvidedCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="34" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="35" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="36" Name="callAttemptIndicator" Parselet=""/>
+        <Element Tag="37" Name="flexibleCounter1" Parselet="IntegerParselet"/>
+        <Element Tag="38" Name="flexibleCounter2" Parselet="IntegerParselet"/>
+        <Element Tag="39" Name="flexibleCounter3" Parselet="IntegerParselet"/>
+        <Element Tag="40" Name="flexibleCounter4" Parselet="IntegerParselet"/>
+        <Element Tag="41" Name="flexibleCounter5" Parselet="IntegerParselet"/>
+        <Element Tag="42" Name="flexibleCounter6" Parselet="IntegerParselet"/>
+        <Element Tag="43" Name="flexibleCounter7" Parselet="IntegerParselet"/>
+        <Element Tag="44" Name="flexibleCounter8" Parselet="IntegerParselet"/>
+        <Element Tag="45" Name="callAttemptState" Parselet="CallAttemptState"/>
+        <Element Tag="46" Name="typeOfSignalling" Parselet="TypeOfSignalling"/>
+        <Element Tag="47" Name="typeOfCalledSubscriber" Parselet="TypeOfCalledSubscriber"/>
+        <Element Tag="48" Name="endToEndAccessDataMap" Parselet="EndToEndAccessDataMap"/>
+        <Element Tag="49" Name="userToUserService1Information" Parselet=""/>
+        <Element Tag="50" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="51" Name="aoCCurrencyAmountSentToUser" Parselet="AoCCurrencyAmountSent"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="18" Name="iSDNCallForwarding" Parselet="">
+        <Element Tag="0" Name="trafficActivityCode" Parselet="TrafficActivityCode"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="chargedCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="calledPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="6" Name="disconnectingParty" Parselet="DisconnectingParty"/>
+        <Element Tag="7" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="8" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="9" Name="timeForStopOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="10" Name="chargeableDuration" Parselet="esn_TimeParselet"/>
+        <Element Tag="11" Name="interruptionTime" Parselet="esn_TimeParselet"/>
+        <Element Tag="12" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="13" Name="tariffSwitchInd" Parselet="TariffSwitchInd"/>
+        <Element Tag="14" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="15" Name="outgoingRoute" Parselet="Ia5StringParselet"/>
+        <Element Tag="16" Name="callPosition" Parselet="CallPosition"/>
+        <Element Tag="17" Name="originalCalledNumber" Parselet="esn_AddressString"/>
+        <Element Tag="18" Name="redirectingNumber" Parselet="esn_AddressString"/>
+        <Element Tag="19" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="20" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="21" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="22" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="23" Name="cUGInterlockCode" Parselet="CUGInterlockCode"/>
+        <Element Tag="24" Name="cUGIndex" Parselet="IntegerParselet"/>
+        <Element Tag="25" Name="presentationAndScreeningIndicator" Parselet=""/>
+        <Element Tag="26" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="27" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="28" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="29" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="30" Name="causeCode" Parselet="IntegerParselet"/>
+        <Element Tag="31" Name="locationCode" Parselet="IntegerParselet"/>
+        <Element Tag="32" Name="networkProvidedCallingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="33" Name="callingPartyNumber" Parselet="esn_AddressString"/>
+        <Element Tag="35" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="36" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="37" Name="callAttemptIndicator" Parselet=""/>
+        <Element Tag="38" Name="flexibleCounter1" Parselet="IntegerParselet"/>
+        <Element Tag="39" Name="flexibleCounter2" Parselet="IntegerParselet"/>
+        <Element Tag="40" Name="flexibleCounter3" Parselet="IntegerParselet"/>
+        <Element Tag="41" Name="flexibleCounter4" Parselet="IntegerParselet"/>
+        <Element Tag="42" Name="flexibleCounter5" Parselet="IntegerParselet"/>
+        <Element Tag="43" Name="flexibleCounter6" Parselet="IntegerParselet"/>
+        <Element Tag="44" Name="flexibleCounter7" Parselet="IntegerParselet"/>
+        <Element Tag="45" Name="flexibleCounter8" Parselet="IntegerParselet"/>
+        <Element Tag="46" Name="callAttemptState" Parselet="CallAttemptState"/>
+        <Element Tag="47" Name="typeOfSignalling" Parselet="TypeOfSignalling"/>
+        <Element Tag="48" Name="typeOfCalledSubscriber" Parselet="TypeOfCalledSubscriber"/>
+        <Element Tag="49" Name="endToEndAccessDataMap" Parselet="EndToEndAccessDataMap"/>
+        <Element Tag="50" Name="userToUserService1Information" Parselet="IMPLICIT"/>
+        <Element Tag="51" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="52" Name="aoCCurrencyAmountSentToUser" Parselet="AoCCurrencyAmountSent"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="19" Name="iSDNSSProcedure" Parselet="">
+        <Element Tag="0" Name="trafficActivityCode" Parselet="TrafficActivityCode"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="IntegerParselet"/>
+        <Element Tag="4" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="5" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="6" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="7" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="8" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="9" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="10" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="11" Name="servedSubscriberNumber" Parselet="esn_AddressString"/>
+        <Element Tag="12" Name="chargedParty" Parselet="ChargedParty"/>
+        <Element Tag="13" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="21" Name="sCFChargingOutput" Parselet="">
+        <Element Tag="0" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="1" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="2" Name="gSMCallReferenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="restartDuringCall" Parselet=""/>
+        <Element Tag="4" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="5" Name="lastPartialOutput" Parselet=""/>
+        <Element Tag="6" Name="partialOutputRecNum" Parselet="IntegerParselet"/>
+        <Element Tag="7" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="8" Name="disconnectionDueToSystemRecovery" Parselet=""/>
+        <Element Tag="9" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="10" Name="forloppReleaseDuringCall" Parselet=""/>
+        <Element Tag="11" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="12" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="13" Name="mSCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="14" Name="esn_DateParselet" Parselet="esn_DateParselet"/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="24" Name="locationServices" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="callIdentificationNumber" Parselet="IntegerParselet"/>
+        <Element Tag="2" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="typeOfCallingSubscriber" Parselet="TypeOfCallingSubscriber,"/>
+        <Element Tag="4" Name="targetMSISDN" Parselet="esn_AddressString"/>
+        <Element Tag="5" Name="targetIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="6" Name="targetIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="dateForStartOfCharge" Parselet="esn_DateParselet"/>
+        <Element Tag="8" Name="timeForStartOfCharge" Parselet="esn_TimeParselet"/>
+        <Element Tag="9" Name="exchangeIdentity" Parselet="Ia5StringParselet"/>
+        <Element Tag="10" Name="mSCIdentification" Parselet="esn_AddressString"/>
+        <Element Tag="11" Name="miscellaneousInformation" Parselet=""/>
+        <Element Tag="12" Name="restartDuringOutputIndicator" Parselet=""/>
+        <Element Tag="13" Name="iCIOrdered" Parselet=""/>
+        <Element Tag="14" Name="outputForSubscriber" Parselet="OutputForSubscriber"/>
+        <Element Tag="15" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="16" Name="switchIdentity" Parselet="IntegerParselet"/>
+        <Element Tag="17" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="18" Name="forloppDuringOutputIndicator" Parselet=""/>
+        <Element Tag="19" Name="positioningDelivery" Parselet="IntegerParselet.Bin"/>
+        <Element Tag="20" Name="lCSClientIdentity" Parselet="esn_AddressString"/>
+        <Element Tag="21" Name="lCSClientType" Parselet="LCSClientType"/>
+        <Element Tag="22" Name="locationEstimate" Parselet="LocationEstimate"/>
+        <Element Tag="23" Name="ageOfLocationEstimate" Parselet="AgeOfLocationInformation"/>
+        <Element Tag="24" Name="subscriberState" Parselet="SubscriberState"/>
+        <Element Tag="25" Name="mLCAddress" Parselet="esn_AddressString"/>
+        <Element Tag="26" Name="decipheringKeys" Parselet="DecipheringKeys"/>
+        <Element Tag="27" Name="typeOfLocationRequest" Parselet="TypeOfLocationRequest"/>
+        <Element Tag="28" Name="firstTargetLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="29" Name="horizontalAccuracy" Parselet="LCSAccuracy"/>
+        <Element Tag="30" Name="responseTimeCategory" Parselet="ResponseTimeCategory"/>
+        <Element Tag="31" Name="verticalAccuracy" Parselet="LCSAccuracy"/>
+        <Element Tag="32" Name="verticalCoordinateRequest" Parselet=""/>
+        <Element Tag="102" Name="outputType" Parselet="OutputType"/>
+      </Element>
+
+      <Element Tag="10" Name="aoCEventModule" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="cRIToMS" Parselet="CRIToMS"/>
+        <Element Tag="2" Name="cRIIndicator" Parselet="CRIIndicator"/>
+        <Element Tag="3" Name="sSCode" Parselet="SSCode"/>
+        <Element Tag="4" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="5" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="6" Name="gsmSCFControlOfAoC" Parselet=""/>
+      </Element>
+
+      <Element Tag="11" Name="sSInvocationEventModule" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="sSCode" Parselet="SSCode"/>
+        <Element Tag="2" Name="sSRequest" Parselet="SSRequest"/>
+        <Element Tag="3" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="4" Name="firstCallingLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="5" Name="cRIIndicator" Parselet="CRIIndicator"/>
+        <Element Tag="6" Name="eventCRIToMS" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="9" Name="networkCallReference" Parselet="NetworkCallReference"/>
+        <Element Tag="10" Name="sSInvocationNotification" Parselet=""/>
+      </Element>
+
+      <Element Tag="12" Name="serviceSwitchEventModule" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="2" Name="serviceSwitchingType" Parselet="ServiceSwitchingType"/>
+        <Element Tag="3" Name="incompleteCallDataIndicator" Parselet=" "/>
+      </Element>
+
+      <Element Tag="16" Name="iNServiceDataEventModule" Parselet="">
+        <Element Tag="0" Name="chargePartyDistributed" Parselet="Distributed"/>
+        <Element Tag="1" Name="chargePartySingle" Parselet="Single"/>
+        <Element Tag="2" Name="chargingUnitsAddition" Parselet="IntegerParselet"/>
+        <Element Tag="3" Name="genericChargingDigits" Parselet="GenericDigitsSet"/>
+        <Element Tag="4" Name="genericChargingNumbers" Parselet="GenericNumbersSet"/>
+        <Element Tag="5" Name="serviceFeatureCode" Parselet="ServiceFeatureCode"/>
+        <Element Tag="6" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="7" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="8" Name="freeFormatData" Parselet=""/>
+        <Element Tag="9" Name="sSFLegID" Parselet="IntegerParselet.Hex"/>
+      </Element>
+
+      <Element Tag="20" Name="chargeRateChangeEventModule" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="2" Name="radioChannelProperty" Parselet="RadioChannelProperty"/>
+        <Element Tag="3" Name="changeInitiatingParty" Parselet="ChangeInitiatingParty"/>
+        <Element Tag="4" Name="tariffClass" Parselet="IntegerParselet"/>
+        <Element Tag="7" Name="aIURRequested" Parselet="AirInterfaceUserRate"/>
+        <Element Tag="8" Name="numberOfChannelsRequested" Parselet="NumberOfChannels"/>
+        <Element Tag="9" Name="channelCodingUsed" Parselet="ChannelCodings "/>
+      </Element>
+
+      <Element Tag="23" Name="iSDNSSInvocationEventModule" Parselet="">
+        <Element Tag="0" Name="trafficActivityCode" Parselet="TrafficActivityCode"/>
+        <Element Tag="1" Name="incompleteCallDataIndicator" Parselet=""/>
+      </Element>
+
+      <Element Tag="25" Name="handOverEventModule" Parselet="">
+        <Element Tag="0" Name="tAC" Parselet="TAC"/>
+        <Element Tag="1" Name="timeForEvent" Parselet="esn_TimeParselet"/>
+        <Element Tag="2" Name="rNCidOfTargetRNC" Parselet="TargetRNCid"/>
+        <Element Tag="3" Name="incompleteCallDataIndicator" Parselet=""/>
+        <Element Tag="4" Name="targetLocationInformation" Parselet="LocationInformation"/>
+        <Element Tag="5" Name="radioChannelProperty" Parselet="RadioChannelProperty"/>
+        <Element Tag="6" Name="channelCodingUsed" Parselet="ChannelCodings"/>
+      </Element>
+    </Element>
+  </Schema>
+</CDRDefinition>

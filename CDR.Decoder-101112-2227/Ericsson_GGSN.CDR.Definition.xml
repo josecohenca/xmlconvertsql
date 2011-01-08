@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CDRDefinition Version="Ericsson GGSN 101024-1653">
+  <!--
+  Signature (first byte in HEX) to verify first record.
+
+  <Signature>
+    <HexSignature>E1</HexSignature>
+    <HexSignature>...</HexSignature>
+    ...
+  </Signature>
+  -->
+  <Signature>
+    <HexSignature>B5</HexSignature>
+    <HexSignature>BC</HexSignature>
+    <HexSignature>BF</HexSignature>
+  </Signature>
+  <Schema Name="Release 7" Default="true">
+    <Element Tag="21" Name="ggsnPDPRecord" Parselet="">
+      <Element Tag="0" Name="recordType" Parselet="IntegerParselet"/>
+      <Element Tag="3" Name="servedIMSI" Parselet="TbcdStringParselet"/>
+      <Element Tag="4" Name="ggsnAddress" Parselet="">
+        <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+        <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+      </Element>
+      <Element Tag="5" Name="chargingID" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="6" Name="sgsnAddress" Parselet="">
+        <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+        <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+      </Element>
+      <Element Tag="7" Name="accessPointNameNI" Parselet="Ia5StringParselet"/>
+      <Element Tag="8" Name="pdpType" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="9" Name="servedPDPAddress" Parselet="">
+        <Element Tag="0" Name="iPAddress" Parselet="">
+          <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+          <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+          <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+          <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="11" Name="dynamicAddressFlag" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="12" Name="listOfTrafficVolumes" Parselet="">
+        <Element Tag="16" Name="" Parselet="">
+          <Element Tag="2" Name="qosNegotiated" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="3" Name="dataVolumeGPRSUplink" Parselet="IntegerParselet"/>
+          <Element Tag="4" Name="dataVolumeGPRSDownlink" Parselet="IntegerParselet"/>
+          <Element Tag="5" Name="changeCondition" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="6" Name="changeTime" Parselet="sgsn_TimeParselet"/>
+        </Element>
+      </Element>
+      <Element Tag="13" Name="recordOpeningTime" Parselet="sgsn_TimeParselet"/>
+      <Element Tag="14" Name="duration" Parselet="IntegerParselet"/>
+      <Element Tag="15" Name="causeForRecClosing" Parselet="IntegerParselet"/>
+      <Element Tag="17" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="18" Name="nodeID" Parselet="Ia5StringParselet"/>
+      <Element Tag="19" Name="recordExtensions" Parselet=""/>
+      <Element Tag="20" Name="localSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="21" Name="apnSelectionMode" Parselet="IntegerParselet"/>
+      <Element Tag="22" Name="servedMSISDN" Parselet="esn_AddressString"/>
+      <Element Tag="23" Name="chargingCharacteristics" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="24" Name="chChSelectionMode" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="25" Name="iMSsignalingContext" Parselet=""/>
+      <Element Tag="26" Name="externalChargingID" Parselet=""/>
+      <Element Tag="27" Name="sgsnPLMNIdentifier" Parselet=""/>
+      <Element Tag="29" Name="servedIMEISV" Parselet="TbcdStringParselet"/>
+      <Element Tag="30" Name="rATType" Parselet="IntegerParselet"/>
+      <Element Tag="31" Name="mSTimeZone" Parselet=""/>
+      <Element Tag="32" Name="userLocationInformation" Parselet=""/>
+    </Element>
+    <Element Tag="70" Name="egsnPDPRecord" Parselet="">
+      <Element Tag="0" Name="recordType" Parselet="IntegerParselet"/>
+      <Element Tag="3" Name="servedIMSI" Parselet="TbcdStringParselet"/>
+      <Element Tag="4" Name="ggsnAddress" Parselet="">
+        <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+        <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+      </Element>
+      <Element Tag="5" Name="chargingID" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="6" Name="sgsnAddress" Parselet="">
+        <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+        <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+      </Element>
+      <Element Tag="7" Name="accessPointNameNI" Parselet="Ia5StringParselet"/>
+      <Element Tag="8" Name="pdpType" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="9" Name="servedPDPAddress" Parselet="">
+        <Element Tag="0" Name="iPAddress" Parselet="">
+          <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+          <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+          <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+          <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="11" Name="dynamicAddressFlag" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="12" Name="listOfTrafficVolumes" Parselet="">
+        <Element Tag="16" Name="" Parselet="">
+          <Element Tag="2" Name="qosNegotiated" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="3" Name="dataVolumeGPRSUplink" Parselet="IntegerParselet"/>
+          <Element Tag="4" Name="dataVolumeGPRSDownlink" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="5" Name="changeCondition" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="6" Name="changeTime" Parselet="sgsn_TimeParselet"/>
+        </Element>
+      </Element>
+      <Element Tag="13" Name="recordOpeningTime" Parselet="sgsn_TimeParselet"/>
+      <Element Tag="14" Name="duration" Parselet="IntegerParselet"/>
+      <Element Tag="15" Name="causeForRecClosing" Parselet="IntegerParselet"/>
+      <Element Tag="17" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="18" Name="nodeID" Parselet="Ia5StringParselet"/>
+      <Element Tag="19" Name="recordExtensions" Parselet=""/>
+      <Element Tag="20" Name="localSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="21" Name="apnSelectionMode" Parselet="IntegerParselet"/>
+      <Element Tag="22" Name="servedMSISDN" Parselet="esn_AddressString"/>
+      <Element Tag="23" Name="chargingCharacteristics" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="24" Name="chChSelectionMode" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="25" Name="iMSsignalingContext" Parselet=""/>
+      <Element Tag="26" Name="externalChargingID" Parselet=""/>
+      <Element Tag="27" Name="sgsnPLMNIdentifier" Parselet=""/>
+      <Element Tag="28" Name="pSFurnishChargingInformation" Parselet=""/>
+      <Element Tag="29" Name="servedIMEISV" Parselet="TbcdStringParselet"/>
+      <Element Tag="30" Name="rATType" Parselet="IntegerParselet"/>
+      <Element Tag="31" Name="mSTimeZone" Parselet=""/>
+      <Element Tag="32" Name="userLocationInformation" Parselet=""/>
+      <Element Tag="34" Name="listOfServiceData" Parselet=""/>
+    </Element>
+  </Schema>
+</CDRDefinition>

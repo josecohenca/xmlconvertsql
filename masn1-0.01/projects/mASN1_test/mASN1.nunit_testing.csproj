@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>mASN1.nunit.test</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mASN1.test</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>mASN1_tests.DebugRunner</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mASN1_framework\mASN1.framework.csproj">
+      <Name>mASN1.framework</Name>
+      <Project>{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="OID.Project">
+      <Name>OID.Project</Name>
+      <Project>{4F56C180-67CC-459F-9BB1-F963B1CC9DDE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\NUnit 2.2\bin\nunit.framework.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\nunit.framework</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mASN1_test_Advanced.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mASN1_test_Basic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mASN1_test_ExperimentalFeatures.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mASN1_test_Intermediate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mASN1_test_Main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mASN1_unit_test_AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resources\ResourceLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_samples.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_BIT_STRING.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_CHOICE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_INTEGER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_OBJECT_IDENTIFIER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_PARAMETERIZED_TYPES.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_SEQUENCE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_SEQUENCE_OF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_SEQUENCE_w_TAGGING.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_SET_OF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_STRING.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_TAG_EXPLICIT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test_TAG_IMPLICIT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_classes\mASN1_test__BER_DER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_instances\samples.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="X501_test_classes\X501_test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="X509_test_classes\X509_test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="resources\entrust.cer" />
+    <EmbeddedResource Include="resources\india.cer" />
+    <EmbeddedResource Include="resources\zaba.rootca.crt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

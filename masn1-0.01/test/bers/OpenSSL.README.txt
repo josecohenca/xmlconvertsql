@@ -1,0 +1,4 @@
+Examples of OpenSSL use:
+
+
+openssl x509  -inform DER -issuer < test.cert.der

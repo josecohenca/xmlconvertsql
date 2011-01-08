@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CDRDefinition Version="Siemens D900 090703-1508">
+  <!--
+  Signature (first byte in HEX) to verify first record.
+
+  <Signature>
+    <HexSignature>E1</HexSignature>
+    <HexSignature>...</HexSignature>
+    ...
+  </Signature>
+  -->
+  <Signature>
+    <HexSignature>E1</HexSignature>
+    <HexSignature>BC</HexSignature>
+  </Signature>
+  <Schema Name="CS-10" Default="false">
+    <Element Tag="1" Name="BillingRecord" Parselet="">
+      <Element Tag="2" Name="dAId" Parselet="TbcdStringParselet"/>
+      <Element Tag="3" Name="firstCellID" Parselet="d900_CellIdParselet"/>
+      <Element Tag="4" Name="incTgTCompBlock" Parselet="">
+        <Element Tag="12" Name="cicIc" Parselet="d900_CircuitParselet"/>
+        <Element Tag="33" Name="biccCallInstCodeInc" Parselet=""/>
+        <Element Tag="75" Name="tgrpNameIc" Parselet="Ia5StringParselet"/>
+      </Element>
+      <Element Tag="5" Name="outgTgTCompBlock" Parselet="">
+        <Element Tag="12" Name="cicOg" Parselet="d900_CircuitParselet"/>
+        <Element Tag="33" Name="biccCallInstCodeOut" Parselet=""/>
+        <Element Tag="75" Name="tgrpNameOg" Parselet="Ia5StringParselet"/>
+      </Element>
+      <Element Tag="10" Name="origTermMscId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="11" Name="origTermBscId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="13" Name="transactionIdentification" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="14" Name="chargingtimeData" Parselet="">
+        <Element Tag="19" Name="startOfChargingdate" Parselet="d900_BcdDateParselet"/>
+        <Element Tag="20" Name="startOfChargingtime" Parselet="">
+          <Element Tag="74" Name="timeStamp" Parselet="d900_BcdTimeParselet"/>
+        </Element>
+        <Element Tag="17" Name="callDuration" Parselet="IntegerParselet"/>
+      </Element>
+      <Element Tag="15" Name="otherParty3a" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="16" Name="otherPartySequence" Parselet="">
+        <Element Tag="9" Name="dialledOtherParty" Parselet="d900_GsmPhoneNumberParselet"/>
+        <Element Tag="39" Name="translatedOtherParty" Parselet="d900_GsmPhoneNumberParselet"/>
+      </Element>
+      <Element Tag="21" Name="individualTeleserviceNumber" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="22" Name="individualBearerserviceNumber" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="23" Name="supplServiceInfo" Parselet="">
+        <Element Tag="41" Name="callHoldInvocCount" Parselet=""/>
+        <Element Tag="42" Name="callWaitInvocCount" Parselet=""/>
+        <Element Tag="43" Name="sSSequenceOf" Parselet="">
+          <Element Tag="44" Name="sSCode" Parselet=""/>
+        </Element>
+        <Element Tag="60" Name="sSInvocation" Parselet="">
+          <Element Tag="61" Name="sSInvocCode" Parselet=""/>
+          <Element Tag="62" Name="sSInvocSucc" Parselet=""/>
+          <Element Tag="63" Name="sSInvocDate" Parselet=""/>
+          <Element Tag="64" Name="sSInvocTime" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="24" Name="msAccessRate" Parselet="IntegerParselet"/>
+      <Element Tag="25" Name="sequenceNumber" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="26" Name="systemType" Parselet="IntegerParselet"/>
+      <Element Tag="27" Name="transmissionMode" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="28" Name="msClassmark" Parselet=""/>
+      <Element Tag="29" Name="incMgwInfoCompBlock" Parselet="">
+        <Element Tag="60" Name="mgwTgrpNameIc" Parselet="Ia5StringParselet"/>
+        <Element Tag="61" Name="mgwNameIc" Parselet="Ia5StringParselet"/>
+        <Element Tag="62" Name="incomingMgwID" Parselet=""/>
+        <Element Tag="63" Name="incomingBearer" Parselet=""/>
+      </Element>
+      <Element Tag="30" Name="outgMgwInfoCompBlock" Parselet="">
+        <Element Tag="60" Name="mgwTgrpNameOut" Parselet="Ia5StringParselet"/>
+        <Element Tag="61" Name="mgwNameOut" Parselet="Ia5StringParselet"/>
+        <Element Tag="62" Name="outgoingMgwID" Parselet=""/>
+        <Element Tag="63" Name="outgoingBearer" Parselet=""/>
+      </Element>
+      <Element Tag="32" Name="thirdParty" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="33" Name="servedMobileNumber" Parselet="">
+        <Element Tag="6" Name="servedIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="servedMSIsdn" Parselet="TbcdStringParselet"/>
+        <Element Tag="8" Name="servedIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="9" Name="pABXNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+        <Element Tag="29" Name="servedMSRN" Parselet="TbcdStringParselet"/>
+      </Element>
+      <Element Tag="34" Name="otherPartySMS" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="35" Name="locationNumber" Parselet="TbcdStringParselet"/>
+      <Element Tag="36" Name="sMReference" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="37" Name="redirectionCounter" Parselet="IntegerParselet"/>
+      <Element Tag="38" Name="serviceCentreAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="40" Name="servedOtherNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="43" Name="intermediateSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="48" Name="ussdData" Parselet="">
+        <Element Tag="13" Name="ussdAccessCode" Parselet="IntegerParselet.Hex"/>
+        <Element Tag="14" Name="ussdString" Parselet="d900_UssdStringParselet"/>
+        <Element Tag="17" Name="ussdCodingScheme" Parselet="IntegerParselet.Hex"/>
+        <Element Tag="15" Name="ussdNotifyCounter" Parselet="IntegerParselet"/>
+        <Element Tag="16" Name="ussdRequestCounter" Parselet="IntegerParselet"/>
+      </Element>
+      <Element Tag="50" Name="sMTransmissionResult" Parselet="IntegerParselet"/>
+      <Element Tag="58" Name="sequenceOfCamelDialogs" Parselet="">
+        <Element Tag="59" Name="camelDialog" Parselet="">
+          <Element Tag="11" Name="camelFFDataIncAppendInd" Parselet=""/>
+          <Element Tag="12" Name="camelFFDataOutAppendInd" Parselet=""/>
+          <Element Tag="83" Name="inTransPar" Parselet=""/>
+          <Element Tag="88" Name="gsmScfAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="89" Name="defaultCallHandling" Parselet="IntegerParselet"/>
+          <Element Tag="90" Name="inServiceKey" Parselet=""/>
+          <Element Tag="104" Name="camelFFDataIncLeg" Parselet=""/>
+          <Element Tag="106" Name="mcrDestinationNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="111" Name="changeFlags" Parselet=""/>
+          <Element Tag="112" Name="camelFFDataOutLeg" Parselet=""/>
+          <Element Tag="113" Name="levelOfCAMELService" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="115" Name="mcrDestinationNumberSMS" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="122" Name="numberOfDpEncountered" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="65" Name="camelCommonData" Parselet="">
+        <Element Tag="21" Name="termCamelRecordInVMSC" Parselet=""/>
+        <Element Tag="80" Name="inFlag" Parselet="IntegerParselet"/>
+        <Element Tag="81" Name="chargeBandNumber" Parselet=""/>
+        <Element Tag="82" Name="inAoC" Parselet=""/>
+        <Element Tag="107" Name="timeOfCAMELLeg" Parselet="d900_BcdTimeParselet"/>
+        <Element Tag="108" Name="dateOfCAMELLeg" Parselet="d900_BcdDateParselet"/>
+        <Element Tag="109" Name="durationOfCAMELLeg" Parselet="IntegerParselet"/>
+        <Element Tag="110" Name="camelInitCfIndicator" Parselet=""/>
+      </Element>
+      <Element Tag="66" Name="multipleSMTransfer" Parselet="IntegerParselet"/>
+      <Element Tag="69" Name="subscriberCategory" Parselet=""/>
+      <Element Tag="70" Name="recordType" Parselet="d900_RecordTypeParselet"/>
+      <Element Tag="71" Name="callTransactionType" Parselet="d900_CallTransactionTypeParselet"/>
+      <Element Tag="72" Name="timeQuality" Parselet=""/>
+      <Element Tag="73" Name="exchangeId" Parselet="Ia5StringParselet"/>
+      <Element Tag="78" Name="reasonForTermination" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="79" Name="chargeIndicator" Parselet="IntegerParselet"/>
+      <Element Tag="84" Name="secondCellId" Parselet="d900_CellIdParselet.CellId"/>
+      <Element Tag="85" Name="callReferenceNumber" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="86" Name="mscAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="87" Name="speechCode" Parselet=""/>
+      <Element Tag="103" Name="usedEmlppPriority" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="114" Name="partialRecordType" Parselet="d900_PartialRecordTypeParselet"/>
+      <Element Tag="116" Name="otherMSRN" Parselet="TbcdStringParselet"/>
+      <Element Tag="118" Name="drcChrgOrigin" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="119" Name="drcTariffClass" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="120" Name="protocolIdForSMS" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="121" Name="partialRecordCorrelationId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="127" Name="locationAreaCode" Parselet="IntegerParselet.Int"/>
+    </Element>
+    <Element Tag="28" Name="TrailerRecord" Parselet="">
+      <Element Tag="2" Name="filename" Parselet="Ia5StringParselet"/>
+      <Element Tag="3" Name="filesize" Parselet="d900_FileSizeParselet.Coding_A"/>
+      <Element Tag="4" Name="numberOfRecords" Parselet="d900_NumberOfRecordsParselet.Coding_A"/>
+      <Element Tag="5" Name="creationDate" Parselet="d900_BcdDateParselet"/>
+      <Element Tag="6" Name="creationTime" Parselet="d900_BcdTimeParselet"/>
+      <Element Tag="7" Name="recordingEntity" Parselet="TbcdStringParselet"/>
+      <Element Tag="8" Name="extensionFileNumber" Parselet="d900_ExtensionFileNumber.Coding_A"/>
+    </Element>
+  </Schema>
+  <Schema Name="CS-50" Default="true">
+    <Element Tag="1" Name="BillingRecord" Parselet="">
+      <Element Tag="2" Name="dAId" Parselet="TbcdStringParselet"/>
+      <Element Tag="4" Name="incTgTCompBlock" Parselet="">
+        <Element Tag="12" Name="cicIc" Parselet="d900_CircuitParselet"/>
+        <Element Tag="33" Name="biccCallInstCodeInc" Parselet=""/>
+        <Element Tag="75" Name="tgrpNameIc" Parselet="Ia5StringParselet"/>
+      </Element>
+      <Element Tag="5" Name="outgTgTCompBlock" Parselet="">
+        <Element Tag="12" Name="cicOg" Parselet="d900_CircuitParselet"/>
+        <Element Tag="33" Name="biccCallInstCodeOut" Parselet=""/>
+        <Element Tag="75" Name="tgrpNameOg" Parselet="Ia5StringParselet"/>
+      </Element>
+      <Element Tag="10" Name="origTermMscId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="11" Name="origTermBscId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="13" Name="transactionIdentification" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="14" Name="chargingtimeData" Parselet="">
+        <Element Tag="19" Name="startOfChargingdate" Parselet="d900_BcdDateParselet"/>
+        <Element Tag="20" Name="startOfChargingtime" Parselet="">
+          <Element Tag="74" Name="timeStamp" Parselet="d900_BcdTimeParselet"/>
+        </Element>
+        <Element Tag="17" Name="callDuration" Parselet="IntegerParselet"/>
+      </Element>
+      <Element Tag="15" Name="otherParty3a" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="16" Name="otherPartySequence" Parselet="">
+        <Element Tag="9" Name="dialledOtherParty" Parselet="d900_GsmPhoneNumberParselet"/>
+        <Element Tag="39" Name="translatedOtherParty" Parselet="d900_GsmPhoneNumberParselet"/>
+      </Element>
+      <Element Tag="21" Name="individualTeleserviceNumber" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="22" Name="individualBearerserviceNumber" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="23" Name="supplServiceInfo" Parselet="">
+        <Element Tag="41" Name="callHoldInvocCount" Parselet=""/>
+        <Element Tag="42" Name="callWaitInvocCount" Parselet=""/>
+        <Element Tag="43" Name="sSSequenceOf" Parselet="">
+          <Element Tag="44" Name="sSCode" Parselet=""/>
+        </Element>
+        <Element Tag="60" Name="sSInvocation" Parselet="">
+          <Element Tag="61" Name="sSInvocCode" Parselet=""/>
+          <Element Tag="62" Name="sSInvocSucc" Parselet=""/>
+          <Element Tag="63" Name="sSInvocDate" Parselet=""/>
+          <Element Tag="64" Name="sSInvocTime" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="24" Name="msAccessRate" Parselet="IntegerParselet"/>
+      <Element Tag="25" Name="sequenceNumber" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="26" Name="systemType" Parselet="IntegerParselet"/>
+      <Element Tag="27" Name="transmissionMode" Parselet="IntegerParselet.Bin"/>
+      <Element Tag="28" Name="msClassmark" Parselet=""/>
+      <Element Tag="29" Name="incMgwInfoCompBlock" Parselet="">
+        <Element Tag="60" Name="mgwTgrpNameIc" Parselet="Ia5StringParselet"/>
+        <Element Tag="61" Name="mgwNameIc" Parselet="Ia5StringParselet"/>
+        <Element Tag="62" Name="incomingMgwID" Parselet=""/>
+        <Element Tag="63" Name="incomingBearer" Parselet=""/>
+      </Element>
+      <Element Tag="30" Name="outgMgwInfoCompBlock" Parselet="">
+        <Element Tag="60" Name="mgwTgrpNameOut" Parselet="Ia5StringParselet"/>
+        <Element Tag="61" Name="mgwNameOut" Parselet="Ia5StringParselet"/>
+        <Element Tag="62" Name="outgoingMgwID" Parselet=""/>
+        <Element Tag="63" Name="outgoingBearer" Parselet=""/>
+      </Element>
+      <Element Tag="32" Name="thirdParty" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="33" Name="servedMobileNumber" Parselet="">
+        <Element Tag="6" Name="servedIMSI" Parselet="TbcdStringParselet"/>
+        <Element Tag="7" Name="servedMSIsdn" Parselet="TbcdStringParselet"/>
+        <Element Tag="8" Name="servedIMEI" Parselet="TbcdStringParselet"/>
+        <Element Tag="9" Name="pABXNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+        <Element Tag="29" Name="servedMSRN" Parselet="TbcdStringParselet"/>
+      </Element>
+      <Element Tag="34" Name="otherPartySMS" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="35" Name="locationNumber" Parselet="TbcdStringParselet"/>
+      <Element Tag="36" Name="sMReference" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="37" Name="redirectionCounter" Parselet="IntegerParselet"/>
+      <Element Tag="38" Name="serviceCentreAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="39" Name="firstCellID" Parselet="d900_CellIdParselet"/>
+      <Element Tag="40" Name="servedOtherNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="43" Name="intermediateSequenceNumber" Parselet="IntegerParselet"/>
+      <Element Tag="48" Name="ussdData" Parselet="">
+        <Element Tag="13" Name="ussdAccessCode" Parselet="IntegerParselet.Hex"/>
+        <Element Tag="14" Name="ussdString" Parselet="d900_UssdStringParselet"/>
+        <Element Tag="17" Name="ussdCodingScheme" Parselet="IntegerParselet.Hex"/>
+        <Element Tag="15" Name="ussdNotifyCounter" Parselet="IntegerParselet"/>
+        <Element Tag="16" Name="ussdRequestCounter" Parselet="IntegerParselet"/>
+      </Element>
+      <Element Tag="50" Name="sMTransmissionResult" Parselet="IntegerParselet"/>
+      <Element Tag="58" Name="sequenceOfCamelDialogs" Parselet="">
+        <Element Tag="59" Name="camelDialog" Parselet="">
+          <Element Tag="11" Name="camelFFDataIncAppendInd" Parselet=""/>
+          <Element Tag="12" Name="camelFFDataOutAppendInd" Parselet=""/>
+          <Element Tag="83" Name="inTransPar" Parselet=""/>
+          <Element Tag="88" Name="gsmScfAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="89" Name="defaultCallHandling" Parselet="IntegerParselet"/>
+          <Element Tag="90" Name="inServiceKey" Parselet=""/>
+          <Element Tag="104" Name="camelFFDataIncLeg" Parselet=""/>
+          <Element Tag="106" Name="mcrDestinationNumber" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="111" Name="changeFlags" Parselet=""/>
+          <Element Tag="112" Name="camelFFDataOutLeg" Parselet=""/>
+          <Element Tag="113" Name="levelOfCAMELService" Parselet="IntegerParselet.Hex"/>
+          <Element Tag="115" Name="mcrDestinationNumberSMS" Parselet="d900_GsmPhoneNumberParselet"/>
+          <Element Tag="122" Name="numberOfDpEncountered" Parselet=""/>
+        </Element>
+      </Element>
+      <Element Tag="64" Name="cUGInterlockCode" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="65" Name="camelCommonData" Parselet="">
+        <Element Tag="21" Name="termCamelRecordInVMSC" Parselet=""/>
+        <Element Tag="80" Name="inFlag" Parselet="IntegerParselet"/>
+        <Element Tag="81" Name="chargeBandNumber" Parselet=""/>
+        <Element Tag="82" Name="inAoC" Parselet=""/>
+        <Element Tag="107" Name="timeOfCAMELLeg" Parselet="d900_BcdTimeParselet"/>
+        <Element Tag="108" Name="dateOfCAMELLeg" Parselet="d900_BcdDateParselet"/>
+        <Element Tag="109" Name="durationOfCAMELLeg" Parselet="IntegerParselet"/>
+        <Element Tag="110" Name="camelInitCfIndicator" Parselet=""/>
+      </Element>
+      <Element Tag="66" Name="multipleSMTransfer" Parselet="IntegerParselet"/>
+      <Element Tag="67" Name="aOCParameter" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="69" Name="subscriberCategory" Parselet=""/>
+      <Element Tag="70" Name="recordType" Parselet="d900_RecordTypeParselet"/>
+      <Element Tag="71" Name="callTransactionType" Parselet="d900_CallTransactionTypeParselet"/>
+      <Element Tag="72" Name="timeQuality" Parselet=""/>
+      <Element Tag="73" Name="exchangeId" Parselet="Ia5StringParselet"/>
+      <Element Tag="78" Name="reasonForTermination" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="79" Name="chargeIndicator" Parselet="IntegerParselet"/>
+      <Element Tag="84" Name="secondCellId" Parselet="d900_CellIdParselet.CellId"/>
+      <Element Tag="85" Name="callReferenceNumber" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="86" Name="mscAddress" Parselet="d900_GsmPhoneNumberParselet"/>
+      <Element Tag="87" Name="speechCode" Parselet=""/>
+      <Element Tag="103" Name="usedEmlppPriority" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="114" Name="partialRecordType" Parselet="d900_PartialRecordTypeParselet"/>
+      <Element Tag="116" Name="otherMSRN" Parselet="TbcdStringParselet"/>
+      <Element Tag="118" Name="drcChrgOrigin" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="119" Name="drcTariffClass" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="120" Name="protocolIdForSMS" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="121" Name="partialRecordCorrelationId" Parselet="IntegerParselet.Hex"/>
+      <Element Tag="127" Name="locationAreaCode" Parselet="IntegerParselet.Int"/>
+      <!--
+      <Element Tag="53" Name="traceType" Parselet=""/>
+      <Element Tag="52" Name="traceReference" Parselet=""/>
+      <Element Tag="35" Name="callTransferThirdParty" Parselet=""/>
+      <Element Tag="36" Name="carrierAccessCode" Parselet=""/>
+      <Element Tag="37" Name="reasonForServiceChange" Parselet=""/>
+      <Element Tag="30" Name="causeForTermination" Parselet=""/>
+      <Element Tag="65" Name="cUGIndex" Parselet=""/>
+      <Element Tag="66" Name="outgoingAccessIndicator" Parselet=""/>
+      <Element Tag="26" Name="chargeAdviceInformation" Parselet=""/>
+      <Element Tag="1" Name="e1" Parselet=""/>
+      <Element Tag="2" Name="e2" Parselet=""/>
+      <Element Tag="3" Name="e3" Parselet=""/>
+      <Element Tag="4" Name="e4" Parselet=""/>
+      <Element Tag="5" Name="e5" Parselet=""/>
+      <Element Tag="6" Name="e6" Parselet=""/>
+      <Element Tag="7" Name="e7" Parselet=""/>
+      <Element Tag="38" Name="servingPLMN" Parselet=""/>
+      <Element Tag="40" Name="lastCellID" Parselet=""/>
+      <Element Tag="41" Name="interPLMNHoList" Parselet=""/>
+      <Element Tag="42" Name="interPLMNHo" Parselet=""/>
+      <Element Tag="43" Name="targetCellID" Parselet=""/>
+      <Element Tag="44" Name="targetTime" Parselet=""/>
+      <Element Tag="18" Name="hotTransferResult" Parselet=""/>
+      <Element Tag="91" Name="additionalBearerServiceInfo" Parselet=""/>
+      <Element Tag="92" Name="noOfUsedTrafficChannels" Parselet=""/>
+      <Element Tag="93" Name="fixedNetworkUserRate" Parselet=""/>
+      <Element Tag="67" Name="optimalRoutingLcf" Parselet=""/>
+      <Element Tag="68" Name="destByOptimalRoutingMmcEcf" Parselet=""/>
+      <Element Tag="94" Name="channelCoding" Parselet=""/>
+      <Element Tag="45" Name="maximumBitRate" Parselet=""/>
+      <Element Tag="46" Name="guaranteedBitRate" Parselet=""/>
+      <Element Tag="27" Name="rateIndication" Parselet=""/>
+      <Element Tag="95" Name="identificationVGSInitiator" Parselet=""/>
+      <Element Tag="96" Name="iMSIVGSInitiator" Parselet=""/>
+      <Element Tag="97" Name="initiatorIndicationOfVGS" Parselet=""/>
+      <Element Tag="98" Name="voiceGroupServiceReference" Parselet=""/>
+      <Element Tag="99" Name="numberOfCellsInVGSGroup" Parselet=""/>
+      <Element Tag="100" Name="numberOfCellsWithSuccSetup" Parselet=""/>
+      <Element Tag="101" Name="noOfDispatcherInVGSGroup" Parselet=""/>
+      <Element Tag="102" Name="noOfDispatWithSuccSetup" Parselet=""/>
+      <Element Tag="123" Name="noOfRmscsInGroup" Parselet=""/>
+      <Element Tag="124" Name="noOfRmscsWithSuccSetup" Parselet=""/>
+      <Element Tag="125" Name="speechCodeVgs" Parselet=""/>
+      <Element Tag="126" Name="cphIndication" Parselet=""/>
+      <Element Tag="56" Name="locationServiceInfo" Parselet=""/>
+      <Element Tag="50" Name="mlcNumber" Parselet=""/>
+      <Element Tag="51" Name="positioningData" Parselet=""/>
+      <Element Tag="24" Name="locationEstimate" Parselet=""/>
+      <Element Tag="53" Name="lCSCause" Parselet=""/>
+      <Element Tag="54" Name="lCSCauseforTermination" Parselet=""/>
+      <Element Tag="49" Name="lCSClientType" Parselet=""/>
+      <Element Tag="56" Name="locationEstimateType" Parselet=""/>
+      <Element Tag="57" Name="lCSMoLr" Parselet=""/>
+      <Element Tag="58" Name="lCSSSCode" Parselet=""/>
+      <Element Tag="51" Name="lCSPriority" Parselet=""/>
+      <Element Tag="54" Name="lCSClientIdentity" Parselet=""/>
+      <Element Tag="18" Name="lCSClientExternalID" Parselet=""/>
+      <Element Tag="19" Name="lCSClientDialedByMSID" Parselet=""/>
+      <Element Tag="20" Name="lCSClientInternalID" Parselet=""/>
+      <Element Tag="59" Name="lCSQoS" Parselet=""/>
+      <Element Tag="47" Name="privacyOverride" Parselet=""/>
+      <Element Tag="48" Name="notificationToMSUser" Parselet=""/>
+      <Element Tag="49" Name="measureDuration" Parselet=""/>
+      <Element Tag="57" Name="optimalRoutingMmcEcf" Parselet=""/>
+      -->
+    </Element>
+    <Element Tag="28" Name="TrailerRecord" Parselet="">
+      <Element Tag="2" Name="filename" Parselet="Ia5StringParselet"/>
+      <Element Tag="3" Name="filesize" Parselet="d900_FileSizeParselet.Coding_A"/>
+      <Element Tag="4" Name="numberOfRecords" Parselet="d900_NumberOfRecordsParselet.Coding_A"/>
+      <Element Tag="5" Name="creationDate" Parselet="d900_BcdDateParselet"/>
+      <Element Tag="6" Name="creationTime" Parselet="d900_BcdTimeParselet"/>
+      <Element Tag="7" Name="recordingEntity" Parselet="TbcdStringParselet"/>
+      <Element Tag="8" Name="extensionFileNumber" Parselet="d900_ExtensionFileNumber.Coding_A"/>
+    </Element>
+  </Schema>
+</CDRDefinition>

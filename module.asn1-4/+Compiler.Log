@@ -1,0 +1,176 @@
+-- ASN.1 Compiler, v0.9.22
+-- Copyright (c) 2003, 2004, 2005, 2006 Lev Walkin <vlm@lionet.info>
+Compiled CallEventRecord.c
+Compiled CallEventRecord.h
+Compiled GGSNPDPRecord.c
+Compiled GGSNPDPRecord.h
+Compiled SGSNMMRecord.c
+Compiled SGSNMMRecord.h
+Compiled SGSNPDPRecord.c
+Compiled SGSNPDPRecord.h
+Compiled SGSNSMORecord.c
+Compiled SGSNSMORecord.h
+Compiled SGSNSMTRecord.c
+Compiled SGSNSMTRecord.h
+Compiled AccessPointNameNI.c
+Compiled AccessPointNameNI.h
+Compiled AccessPointNameOI.c
+Compiled AccessPointNameOI.h
+Compiled AddressString.c
+Compiled AddressString.h
+Compiled APNSelectionMode.c
+Compiled APNSelectionMode.h
+Compiled CallDuration.c
+Compiled CallDuration.h
+Compiled CallDurationC.c
+Compiled CallDurationC.h
+Compiled CallEventRecordType.c
+Compiled CallEventRecordType.h
+Compiled CauseForRecClosing.c
+Compiled CauseForRecClosing.h
+Compiled CellId.c
+Compiled CellId.h
+Compiled ChangeCondition.c
+Compiled ChangeCondition.h
+Compiled ChangeLocation.c
+Compiled ChangeLocation.h
+Compiled ChangeOfCharCondition.c
+Compiled ChangeOfCharCondition.h
+Compiled ChangeOfCharConditionC.c
+Compiled ChangeOfCharConditionC.h
+Compiled ChargingID.c
+Compiled ChargingID.h
+Compiled ConsolidationResult.c
+Compiled ConsolidationResult.h
+Compiled DataVolumeGPRS.c
+Compiled DataVolumeGPRS.h
+Compiled DynamicAddressFlag.c
+Compiled DynamicAddressFlag.h
+Compiled Diagnostics.c
+Compiled Diagnostics.h
+Compiled ETSIAddress.c
+Compiled ETSIAddress.h
+Compiled GSNAddress.c
+Compiled GSNAddress.h
+Compiled IMSI.c
+Compiled IMSI.h
+Compiled IMEI.c
+Compiled IMEI.h
+Compiled IPAddress.c
+Compiled IPAddress.h
+Compiled IPBinaryAddress.c
+Compiled IPBinaryAddress.h
+Compiled IPTextRepresentedAddress.c
+Compiled IPTextRepresentedAddress.h
+Compiled ListOfTrafficVolumesC.c
+Compiled ListOfTrafficVolumesC.h
+Compiled LocalSequenceNumber.c
+Compiled LocalSequenceNumber.h
+Compiled LocationAreaCode.c
+Compiled LocationAreaCode.h
+Compiled ManagementExtensions.c
+Compiled ManagementExtensions.h
+Compiled ManagementExtension.c
+Compiled ManagementExtension.h
+Compiled MessageReference.c
+Compiled MessageReference.h
+Compiled MSISDN.c
+Compiled MSISDN.h
+Compiled MSNetworkCapability.c
+Compiled MSNetworkCapability.h
+Compiled NetworkInitiatedPDPContext.c
+Compiled NetworkInitiatedPDPContext.h
+Compiled NodeID.c
+Compiled NodeID.h
+Compiled PDPAddress.c
+Compiled PDPAddress.h
+Compiled PDPType.c
+Compiled PDPType.h
+Compiled QoSDelay.c
+Compiled QoSDelay.h
+Compiled QoSInformation.c
+Compiled QoSInformation.h
+Compiled QoSMeanThroughput.c
+Compiled QoSMeanThroughput.h
+Compiled QoSPeakThroughput.c
+Compiled QoSPeakThroughput.h
+Compiled QoSPrecedence.c
+Compiled QoSPrecedence.h
+Compiled QoSReliability.c
+Compiled QoSReliability.h
+Compiled RecordingEntity.c
+Compiled RecordingEntity.h
+Compiled RecordNumber.c
+Compiled RecordNumber.h
+Compiled RECORDSequenceNumber.c
+Compiled RECORDSequenceNumber.h
+Compiled RoutingAreaCode.c
+Compiled RoutingAreaCode.h
+Compiled SGSNChange.c
+Compiled SGSNChange.h
+Compiled SMSResult.c
+Compiled SMSResult.h
+Compiled TimeStamp.c
+Compiled TimeStamp.h
+Symlinked /skeletons/BOOLEAN.h	-> BOOLEAN.h
+Symlinked /skeletons/BOOLEAN.c	-> BOOLEAN.c
+Symlinked /skeletons/INTEGER.h	-> INTEGER.h
+Symlinked /skeletons/NativeEnumerated.h	-> NativeEnumerated.h
+Symlinked /skeletons/INTEGER.c	-> INTEGER.c
+Symlinked /skeletons/NULL.h	-> NULL.h
+Symlinked /skeletons/NULL.c	-> NULL.c
+Symlinked /skeletons/NativeEnumerated.c	-> NativeEnumerated.c
+Symlinked /skeletons/NativeInteger.h	-> NativeInteger.h
+Symlinked /skeletons/NativeInteger.c	-> NativeInteger.c
+Symlinked /skeletons/asn_SEQUENCE_OF.h	-> asn_SEQUENCE_OF.h
+Symlinked /skeletons/asn_SEQUENCE_OF.c	-> asn_SEQUENCE_OF.c
+Symlinked /skeletons/asn_SET_OF.h	-> asn_SET_OF.h
+Symlinked /skeletons/asn_SET_OF.c	-> asn_SET_OF.c
+Symlinked /skeletons/constr_CHOICE.h	-> constr_CHOICE.h
+Symlinked /skeletons/constr_CHOICE.c	-> constr_CHOICE.c
+Symlinked /skeletons/constr_SEQUENCE.h	-> constr_SEQUENCE.h
+Symlinked /skeletons/constr_SEQUENCE.c	-> constr_SEQUENCE.c
+Symlinked /skeletons/constr_SEQUENCE_OF.h	-> constr_SEQUENCE_OF.h
+Symlinked /skeletons/constr_SEQUENCE_OF.c	-> constr_SEQUENCE_OF.c
+Symlinked /skeletons/constr_SET_OF.h	-> constr_SET_OF.h
+Symlinked /skeletons/constr_SET.h	-> constr_SET.h
+Symlinked /skeletons/constr_SET.c	-> constr_SET.c
+Symlinked /skeletons/constr_SET_OF.c	-> constr_SET_OF.c
+Symlinked /skeletons/asn_application.h	-> asn_application.h
+Symlinked /skeletons/asn_system.h	-> asn_system.h
+Symlinked /skeletons/asn_codecs.h	-> asn_codecs.h
+Symlinked /skeletons/asn_internal.h	-> asn_internal.h
+Symlinked /skeletons/OCTET_STRING.h	-> OCTET_STRING.h
+Symlinked /skeletons/OCTET_STRING.c	-> OCTET_STRING.c
+Symlinked /skeletons/BIT_STRING.h	-> BIT_STRING.h
+Symlinked /skeletons/BIT_STRING.c	-> BIT_STRING.c
+Symlinked /skeletons/asn_codecs_prim.c	-> asn_codecs_prim.c
+Symlinked /skeletons/asn_codecs_prim.h	-> asn_codecs_prim.h
+Symlinked /skeletons/ber_tlv_length.h	-> ber_tlv_length.h
+Symlinked /skeletons/ber_tlv_length.c	-> ber_tlv_length.c
+Symlinked /skeletons/ber_tlv_tag.h	-> ber_tlv_tag.h
+Symlinked /skeletons/ber_tlv_tag.c	-> ber_tlv_tag.c
+Symlinked /skeletons/ber_decoder.h	-> ber_decoder.h
+Symlinked /skeletons/ber_decoder.c	-> ber_decoder.c
+Symlinked /skeletons/der_encoder.h	-> der_encoder.h
+Symlinked /skeletons/der_encoder.c	-> der_encoder.c
+Symlinked /skeletons/constr_TYPE.h	-> constr_TYPE.h
+Symlinked /skeletons/constr_TYPE.c	-> constr_TYPE.c
+Symlinked /skeletons/constraints.h	-> constraints.h
+Symlinked /skeletons/constraints.c	-> constraints.c
+Symlinked /skeletons/xer_support.h	-> xer_support.h
+Symlinked /skeletons/xer_support.c	-> xer_support.c
+Symlinked /skeletons/xer_decoder.h	-> xer_decoder.h
+Symlinked /skeletons/xer_decoder.c	-> xer_decoder.c
+Symlinked /skeletons/xer_encoder.h	-> xer_encoder.h
+Symlinked /skeletons/xer_encoder.c	-> xer_encoder.c
+Symlinked /skeletons/per_support.h	-> per_support.h
+Symlinked /skeletons/per_support.c	-> per_support.c
+Symlinked /skeletons/per_decoder.h	-> per_decoder.h
+Symlinked /skeletons/per_decoder.c	-> per_decoder.c
+Symlinked /skeletons/per_encoder.h	-> per_encoder.h
+Symlinked /skeletons/per_encoder.c	-> per_encoder.c
+Symlinked /skeletons/per_opentype.h	-> per_opentype.h
+Symlinked /skeletons/per_opentype.c	-> per_opentype.c
+Symlinked /skeletons/converter-sample.c	-> converter-sample.c
+Generated Makefile.am.sample

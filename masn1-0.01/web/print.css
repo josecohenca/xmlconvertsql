@@ -1,0 +1,26 @@
+body {
+	text-align:justify;
+}
+
+#header {
+	display:none;
+}
+
+#menu {
+	display:none;
+}
+
+#footer {
+	font-size:x-small;
+}
+
+
+.container {
+	width:90%;
+	margin:0;
+	padding:10px;
+}
+
+.column {
+	max-width:100%;
+}

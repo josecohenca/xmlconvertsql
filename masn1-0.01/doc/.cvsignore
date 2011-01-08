@@ -1,0 +1,13 @@
+ASN1.tex.bak
+ASN1.toc
+*.dvi
+*.ilg
+*.ind
+ASN1.log
+*.out
+*.aux
+ASN1.pdf
+Documentation.log
+html
+ASN1.rh1
+ndoc_msdn_temp

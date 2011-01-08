@@ -1,0 +1,56 @@
+// mASN1 - mini ASN.1 framework for .NET 
+// Copyright (C) 2004 Marcel Maretic
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+// Marcel Maretic (marcelix@users.sourceforge.net)
+// Davor Runje (eszlikowski@users.sourceforge.net)
+
+namespace mASN1.test.resources
+{
+	using System;
+	using System.IO;
+
+
+	/// <summary>
+	/// Summary description for Class1.
+	/// </summary>
+	public class ResourceLoader
+	{	
+		public static string[] fileNames = 
+				{
+				"zaba.rootca.crt",
+				"india.cer",
+				"entrust.cer"
+				};
+
+		private static string startingPartOfResourceName="mASN1.test.resources.";
+
+//		public ResourceLoader()
+//		{
+//			//
+//			// TODO: Add constructor logic here
+//			//
+//
+//			
+//		}
+
+		public Stream GetStream(string resourceName) 
+		{
+			System.Reflection.Assembly assmb = this.GetType().Assembly;
+			return assmb.GetManifestResourceStream(startingPartOfResourceName+resourceName);
+		}
+	}
+}

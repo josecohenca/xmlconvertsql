@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mASN1.framework", "projects\mASN1_framework\mASN1.framework.csproj", "{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mASN1.nunit_testing", "projects\mASN1_test\mASN1.nunit_testing.csproj", "{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "mASN1.installer", "projects\mASN1_installer\mASN1 Installer.vdproj", "{B0A03E33-8C0F-4FA5-BE0D-6587231A1C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5D65EA-96FC-4E04-BEAE-5D5B6A21FA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B290CDFC-2ACB-4AE7-9CC2-FDE8990C450A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A03E33-8C0F-4FA5-BE0D-6587231A1C41}.Debug|Any CPU.ActiveCfg = Debug
+		{B0A03E33-8C0F-4FA5-BE0D-6587231A1C41}.Debug|Any CPU.Build.0 = Debug
+		{B0A03E33-8C0F-4FA5-BE0D-6587231A1C41}.Release|Any CPU.ActiveCfg = Release
+		{B0A03E33-8C0F-4FA5-BE0D-6587231A1C41}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

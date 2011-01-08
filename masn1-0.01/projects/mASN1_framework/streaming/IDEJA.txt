@@ -1,0 +1,1 @@
+- Raditi sa MemoryStreamom, koji se na kraju dumpa u zadani Stream (file).

@@ -1,0 +1,61 @@
+    0:d=0  hl=4 l= 616 cons: SEQUENCE          
+    4:d=1  hl=2 l=   9 prim:  OBJECT            :pkcs7-signedData
+   15:d=1  hl=4 l= 601 cons:  cont [ 0 ]        
+   19:d=2  hl=4 l= 597 cons:   SEQUENCE          
+   23:d=3  hl=2 l=   1 prim:    INTEGER           :01
+   26:d=3  hl=2 l=   0 cons:    SET               
+   28:d=3  hl=2 l=  11 cons:    SEQUENCE          
+   30:d=4  hl=2 l=   9 prim:     OBJECT            :pkcs7-data
+   41:d=3  hl=4 l= 573 cons:    cont [ 0 ]        
+   45:d=4  hl=4 l= 569 cons:     SEQUENCE          
+   49:d=5  hl=4 l= 422 cons:      SEQUENCE          
+   53:d=6  hl=2 l=   3 cons:       cont [ 0 ]        
+   55:d=7  hl=2 l=   1 prim:        INTEGER           :02
+   58:d=6  hl=2 l=  16 prim:       INTEGER           :79DEE88C4314F9A748EBE92DC681DC47
+   76:d=6  hl=2 l=   9 cons:       SEQUENCE          
+   78:d=7  hl=2 l=   5 prim:        OBJECT            :sha1WithRSA
+   85:d=7  hl=2 l=   0 prim:        NULL              
+   87:d=6  hl=2 l=  80 cons:       SEQUENCE          
+   89:d=7  hl=2 l=  22 cons:        SET               
+   91:d=8  hl=2 l=  20 cons:         SEQUENCE          
+   93:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+   98:d=9  hl=2 l=  13 prim:          PRINTABLESTRING   :Administrator
+  113:d=7  hl=2 l=  12 cons:        SET               
+  115:d=8  hl=2 l=  10 cons:         SEQUENCE          
+  117:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+  122:d=9  hl=2 l=   3 prim:          PRINTABLESTRING   :EFS
+  127:d=7  hl=2 l=  40 cons:        SET               
+  129:d=8  hl=2 l=  38 cons:         SEQUENCE          
+  131:d=9  hl=2 l=   3 prim:          OBJECT            :organizationalUnitName
+  136:d=9  hl=2 l=  31 prim:          PRINTABLESTRING   :EFS File Encryption Certificate
+  169:d=6  hl=2 l=  32 cons:       SEQUENCE          
+  171:d=7  hl=2 l=  13 prim:        UTCTIME           :021217035008Z
+  186:d=7  hl=2 l=  15 prim:        GENERALIZEDTIME   :21021123035008Z
+  203:d=6  hl=2 l=  80 cons:       SEQUENCE          
+  205:d=7  hl=2 l=  22 cons:        SET               
+  207:d=8  hl=2 l=  20 cons:         SEQUENCE          
+  209:d=9  hl=2 l=   3 prim:          OBJECT            :commonName
+  214:d=9  hl=2 l=  13 prim:          PRINTABLESTRING   :Administrator
+  229:d=7  hl=2 l=  12 cons:        SET               
+  231:d=8  hl=2 l=  10 cons:         SEQUENCE          
+  233:d=9  hl=2 l=   3 prim:          OBJECT            :localityName
+  238:d=9  hl=2 l=   3 prim:          PRINTABLESTRING   :EFS
+  243:d=7  hl=2 l=  40 cons:        SET               
+  245:d=8  hl=2 l=  38 cons:         SEQUENCE          
+  247:d=9  hl=2 l=   3 prim:          OBJECT            :organizationalUnitName
+  252:d=9  hl=2 l=  31 prim:          PRINTABLESTRING   :EFS File Encryption Certificate
+  285:d=6  hl=3 l= 159 cons:       SEQUENCE          
+  288:d=7  hl=2 l=  13 cons:        SEQUENCE          
+  290:d=8  hl=2 l=   9 prim:         OBJECT            :rsaEncryption
+  301:d=8  hl=2 l=   0 prim:         NULL              
+  303:d=7  hl=3 l= 141 prim:        BIT STRING        
+  447:d=6  hl=2 l=  26 cons:       cont [ 3 ]        
+  449:d=7  hl=2 l=  24 cons:        SEQUENCE          
+  451:d=8  hl=2 l=  22 cons:         SEQUENCE          
+  453:d=9  hl=2 l=   3 prim:          OBJECT            :X509v3 Extended Key Usage
+  458:d=9  hl=2 l=  15 prim:          OCTET STRING      
+  475:d=5  hl=2 l=   9 cons:      SEQUENCE          
+  477:d=6  hl=2 l=   5 prim:       OBJECT            :sha1WithRSA
+  484:d=6  hl=2 l=   0 prim:       NULL              
+  486:d=5  hl=3 l= 129 prim:      BIT STRING        
+  618:d=3  hl=2 l=   0 cons:    SET               

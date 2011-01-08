@@ -1,0 +1,1008 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mASN1.framework</name>
+    </assembly>
+    <members>
+        <member name="M:mASN1.framework.experimental.DERMethods.LongForm(System.Byte)">
+            <summary>
+            Long form for tag and length octets have 8-th bit set to 1.
+            </summary>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mASN1.framework.experimental.DERMethods.ScanBERLength(System.Int32,System.Byte[])">
+            <summary>
+            Scans total length of DER/BER code that starts
+            at start position.
+            </summary>
+            <param name="start"></param>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mASN1.framework.experimental.ASN1TAG">
+            <summary>
+            Summary description for Tag.
+            </summary>
+        </member>
+        <member name="M:mASN1.framework.experimental.ASN1TAG.Match(System.Int32)">
+            <summary>
+             ????
+            </summary>
+            <param name="inputTag"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mASN1.framework.experimental.SimpleASN1TAG">
+            <summary>
+            <para>
+            This would be a very simple Tag - unmodified standard tag. Instances of this class
+            would be tags for ASN.1's INTEGER, BOOLEAN etc.. Vidi TagTable.
+            </para>
+            
+            <para>
+            SimpleASN1TAG instances could and probably should be static.
+            </para>
+            </summary>
+        </member>
+        <member name="T:mASN1.framework.experimental.TaggedTAG">
+            <summary>
+            This would represent more complex tags that arise from explicit or implicit tagging, 
+            along with context changing (UNIVERSAL, APPLICATION, etc.)
+            </summary>
+        </member>
+        <member name="T:mASN1.framework.experimental.MultiASN1TAG">
+            <summary>
+            This would represent a collection of tags in CHOICE structure.
+            </summary>
+        </member>
+        <member name="F:mASN1.framework.experimental.ComponentTypeInfo.Type">
+            <summary>
+            <para>
+            This is the essential member of ComponentTypeInfo class. Everything else in the class is about 
+            functionality, or additional information about SEQUENCE's component type.
+            </para>
+            
+            <para>
+            For example - whether this component is marked OPTIONAL, or it has a DEFAULT value etc. 
+            </para>
+            
+            </summary>
+        </member>
+        <member name="F:mASN1.framework.experimental.ComponentTypeInfo.isOptional">
+            <summary>
+            Moram iz ovog napraviti READONLY property
+            </summary>
+        </member>
+        <member name="M:mASN1.framework.experimental.ComponentTypeInfo.#ctor">
+            Ovo bi trebala biti konstanta...
+        </member>
+        <member name="M:mASN1.framework.experimental.ComponentTypeInfo.#ctor(mASN1.framework.experimental.ExperimentalType)">
+            <summary>
+            Basic constructor, type w/out qualifiers.
+            </summary>
+            <param name="tip">type of the component</param>
+        </member>
+        <member name="M:mASN1.framework.experimental.ComponentTypeInfo.Make(mASN1.framework.experimental.SEQUENCE,System.Int32,mASN1.framework.experimental.ExperimentalType)">
+            <summary>
+            This is advanced interface - this is what I would like...
+            </summary>
+            <param name="asnseq"></param>
+            <param name="num"></param>
+            <param name="tip"></param>
+        </member>
+        <member name="T:mASN1.ASN1Object">
+            <summary>
+            Ovo je osnovna apstraktna klasa iz koje se
+            izvode sve ostale ASN1 klase.
+            </summary>
+        </member>
+        <member name="T:mASN1.IBERCodec">
+            <summary>
+            Ovo je osnovni interface koji se ocekuje 
+            od ASN1 klasa.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1TagNumber">
+            <summary>
+            Sadrzi tagove osnovnih tipova.
+            </summary>
+        </member>
+        <member name="T:mASN1.framework.experimental.TagValueNode">
+            <summary>
+            This class will represent a tree structure that Visit() method 
+            in DERVisitor creates. Another method (?) xpands this tree by DFSing it into a
+            TLV tree which can be dumped it to MemoryStream.
+            </summary>
+        </member>
+        <member name="M:mASN1.framework.experimental.TagValueNode.Expand(mASN1.framework.experimental.TagValueNode)">
+            <summary>
+            <para>
+            This method traverses TagValue tree and expands all explicit and implicit tags and 
+            turns them into simple tags.
+            </para>
+            <para>
+            This is preparation before binary dump. There are no length octets - but now 
+            when all value octets are expanded they can be easily calculated on the fly.</para>
+            </summary>
+            <param name="node">a node representing a TagValue tree</param>
+            <returns>expanded corresponding tree</returns>
+        </member>
+        <member name="T:mASN1.ASN1Any_type">
+            <summary>
+            'Any' reminds of old ASN.1 syntax with 'ANY DEFINED BY',
+             but actually models parametrized types 
+             (introduced to ASN.1 in 1997) in a unified way.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1DependentType">
+            <summary>
+            This is a base type for all *_type classes that are context
+            dependent (ANY and derived classes).
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Type.CreateInstance(mASN1.BEREncoding)">
+            <summary>
+            <para>
+            Factory method - creates ASN1Object instances from their BER
+            encoding. 
+            </para>
+            <para>
+            Most types don't override this method.
+            </para>
+            </summary>
+            <param name="ulazBER">BER code</param>
+            <returns>Instance of ASN1Object derived class.</returns>
+        </member>
+        <member name="M:mASN1.ASN1Type.Instance">
+            <summary>
+            This is a factory method of class XXX_type for class XXX. 
+            </summary>
+            <returns>An instance of ASN1Object derived class</returns>
+        </member>
+        <member name="M:mASN1.ASN1Type.MatchType(mASN1.ASN1Object,mASN1.ASN1Type)">
+            <summary>
+            MUST CHANGE, MOVE OR WHATEVER....
+               usage - u ASN1Sequence..
+               
+               <para>Returns true if ASN1Object ob and ASN1Type tip match.</para>
+            </summary>
+            <param name="ob"></param>
+            <param name="tip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mASN1.ASN1Type.MatchTag(System.Int32,mASN1.ASN1Type)">
+            <summary>
+            OVO ZELIM BACITI VAN!!! U DRUGU KLASU!!
+            
+            koriste samo Choice i Sequence... to se mora moci lako srediti.
+            </summary>
+            <param name="tag"></param>
+            <param name="tip"></param>
+            <returns></returns>
+        </member>
+        <member name="F:mASN1.ASN1DependentType.dependsOnThis">
+            <summary>
+            This is the TypeInfo this _type depends on.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1DependentType.#ctor">
+            <summary>
+            Since I wrote non-trivial constructor C# compiler
+            complained and now I have to write the trivial .ctr too.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Any_type.Instance">
+            <summary>
+            This is a remnant from ASN1Type. Here, and all "ANY"-derived types,
+            calls to .Instance must be avoided.
+            </summary>
+            <returns>Never returns.</returns>
+        </member>
+        <member name="T:mASN1.ASN1Any_type.ProjectionDelegate">
+            <summary>
+            This should suffice for the "column" coordinate.
+            Since return is non-void - system derives the delegate from
+            System.Delegate (not System.MulitcastDelegate)
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1NiceAny_type">
+            <summary>
+            This is a "gentler" version of ANY. If the InformationObject instance encountered
+            is not recognised, i.e. OID doesn't belong to this IOSet's know OIDs, it
+            creates an ASN1Phantom object that will gobble the contents and proceed.
+            Thus, this class doesn't return null, it ignores unknown BER data and 
+            proceeds.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1TypeIdAny_type">
+            <summary>
+            This ANY class is tailored to fit the most common situation
+            where context dependent type is parameterized using
+            InformationObject sets of TYPE-IDENTIFIERS.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1PhantomObject">
+            <summary>
+            This class serves a very special purpose - to gobble/ignore
+            unrecognised data. For example, in X.509 it can ignore unrecognised
+            non-critical X.509 extensions (very common).
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1PhantomObject.unrecognisedBERCode">
+            <summary>
+            Remembering member field:-)
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1PhantomObject.fromBER(mASN1.BEREncoding)">
+            <summary>
+            This method does not decode BER code. It just "remembers" it.
+            This way unrecognised data doesn't break parsing. If this object
+            has to be encoded again, it encodes itself as the BER code it
+            remembered earlier.
+            </summary>
+            <param name="ulazBER">BER/DER code</param>
+        </member>
+        <member name="T:mASN1.BitConstant">
+            <summary>
+            A few bit-constants, important in BER
+            (they identify different flavors of BER encoding).
+            </summary>
+        </member>
+        <member name="T:mASN1.BER">
+            <summary>
+            Intent is to expand ASN1Object's .asBER() method... when
+            passed this enum ASN1Object should encode itself 
+            apropriately.
+            </summary>
+        </member>
+        <member name="T:mASN1.IPERCodec">
+            <summary>
+            Planned.
+            </summary>
+        </member>
+        <member name="T:mASN1.BEREncoding">
+            <summary>
+            Class for handling (existing) BER encodings. BER is a Tag-Length-Value encoding.
+            </summary>
+        </member>
+        <member name="F:mASN1.BEREncoding.IdOctets">
+            <summary>
+            "raskodirano"
+            </summary>
+        </member>
+        <member name="M:mASN1.BEREncoding.#ctor(System.Byte[])">
+            <summary>
+            Konstruktor za inicijaliziranje BEREncoding
+            objekta sa kodom...
+            </summary>
+            <param name="kod"></param>
+        </member>
+        <member name="M:mASN1.BEREncoding.#ctor(System.Byte[],System.Byte[])">
+            <summary>
+            Ovaj mora van. (FIXME)
+            </summary>
+            <param name="idOct">Identifier octets</param>
+            <param name="contOct">Contents octets</param>
+        </member>
+        <member name="M:mASN1.BEREncoding.#ctor(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Konstruktor sa raskodiranim parametrima.. 
+            (za (primitive/constructed) definite length
+            kodiranje)
+            </summary>
+            <param name="idOct">Identifier okteti</param>
+            <param name="lenOct">Length okteti</param>
+            <param name="contOct">Contents okteti</param>
+        </member>
+        <member name="M:mASN1.BEREncoding.Encode(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Metoda koja iz komponenti napravi
+            BERCode (polje byte-ova), i sprema u
+            "this.EncodedOctets"
+            </summary>
+        </member>
+        <member name="M:mASN1.BEREncoding.Decode">
+            <summary>
+            Metoda kojom BEREncoding objekt postavlja 
+            IdOctets, LenOctets i ContentsOctets iz
+            EncodedOctets.
+            </summary>
+        </member>
+        <member name="M:mASN1.BEREncoding.SetOctetsFromBER">
+            <summary>
+            Funkcija treba rasclaniti BER kod na cjeline:
+            Identifier, Length i Contents oktete.
+            </summary>
+        </member>
+        <member name="M:mASN1.BEREncoding.ApplyEncodingClass(mASN1.EncodingClass)">
+            <summary>
+            BER's method for applying encoding class bits.
+            Possible options are UNIVERSAL, CONTEXT, APPLICATION, PRIVATE
+            </summary>
+            <param name="klasa">EncodingClass enum member</param>
+        </member>
+        <member name="M:mASN1.BEREncoding.GetLength">
+            <summary>
+            Metoda vraca duljinu ContentsOctets dijela.
+            </summary>
+            <returns>duljina Contents dijela (int)</returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.Decompose">
+            <summary>
+            Ova metoda vraca polje BER kodova koji su "concatenated" u 
+            contents dijelu.
+            
+            
+            Mozda bi bilo bolje da se zove DecomposeContents...
+            food for thought.
+            </summary>
+            <returns>polje BER kodova (BEREncoding objekata)</returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.ToString">
+            <summary>
+            BER-ova ToString() metoda, zgodno za 
+            ispis...
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.Equals(System.Object)">
+            <summary>
+            Usporedjuje samo Contents oktete. To je glupo, moram 
+            promijeniti... uskoro..
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.MakeTagOctets(System.Int32)">
+            <summary>
+            Trebaju mi static fje koje barataju i rade sa 
+            prebacivanjem tag i length integera u pripadajuce
+            oktete.
+            </summary>
+            <returns>Vraca odgovarajuce polje byte-va koje
+            sadrzi tag oktete</returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.MakeLenOctets(System.Int32)">
+            <summary>
+            Rutina za razbijanje duljine u pripadne byteove
+            za LENGTH OCTETS.
+            
+            FIXME: Ovo je vec sad obsolete...
+            </summary>
+            <param name="ulazLenNumber">uzimam da duljina moze 
+            biti navise MaxInteger</param>
+            <returns>polje byteova, Length Octets za zadanu duljinu</returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.DecodeTagNumber(System.Byte[])">
+            <summary>
+            Funkcija iz Tag dijela BERCode-a treba
+            prokuziti tag-number...
+            
+            </summary>
+            <returns>Tag number kao integer</returns>
+        </member>
+        <member name="M:mASN1.BEREncoding.MakeIndefiniteLength">
+            <summary>
+            This static method creates one byte array 
+            representing Constructed indefinite encoding.
+            </summary>
+            <returns>One byte byte-array, of value 0x80</returns>
+        </member>
+        <member name="T:mASN1.BERPrimitiveEncoding">
+            <summary>
+            Constructor for a class responsible for 
+            BER Primitive encoding.
+            </summary>
+        </member>
+        <member name="M:mASN1.BERPrimitiveEncoding.#ctor(System.Int32,System.Int32,System.Byte[])">
+            <summary>
+            Jednostavni konstruktor za primitivni BER.
+            </summary>
+            <param name="tagNum">tag number</param>
+            <param name="lenNum">length of contents</param>
+            <param name="contOct">contents octets</param>
+        </member>
+        <member name="T:mASN1.BERConstructedEncoding">
+            <summary>
+            Class responsible for constructed BER encoding
+            </summary>
+        </member>
+        <member name="M:mASN1.BERConstructedEncoding.#ctor">
+            Novi konstruktori
+            
+        </member>
+        <member name="T:mASN1.BERIndefiniteEncoding">
+            <summary>
+            BER class used for construction of 
+            BER indefinite-length codes.
+            </summary>
+        </member>
+        <member name="M:mASN1.BERIndefiniteEncoding.#ctor(System.Byte[],System.Byte[])">
+            <summary>
+            Konstruktor za indefinite BER.
+            Kasnije se sa rutinom AddContents(Byte[]) moze
+            dodavati jos byteova. Na kraju treba pozvati
+            MakeEndOfContents().
+            </summary>
+            <param name="tagOct">Tag okteti</param>
+            <param name="contOct">Contents okteti (ili barem pocetak istih)</param>
+        </member>
+        <member name="M:mASN1.BERIndefiniteEncoding.AddContents(System.Byte[])">
+            <summary>
+            Method used to "feed" indefinite BER. When done, 
+            call MakeEndOfContents().
+            </summary>
+            <param name="contOctets"></param>
+        </member>
+        <member name="T:mASN1.BERWriter">
+            <summary>
+            Perhaps unnecessary, but - very convenient, at least in the
+            development phase.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1Choice">
+            <summary>
+            Abstract class - used as a base class for CHOICE
+            structures.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Choice_type.#ctor">
+            jel se tu ima sto posebno reci?
+            CreateInstance treba prosvrljati
+            i naci koji tip odgovara BER kodu..., 
+            a ovo pak se ne zna ovdje.. 
+            
+            Something to refactor!
+            
+        </member>
+        <member name="T:mASN1.SetSequenceChoice_type">
+            <summary>
+            Makes descendand constructors obsolete for this kind of
+            CHOICE types.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1ComponentTypeInfo">
+            <summary>
+            This is an ordered triple which is needed to hold information
+            about SET's and SEQUENCE's members. 
+            
+            Each component holds a type and possible OPTIONAL qualifier, 
+            along with possible DEFAULT value.
+            
+            Type component is mandatory, leaving a total of 4 possible 
+            combinations of OPTIONAL and DEFAULT. Simplest case ofcourse
+            is when both qualifiers are absent. These 4 cases result in
+            4 constructors of the class.
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1ComponentTypeInfo.Type">
+            <summary>
+            <para>
+            This is the essential member of ASN1ComponentTypeInfo class. Everything else in the class is about 
+            functionality, or additional information about SEQUENCE's component type.
+            </para>
+            
+            <para>
+            For example - whether this component is marked OPTIONAL, or it has a DEFAULT value etc. 
+            </para>
+            
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1ComponentTypeInfo.isOptional">
+            <summary>
+            Moram iz ovog napraviti READONLY property
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1ComponentTypeInfo.#ctor">
+            Ovo bi trebala biti konstanta...
+        </member>
+        <member name="M:mASN1.ASN1ComponentTypeInfo.#ctor(mASN1.ASN1Type)">
+            <summary>
+            Basic constructor, type w/out qualifiers.
+            </summary>
+            <param name="tip">type of the component</param>
+        </member>
+        <member name="M:mASN1.ASN1ComponentTypeInfo.CreateInstance(mASN1.BEREncoding)">
+            <summary>
+            Delegates .CreateInstance to its .Type component.
+            </summary>
+            <param name="ulazBER"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mASN1.ASN1ComponentTypeInfo.Make(mASN1.ASN1Sequence,System.Int32,mASN1.ASN1Type)">
+            <summary>
+            This is advanced interface - this is what I would like...
+            </summary>
+            <param name="asnseq"></param>
+            <param name="num"></param>
+            <param name="tip"></param>
+        </member>
+        <member name="T:mASN1.CTX_DEP_TypeInfo">
+            <summary>
+            <para>
+            This class should initialize with a reference to an object
+            that must be marked as UNIQUE in ASN.1 syntax. Here, this translates
+            into initialization with mandatory UniqueObject. 
+            </para>
+            
+            <para>
+            Most of functionality basicaly derives from the base class. Where needed, 
+            UniqueObject is used.
+            </para>
+            </summary>
+        </member>
+        <member name="M:mASN1.CTX_DEP_TypeInfo.#ctor(mASN1.UNIQUE_TypeInfo)">
+            <summary>
+            The ONLY constructor for dependent TypeInfos.
+            </summary>
+            <param name="uniqueTypeInfo">THE TypeInfo this TypeInfo depends on.</param>
+        </member>
+        <member name="M:mASN1.CTX_DEP_TypeInfo.Make(mASN1.IParameterizedASN1Type)">
+            <summary>
+             STATIC "factory"-pattern 'Make' methods....
+            </summary>
+            <param name="parameterizedType"></param>
+            <returns></returns>
+        </member>
+        <member name="F:mASN1.ASN1InformationObjectSet.Elements">
+            <summary>
+            Elements is an ArrayList. Elements contains 
+            ASN.1's Information-Objects.
+            </summary>
+        </member>
+        <member name="T:mASN1.TypeIdentifierSet">
+            <summary>
+            This class represents InformationObjects set consisting of
+            TYPE-IDENTIFIERS. This is the most common IOSet.
+            </summary>
+        </member>
+        <member name="T:mASN1.InformationObject">
+            <summary>
+            ASN.1:
+            Every information object must have a unique component. Unique component
+            is a value component (here I assume it is an instance of ObjectIdentifier).
+            Other components are type components.
+            </summary>
+        </member>
+        <member name="T:mASN1.TypeIdentifier">
+            <summary>
+            <para>
+            This is a very common ASN.1 construct - TYPE IDENTIFIER used for situations
+            where component's type is context-dependent. For example, in a SEQUENCE type
+            a _type of second member may be dependant on the value of first component which 
+            should be some OBJECT IDENTIFIER. A list of possible pairs (OIDs and _types)
+            is actualy a list of TypeIdentifiers.
+            </para>
+            
+            <para>
+            TYPE IDENTIFIER is the only Information Object used in PKCS#7 and X.509, X.501
+            standards.</para>
+            </summary>
+        </member>
+        <member name="M:mASN1.TypeIdentifier.Assign(mASN1.ASN1ObjectIdentifier,mASN1.ASN1Type)">
+            <summary>
+            Koji je UNIQUE?
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1Integer">
+            <summary>
+            mASN1 class with INTEGER functionality. Linking with some Big-Int lib is
+            in plan. So far these integers are never really used as integers, only
+            as arrays of bytes (as they appear in BER/DER).
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1ObjectIdentifier">
+            <summary>
+            ASN1ObjectIdentifier is a class
+            representing ASN1's
+            OBJECT IDENTIFIER type.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1ObjectIdentifier.#ctor(mASN1.ASN1ObjectIdentifier,System.Int32[])">
+            <summary>
+            Constructor for creating extensions of existing OIDs.
+            </summary>
+            <param name="oid">base OID</param>
+            <param name="values">added ints</param>
+        </member>
+        <member name="M:mASN1.ASN1ObjectIdentifier.CheckValues(System.Int32[])">
+            <summary>
+            Check values for conformity with OID specification.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1ObjectIdentifier.Equals(System.Object)">
+            <summary>
+            Two OID objects are considered equal if their Value fields have all values
+            equal.
+            </summary>
+            <param name="obj">object compared to</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:mASN1.ASN1ObjectIdentifier.GetHashCode">
+            <summary>
+            Equals trazi override, pa eto.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:mASN1.ASN1ObjectIdentifier_type">
+            <summary>
+            A class representing ASN.1-OIDs type.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1ParameterizedSequence">
+            <summary>
+            Most parameterized types are based on SEQUENCE. This class
+            derives from ASN1Sequence and serves as base class
+            for classess that capture parameterized type's functionality.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1Sequence">
+            <summary>
+            Abstract prototype-class for ASN.1's SEQUENCE 
+            type (tuples).
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Sequence.RegisterTypes">
+            <summary>
+            <para>
+            This method serves as a method where
+            component types are declared (as in 
+            variable declaration).
+            </para>
+            
+            <para>
+            Descending (concrete) SEQUENCE class must 
+            specify types of its components, and specify
+            whether some are optional or not. 
+            </para>
+            
+            <para>
+            Also, if a component has a DEFAULT value, it can
+            be specified here... 
+            (see examples in test project)
+            </para>
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Sequence.RegisterComponents">
+            <summary>
+            This method does not care about OPTIONAL-ity or
+            DEFAULTs of components. It merely corresponds to variable
+            declarations - and performs necessary casts after
+            initializations.
+            
+            In SEQUENCE types the order of components is important.
+            This method "registers" named variables (components) to its
+            numeric places. Therefore, it is here only for coding
+            convenience.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Sequence.Init">
+            <summary>
+            A MUST-CALL method for a constructor of descending class
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Sequence_type.NewCreateInstance(mASN1.BEREncoding)">
+            <summary>
+            Ovo je metoda koja ce zamijeniti .CreateInstance u 
+            SEQUENCE type-u, a i .CreateInstance u klasama koje naslijedjuju
+            od SEQUENCE-a...
+            </summary>
+            <param name="ulazBER"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mASN1.ASN1SequenceOf">
+            <summary>
+            Base class for SEQUENCE OF structures in ASN.1
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1SequenceOf.Elements">
+            <summary>
+            contains elements of the sequence
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1SequenceOf.type">
+            <summary>
+            constructors of descendant classess must intialize this value to the
+            _type object that corresponds to the type of elements in "SEQUENCE OF"
+            structure.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1SequenceOf.CheckType(mASN1.ASN1Object)">
+            <summary>
+            Must rename this to CheckTag... an introspection any deeper
+            than this is pointless..
+            </summary>
+            <param name="obo"></param>
+            <returns></returns>
+        </member>
+        <member name="F:mASN1.ASN1SequenceOf_type.type">
+            <summary>
+            !!! must check whether this one is needed...
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1SetOf.type">
+            !!!!
+             ovo gore treba promijeniti u sorted list, or something...
+        </member>
+        <member name="M:mASN1.ASN1SetOf.asBER">
+            <summary>
+            BEREncoding is constructed. Content octets are concatenation
+            of elements' BER encodings.
+            </summary>
+            <returns>BER BEREncoding</returns>
+        </member>
+        <member name="M:mASN1.ASN1SetOf.asDER">
+            <summary>
+            BERcode je constructed, uz dodatak da su
+            DER kodovi elemenata (u contents) sortirani
+            leksikografski u uzlaznom redoslijedu.
+            </summary>
+            <returns>DER BEREncoding</returns>
+        </member>
+        <member name="M:mASN1.ASN1SetOf_type.CreateInstance(mASN1.BEREncoding)">
+            <summary>
+             ovo sam zasrao. Ovo mora ici u ASN1SetOf.fromBER()
+            </summary>
+            <param name="ulazBER"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mASN1.ASN1Set">
+            <summary>
+            So far there hasn't been a need to implement this.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1Null">
+            <summary>
+            A class representing ASN.1's NULL type.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1Null.asDER">
+            <summary>
+            Method returns ASN.1's NULL encoded as DER/BER.
+            </summary>
+            <returns>BER encoded null.</returns>
+        </member>
+        <member name="T:mASN1.ASN1Boolean">
+            <summary>
+            ASN.1's BOOLEAN type.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1BitString">
+            <summary>
+            Class representing 
+            ASN.1's BIT STRING type.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1BitString.#ctor(System.Byte[],System.Int32)">
+            <summary>
+            Class constructor, used for encoding ASN.1's Bit String
+            type to BER. Initializes ASN1BitString class with
+            decoded parts of a BitString packed in a byte array.
+            </summary>
+            <param name="ulaz">byte array input</param>
+            <param name="n">integer denoting the number of bits used (MSF)</param>
+        </member>
+        <member name="M:mASN1.ASN1BitString.#ctor(mASN1.BEREncoding)">
+            <summary>
+            Class constructor, initialized with BER encoded input.
+            Used for decoding BER objects to ASN.1's BitString type
+            class.
+            </summary>
+            <param name="ulazBER">BER encoded input</param>
+        </member>
+        <member name="T:mASN1.ASN1OctetString">
+            <summary>
+            A class representing ASN.1's OCTET STRING 
+            type instances.
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1OctetString.OctetString">
+            <summary>
+            Data Member, as Byte[].. OCTET STRING's value is stored 
+            in OctetString data member.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1OctetString.#ctor(System.Byte[])">
+            <summary>
+            Class constructor, used for encoding. Initialized 
+            with (decoded) OctetString as a Byte[].
+            </summary>
+            <param name="ulazOctetString">input OctetString as Byte[]</param>
+        </member>
+        <member name="M:mASN1.ASN1OctetString.#ctor(mASN1.BEREncoding)">
+            <summary>
+            Class constructor, used for decoding to ASN.1's type class.
+            Initializes with (encoded) BER code.
+            </summary>
+            <param name="ulazBER">input BER code (as BEREncoding)</param>
+        </member>
+        <member name="M:mASN1.ASN1OctetString.asDER">
+            <summary>
+            Overriden asDER() method, specific for OctetString type.
+            Returns primitive BER code.
+            </summary>
+            <returns>Primitive BER code (as BEREncoding)</returns>
+        </member>
+        <member name="M:mASN1.ASN1OctetString.fromBER(mASN1.BEREncoding)">
+            <summary>
+            Constructor used for initializing ASN.1's type class with
+            BER code normally calls this method.
+            This method explicitly initializes OctetString's data 
+            member from BER code.
+            </summary>
+            <param name="ulazBER">input BER code</param>
+        </member>
+        <member name="T:mASN1.ASN1OctetString_type">
+            <summary>
+            A class representing ASN.1's OCTET STRING type.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1StringBase">
+            <summary>
+            Abstract class on top of which I build
+            ASN.1's string types.
+            </summary>
+        </member>
+        <member name="F:mASN1.ASN1StringBase.StringValue">
+            <summary>
+            This member points to a String value of 
+            corresponding ASN.1's string type.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1StringBase.CheckString">
+            <summary>
+            This method is used for checking string values. Each string type
+            has its own set of restriction. Therefore - each should
+            override this method to meet these restrictions.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1StringBase.fromBER(mASN1.BEREncoding)">
+            <summary>
+            Read values from BER code. Inherited by 
+            ASN.1's string types.
+            </summary>
+            <param name="ulazBER">BER encoded input</param>
+        </member>
+        <member name="M:mASN1.ASN1StringBase.asDER">
+            <summary>
+            DER encoding of ASN.1-string types is primitive.
+            </summary>
+            <returns>DER encoding as BEREncoding object</returns>
+        </member>
+        <member name="M:mASN1.ASN1StringBase.ToString">
+            <summary>
+            For ASN.1's string types, ToString() simply
+            returns ASN.1-type's StringValue.
+            </summary>
+            <returns>Type's string Value</returns>
+        </member>
+        <member name="T:mASN1.ASN1PrintableString">
+            <summary>
+            ASN.1's PRINTABLE STRING. 
+            PrintableString has certain character limits:
+                A..Z, a..z, 0..9,
+                (space) ' ( ) + , - . / : = ?
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1PrintableString.#ctor">
+            <summary>
+            Parameterless constructor, sets up ASN.1-type's
+            tag (as integer). Implicitly invoked by other 
+            constructors.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1PrintableString.#ctor(System.String)">
+            <summary>
+            Class constructor for initializing ASN.1's PrintableString
+            type from decoded input String. 
+            </summary>
+            <param name="ulazniString">String input</param>
+        </member>
+        <member name="M:mASN1.ASN1PrintableString.#ctor(mASN1.BEREncoding)">
+            <summary>
+            Constructor, initializes from BER code. Intended
+            for decoding BER to corresponding ASN.1-type.
+            </summary>
+            <param name="ulazBER">BER encoded input</param>
+        </member>
+        <member name="M:mASN1.ASN1PrintableString.CheckString">
+            <summary>
+            Overriden CheckString() method. Enforces
+            restrictions imposed on ASN.1's PrintableString
+            type. Throws exception if appropriate.
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1T61String">
+            <summary>
+            ASN.1's T61 String. CheckString() is redundant, as
+            this type accepts all 256 possible values of
+            8-bit character in its StringValue member.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1T61String.#ctor">
+            <summary>
+            Parameterless constructor, sets up ASN.1-type's
+            tag (as integer). Implicitly invoked by other 
+            constructors.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1T61String.#ctor(System.String)">
+            <summary>
+            Class constructor - intent is to initialize a class 
+            representing ASN.1's T61String type from (decoded) input string. 
+            </summary>
+            <param name="ulazniString">(decoded) string input</param>
+        </member>
+        <member name="M:mASN1.ASN1T61String.#ctor(mASN1.BEREncoding)">
+            <summary>
+            Class constructor - intent is to initialize a class
+            representing ASN.1's T61String type from (encoded) 
+            BER code.
+            </summary>
+            <param name="ulazniBER">(encoded) BER code</param>
+        </member>
+        <member name="T:mASN1.ASN1IA5String">
+            <summary>
+            Nedovrseno.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1IA5String.#ctor">
+            <summary>
+            Parameterless constructor, sets up ASN.1-type's
+            tag (as integer). Implicitly invoked by other 
+            constructors.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1IA5String.CheckString">
+            <summary>
+            This method validates string input. An exception is
+            thrown incase type's requirements are not met (both for
+            encoding/decoding)
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1ExplicitTag">
+            <summary>
+            Base class for explicit tagged ASN.1 types (instance class)
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1ExplicitTag.finishEncoding(mASN1.BEREncoding)">
+            <summary>
+            This private method reflects how similar asBER() and asDER() are.
+            In EXPLICIT tagged types they differ only on sub-objects.
+            </summary>
+            <param name="under_code">BER/DER code of the underlying object</param>
+            <returns>BER code</returns>
+        </member>
+        <member name="T:mASN1.ASN1Time">
+            <summary>
+            
+            This class captures common features of UTCTime and GeneralizedTime,
+            both used in X.509.
+            
+            </summary>
+        </member>
+        <member name="T:mASN1.ASN1UTCTime">
+            <summary>
+            Jos nisam. Tu nema nejasnoca.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1UTCTime.DecodeString">
+            <summary>
+            Scans time values from StringValue.
+            </summary>
+        </member>
+        <member name="M:mASN1.ASN1UTCTime.Assign(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Int16,System.Byte)">
+            <summary>
+            This method is delegated to TimeInfo's Assign(...).
+            </summary>
+            <param name="yyyy"></param>
+            <param name="mo"></param>
+            <param name="dd"></param>
+            <param name="hh"></param>
+            <param name="mi"></param>
+            <param name="sec"></param>
+            <param name="zz"></param>
+            <param name="zz_mm"></param>
+        </member>
+    </members>
+</doc>

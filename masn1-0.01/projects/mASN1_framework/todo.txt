@@ -1,0 +1,54 @@
+PROBLEM:
+ + 1.
+         - class A:B, 
+         - B ima static int a, A ima new static int a.
+         - A nasljeduje virtualnu metodu iz B. 
+     Kako bi virtualna metoda iz B mogla vidjeti 'a' koji pripada tipu A. 
+     Odgovor: Ne moze se tako. Property - to je rjesenje.
+    
+  2. ASN1Sequence (uredjene n-torke).
+    Napravio sam apstraktnu klasu. Svi tipovi koji se baziraju na Sequence asn1 tipu
+    nasljedjuju tu klasu. U najjednostavnijem slucaju zelim da to izgleda
+      
+       class MySeq : ASN1Sequence {
+        ASN1Tip_1 id_1;
+        ...
+        ASN1Tip_n id_n;
+       }
+       
+     Ostavljam default konstruktor. Upotreba:
+     
+		MySeq M = new MySeq();
+		MySeq.Init(instanca_tipa_1, ..., instanca_tip1_n);
+		B = MySeq.asBER();
+      
+    Problem nastaje kad uvedem OPTIONAL.. neke komponente imaju OPTIONAL qualifier,
+    sto znaci da se ne moraju pojavljivati.
+    
+
+    
+    
+    
+TODO:
+  1. GetHashCode za BER i ASN1Object
+
+   
+   
+  3. Mozda bi mi bilo bolje da mi ContentsOctets bude ArrayList -> 
+   na taj nacin mogu bezbolno dodavati sadrzaj..., pa u
+   this.Encode() pretvoriti u Array i spojiti sa ostalim dijelovima.
+   
++ 4. Jel mi treba npr. idOct.Clone() u BER konstruktorima?
+     - provjeriti kako se predaju value polja i odluciti se ocu li clone...
+     
+ 
+  7. asBER() 1-pass - (kroz ConstructedIndefinite where possible (valjda))
+
+  
+  9. Imenovanje varijabli, nekonzistentnost nervira Davora..
+  
+  10. IA5String, UTCTime klase...
+  
+
+  
+          

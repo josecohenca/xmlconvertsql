@@ -1,0 +1,77 @@
+    0:d=0  hl=4 l=1145 cons: SEQUENCE          
+    4:d=1  hl=4 l= 865 cons:  SEQUENCE          
+    8:d=2  hl=2 l=   3 cons:   cont [ 0 ]        
+   10:d=3  hl=2 l=   1 prim:    INTEGER           :02
+   13:d=2  hl=2 l=   2 prim:   INTEGER           :2754
+   17:d=2  hl=2 l=  13 cons:   SEQUENCE          
+   19:d=3  hl=2 l=   9 prim:    OBJECT            :sha1WithRSAEncryption
+   30:d=3  hl=2 l=   0 prim:    NULL              
+   32:d=2  hl=2 l=  53 cons:   SEQUENCE          
+   34:d=3  hl=2 l=  11 cons:    SET               
+   36:d=4  hl=2 l=   9 cons:     SEQUENCE          
+   38:d=5  hl=2 l=   3 prim:      OBJECT            :countryName
+   43:d=5  hl=2 l=   2 prim:      PRINTABLESTRING   :IN
+   47:d=3  hl=2 l=  18 cons:    SET               
+   49:d=4  hl=2 l=  16 cons:     SEQUENCE          
+   51:d=5  hl=2 l=   3 prim:      OBJECT            :organizationName
+   56:d=5  hl=2 l=   9 prim:      PRINTABLESTRING   :India PKI
+   67:d=3  hl=2 l=  18 cons:    SET               
+   69:d=4  hl=2 l=  16 cons:     SEQUENCE          
+   71:d=5  hl=2 l=   3 prim:      OBJECT            :commonName
+   76:d=5  hl=2 l=   9 prim:      PRINTABLESTRING   :CCA India
+   87:d=2  hl=2 l=  30 cons:   SEQUENCE          
+   89:d=3  hl=2 l=  13 prim:    UTCTIME           :030523083831Z
+  104:d=3  hl=2 l=  13 prim:    UTCTIME           :080522083831Z
+  119:d=2  hl=3 l= 157 cons:   SEQUENCE          
+  122:d=3  hl=2 l=  11 cons:    SET               
+  124:d=4  hl=2 l=   9 cons:     SEQUENCE          
+  126:d=5  hl=2 l=   3 prim:      OBJECT            :countryName
+  131:d=5  hl=2 l=   2 prim:      PRINTABLESTRING   :IN
+  135:d=3  hl=2 l=  12 cons:    SET               
+  137:d=4  hl=2 l=  10 cons:     SEQUENCE          
+  139:d=5  hl=2 l=   3 prim:      OBJECT            :organizationName
+  144:d=5  hl=2 l=   3 prim:      PRINTABLESTRING   :NIC
+  149:d=3  hl=2 l=  15 cons:    SET               
+  151:d=4  hl=2 l=  13 cons:     SEQUENCE          
+  153:d=5  hl=2 l=   3 prim:      OBJECT            :organizationalUnitName
+  158:d=5  hl=2 l=   6 prim:      PRINTABLESTRING   :NIC CA
+  166:d=3  hl=2 l=  33 cons:    SET               
+  168:d=4  hl=2 l=  31 cons:     SEQUENCE          
+  170:d=5  hl=2 l=   3 prim:      OBJECT            :commonName
+  175:d=5  hl=2 l=  24 prim:      PRINTABLESTRING   :NIC Certifying Authority
+  201:d=3  hl=2 l=  18 cons:    SET               
+  203:d=4  hl=2 l=  16 cons:     SEQUENCE          
+  205:d=5  hl=2 l=   3 prim:      OBJECT            :localityName
+  210:d=5  hl=2 l=   9 prim:      PRINTABLESTRING   :New Delhi
+  221:d=3  hl=2 l=  36 cons:    SET               
+  223:d=4  hl=2 l=  34 cons:     SEQUENCE          
+  225:d=5  hl=2 l=   9 prim:      OBJECT            :emailAddress
+  236:d=5  hl=2 l=  21 prim:      IA5STRING         :support@camail.nic.in
+  259:d=3  hl=2 l=  18 cons:    SET               
+  261:d=4  hl=2 l=  16 cons:     SEQUENCE          
+  263:d=5  hl=2 l=   3 prim:      OBJECT            :stateOrProvinceName
+  268:d=5  hl=2 l=   9 prim:      PRINTABLESTRING   :NCT Delhi
+  279:d=2  hl=4 l= 289 cons:   SEQUENCE          
+  283:d=3  hl=2 l=  13 cons:    SEQUENCE          
+  285:d=4  hl=2 l=   9 prim:     OBJECT            :rsaEncryption
+  296:d=4  hl=2 l=   0 prim:     NULL              
+  298:d=3  hl=4 l= 270 prim:    BIT STRING        
+  572:d=2  hl=4 l= 297 cons:   cont [ 3 ]        
+  576:d=3  hl=4 l= 293 cons:    SEQUENCE          
+  580:d=4  hl=2 l=  15 cons:     SEQUENCE          
+  582:d=5  hl=2 l=   3 prim:      OBJECT            :X509v3 Basic Constraints
+  587:d=5  hl=2 l=   1 prim:      BOOLEAN           :255
+  590:d=5  hl=2 l=   5 prim:      OCTET STRING      
+  597:d=4  hl=2 l=  17 cons:     SEQUENCE          
+  599:d=5  hl=2 l=   3 prim:      OBJECT            :X509v3 Subject Key Identifier
+  604:d=5  hl=2 l=  10 prim:      OCTET STRING      
+  616:d=4  hl=2 l=  19 cons:     SEQUENCE          
+  618:d=5  hl=2 l=   3 prim:      OBJECT            :X509v3 Authority Key Identifier
+  623:d=5  hl=2 l=  12 prim:      OCTET STRING      
+  637:d=4  hl=3 l= 233 cons:     SEQUENCE          
+  640:d=5  hl=2 l=   3 prim:      OBJECT            :X509v3 CRL Distribution Points
+  645:d=5  hl=3 l= 225 prim:      OCTET STRING      
+  873:d=1  hl=2 l=  13 cons:  SEQUENCE          
+  875:d=2  hl=2 l=   9 prim:   OBJECT            :sha1WithRSAEncryption
+  886:d=2  hl=2 l=   0 prim:   NULL              
+  888:d=1  hl=4 l= 257 prim:  BIT STRING        

@@ -1,0 +1,20 @@
+public class XXX_type:ASN1Type
+{
+	public override ASN1Object Instance()
+	{
+		return new XXX();
+	}
+
+}
+
+
+
+public class XXX_type:ASN1DependentType
+{
+	public XXX_type(UNIQUE_TypeInfo uti):base(uti) {}
+
+	public override ASN1Object Instance()
+	{
+		return new XXX(this.dependsOnThis);
+	}
+}

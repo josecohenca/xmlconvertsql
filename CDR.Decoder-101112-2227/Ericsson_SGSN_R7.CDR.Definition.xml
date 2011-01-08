@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CDRDefinition Version="Ericsson SGSN R7 101112-1236" Type="SGSN">
+  <!--
+  Signature (first byte in HEX) to verify first record.
+
+  <Signature>
+    <HexSignature>E1</HexSignature>
+    <HexSignature>...</HexSignature>
+    ...
+  </Signature>
+  -->
+  <Signature>
+    <HexSignature>B4</HexSignature>
+    <HexSignature>B7</HexSignature>
+    <HexSignature>B8</HexSignature>
+  </Signature>
+  <Schema Name="S-CDR" Default="true">
+    <Element Tag="20" Name="sgsnPDPRecord" Parselet=""/>
+    <Element Tag="0" Name="recordType" Parselet="IntegerParselet"/>
+    <Element Tag="3" Name="servedIMSI" Parselet="TbcdStringParselet"/>
+    <Element Tag="4" Name="servedIMEI" Parselet="TbcdStringParselet"/>
+    <Element Tag="5" Name="sgsnAddress" Parselet="">
+      <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+      <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+      <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+      <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+    </Element>
+    <Element Tag="6" Name="msNetworkCapability" Parselet=""/>
+    <Element Tag="7" Name="routingArea" Parselet=""/>
+    <Element Tag="8" Name="locationAreaCode" Parselet=""/>
+    <Element Tag="9" Name="cellIdentifier" Parselet=""/>
+    <Element Tag="10" Name="chargingID" Parselet="IntegerParselet"/>
+    <Element Tag="11" Name="ggsnAddressUsed" Parselet="">
+      <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+      <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+      <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+      <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+    </Element>
+    <Element Tag="12" Name="accessPointNameNI" Parselet="Ia5StringParselet"/>
+    <Element Tag="13" Name="pdpType" Parselet=""/>
+    <Element Tag="14" Name="servedPDPAddress" Parselet="">
+      <Element Tag="0" Name="IPAddress" Parselet="">
+        <Element Tag="0" Name="iPBinV4Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="1" Name="iPBinV6Address" Parselet="sgsn_iPBinAddress"/>
+        <Element Tag="2" Name="iPTextV4Address" Parselet=""/>
+        <Element Tag="3" Name="iPTextV6Address" Parselet=""/>
+      </Element>
+      <Element Tag="1" Name="eTSIAddress" Parselet=""/>
+    </Element>
+    <Element Tag="15" Name="listOfTrafficVolumes" Parselet="">
+      <Element Tag="16" Name="" Parselet="">
+        <Element Tag="1" Name="qosRequested" Parselet=""/>
+        <Element Tag="2" Name="qosNegotiated" Parselet=""/>
+        <Element Tag="3" Name="dataVolumeGPRSUplink" Parselet=""/>
+        <Element Tag="4" Name="dataVolumeGPRSDownlink" Parselet=""/>
+        <Element Tag="5" Name="changeCondition" Parselet="IntegerParselet"/>
+        <Element Tag="6" Name="changeTime" Parselet="sgsn_TimeParselet"/>
+      </Element>
+    </Element>
+    <Element Tag="16" Name="recordOpeningTime" Parselet="sgsn_TimeParselet"/>
+    <Element Tag="17" Name="duration" Parselet="IntegerParselet"/>
+    <Element Tag="18" Name="sgsnChange" Parselet="IntegerParselet"/>
+    <Element Tag="19" Name="causeForRecClosing" Parselet=""/>
+    <!--
+    <Element Tag="20" Name="diagnostics" Parselet=""/>
+    -->
+    <Element Tag="21" Name="recordSequenceNumber" Parselet="IntegerParselet"/>
+    <Element Tag="22" Name="nodeID" Parselet="Ia5StringParselet"/>
+    <Element Tag="23" Name="recordExtensions" Parselet=""/>
+    <Element Tag="24" Name="localSequenceNumber" Parselet="IntegerParselet"/>
+    <Element Tag="25" Name="apnSelectionMode" Parselet="IntegerParselet"/>
+    <Element Tag="26" Name="accessPointNameOI" Parselet="Ia5StringParselet"/>
+    <Element Tag="27" Name="servedMSISDN" Parselet="esn_AddressString"/>
+    <Element Tag="28" Name="chargingCharacteristics" Parselet=""/>
+    <Element Tag="29" Name="systemType" Parselet=""/>
+    <Element Tag="30" Name="cAMELInformationPDP" Parselet=""/>
+    <Element Tag="32" Name="chChSelectionMode" Parselet=""/>
+    <Element Tag="33" Name="dynamicAddressFlag" Parselet="IntegerParselet"/>
+    <Element Tag="101" Name="pLMNIdentifier" Parselet=""/>
+  </Schema>
+  <Schema Name="S-SMO-CDR" Default="false">
+    <Element Tag="23" Name="sgsnSMORecord" Parselet=""/>
+    <Element Tag="0" Name="recordType" Parselet=""/>
+    <Element Tag="1" Name="servedIMSI" Parselet=""/>
+    <Element Tag="2" Name="servedIMEI" Parselet=""/>
+    <Element Tag="3" Name="servedMSISDN" Parselet=""/>
+    <Element Tag="4" Name="msNetworkCapability" Parselet=""/>
+    <Element Tag="5" Name="serviceCentre" Parselet=""/>
+    <Element Tag="6" Name="recordingEntity" Parselet=""/>
+    <Element Tag="7" Name="locationArea" Parselet=""/>
+    <Element Tag="8" Name="routingArea" Parselet=""/>
+    <Element Tag="9" Name="cellIdentifier" Parselet=""/>
+    <Element Tag="10" Name="messageReference" Parselet=""/>
+    <Element Tag="11" Name="eventTimeStamp" Parselet=""/>
+    <Element Tag="12" Name="smsResult" Parselet=""/>
+    <Element Tag="14" Name="nodeID" Parselet=""/>
+    <Element Tag="15" Name="localSequenceNumber" Parselet=""/>
+    <Element Tag="16" Name="chargingCharacteristics" Parselet=""/>
+    <Element Tag="17" Name="systemType" Parselet=""/>
+    <Element Tag="18" Name="destinationNumber" Parselet=""/>
+    <Element Tag="19" Name="cAMELInformationSMS" Parselet=""/>
+    <Element Tag="20" Name="chChSelectionMode" Parselet=""/>
+    <Element Tag="101" Name="pLMNIdentifier" Parselet=""/>
+  </Schema>
+  <Schema Name="S-SMT-CDR" Default="false">
+    <Element Tag="24" Name="sgsnSMTRecord" Parselet=""/>
+    <Element Tag="0" Name="recordType" Parselet=""/>
+    <Element Tag="1" Name="servedIMSI" Parselet=""/>
+    <Element Tag="2" Name="servedIMEI" Parselet=""/>
+    <Element Tag="3" Name="servedMSISDN" Parselet=""/>
+    <Element Tag="4" Name="msNetworkCapability" Parselet=""/>
+    <Element Tag="5" Name="serviceCentre" Parselet=""/>
+    <Element Tag="6" Name="recordingEntity" Parselet=""/>
+    <Element Tag="7" Name="locationArea" Parselet=""/>
+    <Element Tag="8" Name="routingArea" Parselet=""/>
+    <Element Tag="9" Name="cellIdentifier" Parselet=""/>
+    <Element Tag="10" Name="eventTimeStamp" Parselet=""/>
+    <Element Tag="11" Name="smsResult" Parselet=""/>
+    <Element Tag="13" Name="nodeID" Parselet=""/>
+    <Element Tag="14" Name="localSequnceNumber" Parselet=""/>
+    <Element Tag="15" Name="chargingCharacteristics" Parselet=""/>
+    <Element Tag="16" Name="systemType" Parselet=""/>
+    <Element Tag="17" Name="chChSelectionMode" Parselet=""/>
+    <Element Tag="101" Name="numberOfSM" Parselet=""/>
+    <Element Tag="102" Name="locationAreaLastSM" Parselet=""/>
+    <Element Tag="103" Name="routingAreaLastSM" Parselet=""/>
+    <Element Tag="104" Name="cellIdentifierLastSM" Parselet=""/>
+    <Element Tag="105" Name="pLMNIdentifierLastSM" Parselet=""/>
+    <Element Tag="106" Name="pLMNIdentifier" Parselet=""/>
+  </Schema>
+</CDRDefinition>

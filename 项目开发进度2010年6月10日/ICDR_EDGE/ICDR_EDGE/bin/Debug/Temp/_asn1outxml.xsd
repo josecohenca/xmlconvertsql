@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element maxOccurs="unbounded" name="CONTEXT_28">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                  <xs:element name="CONTEXT_0" type="xs:unsignedByte" />
+                  <xs:element name="CONTEXT_3" type="xs:string" />
+                  <xs:element name="CONTEXT_4">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="CONTEXT_0" type="xs:string" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="CONTEXT_5" type="xs:string" />
+                  <xs:element name="CONTEXT_6">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="CONTEXT_0" type="xs:string" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="CONTEXT_7" type="xs:string" />
+                  <xs:element name="CONTEXT_8" type="xs:unsignedByte" />
+                  <xs:element name="CONTEXT_9">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="CONTEXT_0">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="CONTEXT_0" type="xs:string" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="CONTEXT_11" type="xs:string" />
+                  <xs:element name="CONTEXT_12">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="SEQUENCE">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="CONTEXT_2" type="xs:string" />
+                              <xs:element name="CONTEXT_3" type="xs:string" />
+                              <xs:element name="CONTEXT_4" type="xs:string" />
+                              <xs:element name="CONTEXT_5" type="xs:unsignedByte" />
+                              <xs:element name="CONTEXT_6" type="xs:string" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="CONTEXT_13" type="xs:string" />
+                  <xs:element name="CONTEXT_14" type="xs:string" />
+                  <xs:element name="CONTEXT_15" type="xs:unsignedByte" />
+                  <xs:element name="CONTEXT_17" type="xs:string" />
+                  <xs:element name="CONTEXT_18" type="xs:string" />
+                  <xs:element name="CONTEXT_21" type="xs:unsignedByte" />
+                  <xs:element name="CONTEXT_22" type="xs:string" />
+                  <xs:element name="CONTEXT_23" type="xs:unsignedShort" />
+                  <xs:element name="CONTEXT_24" type="xs:unsignedByte" />
+                  <xs:element name="CONTEXT_34">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="SEQUENCE">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="CONTEXT_1" type="xs:string" />
+                              <xs:element name="CONTEXT_4" type="xs:unsignedByte" />
+                              <xs:element name="CONTEXT_5" type="xs:string" />
+                              <xs:element name="CONTEXT_6" type="xs:string" />
+                              <xs:element name="CONTEXT_8" type="xs:float" />
+                              <xs:element name="CONTEXT_9" type="xs:string" />
+                              <xs:element name="CONTEXT_10">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="CONTEXT_0" type="xs:string" />
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element minOccurs="0" name="CONTEXT_11" type="xs:string" />
+                              <xs:element name="CONTEXT_12" type="xs:string" />
+                              <xs:element name="CONTEXT_13" type="xs:string" />
+                              <xs:element name="CONTEXT_14" type="xs:string" />
+                              <xs:element name="CONTEXT_17" type="xs:string" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="CONTEXT_27" type="xs:string" />
+                  <xs:element name="CONTEXT_20" type="xs:string" />
+                </xs:choice>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CONTEXT_21">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CONTEXT_0" type="xs:unsignedByte" />
+                <xs:element name="CONTEXT_3" type="xs:string" />
+                <xs:element name="CONTEXT_4">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CONTEXT_0" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CONTEXT_5" type="xs:string" />
+                <xs:element name="CONTEXT_6">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="CONTEXT_0" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CONTEXT_7" type="xs:string" />
+                <xs:element name="CONTEXT_8" type="xs:unsignedByte" />
+                <xs:element name="CONTEXT_9">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CONTEXT_0">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="CONTEXT_0" type="xs:string" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CONTEXT_11" type="xs:string" />
+                <xs:element name="CONTEXT_12">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="SEQUENCE">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="CONTEXT_2" type="xs:string" />
+                            <xs:element name="CONTEXT_3" type="xs:string" />
+                            <xs:element name="CONTEXT_4" type="xs:string" />
+                            <xs:element name="CONTEXT_5" type="xs:unsignedByte" />
+                            <xs:element name="CONTEXT_6" type="xs:string" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CONTEXT_13" type="xs:string" />
+                <xs:element name="CONTEXT_14" type="xs:string" />
+                <xs:element name="CONTEXT_15" type="xs:unsignedByte" />
+                <xs:element name="CONTEXT_17" type="xs:string" />
+                <xs:element name="CONTEXT_18" type="xs:string" />
+                <xs:element name="CONTEXT_21" type="xs:unsignedByte" />
+                <xs:element name="CONTEXT_22" type="xs:string" />
+                <xs:element name="CONTEXT_23" type="xs:unsignedShort" />
+                <xs:element name="CONTEXT_24" type="xs:unsignedByte" />
+                <xs:element minOccurs="0" name="CONTEXT_27" type="xs:string" />
+                <xs:element minOccurs="0" name="CONTEXT_29" type="xs:unsignedLong" />
+                <xs:element minOccurs="0" name="CONTEXT_31" type="xs:unsignedShort" />
+                <xs:element minOccurs="0" name="CONTEXT_32" type="xs:string" />
+                <xs:element name="CONTEXT_20" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

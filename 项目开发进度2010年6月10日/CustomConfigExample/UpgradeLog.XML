@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CustomConfigExample">
+</Property><Property Name="解决方案文件" Value="C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\CustomConfigExample.sln">
+</Property><Property Name="Date" Value="2010年6月10日">
+</Property><Property Name="Time" Value="4:50">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CustomConfigExample.sln" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\CustomConfigExample.sln">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="CustomConfigExample.csproj" Description="项目文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\CustomConfigExample.csproj">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="AShapeSetting.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\AShapeSetting.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="MySection.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\MySection.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Form1.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Form1.Designer.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Program.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="ShapeSettings.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\ShapeSettings.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="SomeSettings.cs" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\SomeSettings.cs">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="App.config" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Properties\Settings.settings" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Form1.resx" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="Properties\Resources.resx" Description="文件已成功备份为 C:\TDDOWNLOAD\CustomConfigSectionDemo_src\CustomConfigExample\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="CustomConfigExample.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CustomConfigExample" Source="CustomConfigExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CustomConfigExample.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="CustomConfigExample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CustomConfigExample" Source="CustomConfigExample.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

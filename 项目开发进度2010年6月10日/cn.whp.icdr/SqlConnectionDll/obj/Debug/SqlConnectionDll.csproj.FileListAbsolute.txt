@@ -1,0 +1,4 @@
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\SqlConnectionDll\obj\Debug\ResolveAssemblyReference.cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\SqlConnectionDll\obj\Debug\SQLConnectionDialog.resources
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\SqlConnectionDll\obj\Debug\SqlConnectionDll.csproj.GenerateResource.Cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\SqlConnectionDll\obj\Debug\SqlConnectionDll.csproj.ResolveComReference.cache

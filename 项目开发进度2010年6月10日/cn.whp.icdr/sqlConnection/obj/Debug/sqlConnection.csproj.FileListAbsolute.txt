@@ -1,0 +1,8 @@
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\bin\Debug\sqlConnection.exe
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\bin\Debug\sqlConnection.pdb
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\ResolveAssemblyReference.cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\sqlConnection.Form1.resources
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\sqlConnection.Properties.Resources.resources
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\sqlConnection.csproj.GenerateResource.Cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\sqlConnection.exe
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\sqlConnection\obj\Debug\sqlConnection.pdb

@@ -1,0 +1,12 @@
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\bin\Debug\cn.whp.icdr.exe
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\bin\Debug\cn.whp.icdr.pdb
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\ResolveAssemblyReference.cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.Form1.resources
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.Properties.Resources.resources
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.csproj.GenerateResource.Cache
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.exe
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.pdb
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\bin\Debug\cn.whp.icdr.exe.config
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\bin\Debug\ICSharpCode.Core.WinForms.dll
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\bin\Debug\ICSharpCode.Core.WinForms.pdb
+F:\项目开发LIB\项目开发进度2010年6月10日\cn.whp.icdr\cn.whp.icdr\obj\Debug\cn.whp.icdr.csproj.ResolveComReference.cache

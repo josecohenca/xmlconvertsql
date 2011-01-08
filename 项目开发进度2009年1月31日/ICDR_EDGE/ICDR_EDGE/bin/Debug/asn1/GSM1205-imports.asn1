@@ -1,0 +1,144 @@
+-- *************************
+-- * uniGone modifications :
+-- *************************
+-- the modifications made by uniGone are prefixed by "uniGone"
+--
+-- in order to minimize the number of types, IMPORTed modules have been locally
+-- defined see MAP-imports.asn1 - in no way ASN.1 definitions have been modified
+--
+-- Modules are imported from GSM1205-DataTypes {  ccitt (0) identified-organization (4) etsi (0) mobileDomain (0) gsm-Operation-Maintenance (3) gsm-12-05 (5) informationModel (0) asn1Module (2) 1 }
+--                           definitions (3GPP 12.05 - 701)
+-- Modules Object Identifiers have been removed to indicate this is not the 'standard' module.           
+--
+
+GSM1205-DataTypes { ccitt (0) identified-organization (4) etsi(0) mobileDomain (0) gsmOperation-Maintenance (3) moduleId (3) gsm-12-05 (5) informationModel (0) asn1Module (2) 1 }
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+IMPORTS
+
+AddressString, ISDN-AddressString
+FROM MAP-CommonDataTypes
+
+ManagementExtension
+FROM Attribute-ASN1Module
+;
+
+CellId	::= OCTET STRING (SIZE(2))
+
+Diagnostics						::= CHOICE
+{
+	gsm0408Cause				[0] INTEGER,
+	-- See TS GSM 04.08	
+	gsm0902MapErrorValue		[1] INTEGER,
+	-- Note: The value to be stored here corresponds to
+	-- the local values defined in the MAP-Errors and 
+	-- MAP-DialogueInformation modules, for full details
+	-- see TS GSM 09.02.
+	ccittQ767Cause				[2] INTEGER,
+	-- See CCITT Q.767	
+	networkSpecificCause		[3] ManagementExtension,
+	-- To be defined by network operator	
+	manufacturerSpecificCause	[4] ManagementExtension
+	-- To be defined by manufacturer	
+}
+
+CallDuration 			::= INTEGER
+	--
+	-- The call duration in seconds. 
+	-- For successful calls this is the chargeable duration.
+	-- For call attempts this is the call holding time.
+	--
+
+ManagementExtensions	::= SET OF ManagementExtension
+
+TimeStamp					::= OCTET STRING (SIZE(9))
+	--
+	-- The contents of this field are a compact form of the UTCTime format
+	-- containing local time plus an offset to universal time. Binary coded
+	-- decimal encoding is employed for the digits to reduce the storage and
+	-- transmission overhead
+	-- e.g. YYMMDDhhmmssShhmm
+	-- where
+	-- YY 	= 	Year 00 to 99		BCD encoded
+	-- MM 	= 	Month 01 to 12 		BCD encoded
+	-- DD	=	Day 01 to 31		BCD encoded
+	-- hh	=	hour 00 to 23		BCD encoded
+	-- mm	=	minute 00 to 59		BCD encoded
+	-- ss	=	second 00 to 59		BCD encoded
+	-- S	=	Sign 0 = "+", "-"	ASCII encoded
+	-- hh	=	hour 00 to 23		BCD encoded
+	-- mm	=	minute 00 to 59		BCD encoded
+	--
+
+MSISDN	::= ISDN-AddressString 
+	-- 
+	-- See TS GSM 03.03
+	--
+
+LocationAreaCode		::= OCTET STRING (SIZE(2))
+
+MessageReference		::= OCTET STRING
+
+RecordingEntity 		::= AddressString 
+
+SMSResult					::= Diagnostics
+
+LevelOfCAMELService		::= BIT STRING
+{
+	basic					(0),
+	callDurationSupervision	(1),
+	onlineCharging			(2)
+}
+
+BCDDirectoryNumber		::= OCTET STRING
+	-- This type contains the binary coded decimal representation of
+	-- a directory number e.g. calling/called/connected/translated number.
+	-- The encoding of the octet string is in accordance with the
+	-- the elements "Calling party BCD number", "Called party BCD number"
+	-- and "Connected number" defined in TS GSM 04.08.
+	-- This encoding includes type of number and number plan information
+	-- together with a BCD encoded digit string.
+	-- It may also contain both a presentation and screening indicator
+	-- (octet 3a).
+	-- For the avoidance of doubt, this field does not include 
+	-- octets 1 and 2, the element name and length, as this would be 
+	-- redundant.
+
+CallingNumber			::= BCDDirectoryNumber
+
+CalledNumber			::= BCDDirectoryNumber
+
+CallEventRecordType 	::= INTEGER 
+{ 
+	moCallRecord		(0),
+	mtCallRecord		(1),
+	roamingRecord		(2),
+	incGatewayRecord	(3),
+	outGatewayRecord	(4),
+	transitCallRecord	(5),
+	moSMSRecord			(6),
+	mtSMSRecord			(7),
+	moSMSIWRecord		(8),
+	mtSMSGWRecord		(9),
+	ssActionRecord		(10),
+	hlrIntRecord		(11),
+	locUpdateHLRRecord	(12),
+	locUpdateVLRRecord	(13),
+	commonEquipRecord	(14),
+	moTraceRecord		(15),
+	mtTraceRecord		(16),
+	termCAMELIntRecord	(17),
+--
+--	Record values 18..22 are GPRS specific.
+--	The contents are defined in GSM 12.15
+--
+	sgsnPDPRecord		(18),
+	ggsnPDPRecord		(19),
+	sgsnMMRecord		(20),
+	sgsnSMORecord		(21),
+	sgsnSMTRecord		(22)
+}
+
+END

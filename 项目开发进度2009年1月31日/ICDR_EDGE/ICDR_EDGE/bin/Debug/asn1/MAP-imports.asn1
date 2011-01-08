@@ -1,0 +1,361 @@
+-- *************************
+-- * uniGone modifications :
+-- *************************
+-- the modifications made by uniGone are prefixed by "uniGone"
+--
+-- in order to minimize the number of types, IMPORTed modules have been locally
+-- defined - in no way ASN.1 definitions have been modified
+--
+-- Modules are imported from MAP definitions (MAP standard from 3GPP TS 29.002 - see identifiers for each module)
+-- Modules Object Identifiers have been removed to indicate this is not the 'standard' module.           
+--
+
+-- extract from MAP-CH-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-CH-DataTypes(13) version7(7)}
+MAP-CH-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-CH-DataTypes(13) version7(7)}
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+NumberOfForwarding ::= INTEGER(1..5)
+
+CallReferenceNumber ::= OCTET STRING(SIZE (1..8))
+
+END
+
+-- extract from MAP-Common-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-CommonDataTypes(18) version7(7)}
+MAP-CommonDataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+IMPORTS
+
+BearerServiceCode
+FROM MAP-BS-Code
+
+TeleserviceCode
+FROM MAP-TS-Code
+
+ExtensionContainer
+FROM MAP-ExtensionDataTypes;
+
+TBCD-STRING ::= OCTET STRING
+
+-- This type (Telephony Binary Coded Decimal String) is used to
+-- represent several digits from 0 through 9, *, #, a, b, c, two
+-- digits per octet, each digit encoded 0000 to 1001 (0 to 9),
+-- 1010 (*), 1011 (#), 1100 (a), 1101 (b) or 1110 (c); 1111 used
+-- as filler when there is an odd number of digits.
+-- bits 8765 of octet n encoding digit 2n
+-- bits 4321 of octet n encoding digit 2(n-1) +1
+AddressString ::= OCTET STRING(SIZE (1..maxAddressLength))
+
+-- This type is used to represent a number for addressing
+-- purposes. It is composed of
+--	a)	one octet for nature of address, and numbering plan
+--		indicator.
+--	b)	digits of an address encoded as TBCD-String.
+-- a)	The first octet includes a one bit extension indicator, a
+--		3 bits nature of address indicator and a 4 bits numbering
+--		plan indicator, encoded as follows:
+-- bit 8: 1  (no extension)
+-- bits 765: nature of address indicator
+--	000  unknown
+--	001  international number
+--	010  national significant number
+--	011  network specific number
+--	100  subscriber number
+--	101  reserved
+--	110  abbreviated number
+--	111  reserved for extension
+-- bits 4321: numbering plan indicator
+--	0000  unknown
+--	0001  ISDN/Telephony Numbering Plan (Rec CCITT E.164)
+--	0010  spare
+--	0011  data numbering plan (CCITT Rec X.121)
+--	0100  telex numbering plan (CCITT Rec F.69)
+--	0101  spare
+--	0110  land mobile numbering plan (CCITT Rec E.212)
+--	0111  spare
+--	1000  national numbering plan
+--	1001  private numbering plan
+--	1111  reserved for extension
+--	all other values are reserved.
+-- b)	The following octets representing digits of an address
+--		encoded as a TBCD-STRING.
+maxAddressLength INTEGER ::= 20
+
+ISDN-AddressString ::= AddressString (SIZE (1..maxISDN-AddressLength))
+
+-- This type is used to represent ISDN numbers.
+maxISDN-AddressLength INTEGER ::= 9
+
+BasicServiceCode ::= CHOICE {
+  bearerService  [2]  BearerServiceCode,
+  teleservice    [3]  TeleserviceCode
+}
+
+IMSI ::= TBCD-STRING(SIZE (3..8))
+
+IMEI ::= TBCD-STRING(SIZE (8))
+
+LCSClientInternalID ::= ENUMERATED
+{
+  broadcastService(0), o-andM-HPLMN(1), o-andM-VPLMN(2), anonymousLocation(3),
+  targetMSsubscribedService(4), ...
+}
+
+LCSClientExternalID ::= SEQUENCE {
+  externalAddress     [0]  AddressString OPTIONAL,
+  extensionContainer  [1]  ExtensionContainer OPTIONAL,
+  ...
+}
+
+END
+
+-- extract from MAP-ExtensionDataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-ExtensionDataTypes(21) version7(7)}
+MAP-ExtensionDataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+-- IOC for private MAP extensions
+MAP-EXTENSION ::= CLASS {
+  &ExtensionType  OPTIONAL,
+  &extensionId    OBJECT IDENTIFIER
+}
+
+-- The length of the Object Identifier shall not exceed 16 octets and the
+-- number of components of the Object Identifier shall not exceed 16
+-- data types
+ExtensionContainer ::= SEQUENCE {
+  privateExtensionList  [0]  PrivateExtensionList OPTIONAL,
+  pcs-Extensions        [1]  PCS-Extensions OPTIONAL,
+  ...
+}
+
+PrivateExtensionList ::=
+  SEQUENCE SIZE (1..maxNumOfPrivateExtensions) OF PrivateExtension
+
+PrivateExtension ::= SEQUENCE {
+  extId    MAP-EXTENSION.&extensionId({ExtensionSet}),
+  extType  MAP-EXTENSION.&ExtensionType({ExtensionSet}{@extId}) OPTIONAL
+}
+
+maxNumOfPrivateExtensions INTEGER ::= 10
+
+ExtensionSet MAP-EXTENSION ::=
+{
+	...
+	-- ExtensionSet is the set of all defined private extensions
+}
+
+-- Unsupported private extensions shall be discarded if received.
+PCS-Extensions ::= SEQUENCE
+{
+	...
+}
+
+END
+
+-- extract from MAP-MS-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-MS-DataTypes(11) version7(7)}
+MAP-MS-DataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+ServiceKey ::= INTEGER(0..2147483647)
+
+DefaultCallHandling ::= ENUMERATED
+{
+	continueCall(0),
+	releaseCall(1),
+	...
+}
+
+DefaultSMS-Handling ::= ENUMERATED
+{
+	continueTransaction(0),
+	releaseTransaction(1),
+	...
+}
+
+NotificationToMSUser ::= ENUMERATED
+{
+	notifyLocationAllowed(0),
+	notifyAndVerify-LocationAllowedIfNoResponse(1),
+	notifyAndVerify-LocationNotAllowedIfNoResponse(2),
+	..., 
+	locationNotAllowed(3)
+}
+
+DefaultGPRS-Handling ::= ENUMERATED
+{
+	continueTransaction(0),
+	releaseTransaction(1),
+	...
+}
+
+
+END
+
+-- extract from MAP-BS-Code {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-BS-Code(20) version7(7)}
+MAP-BS-Code
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+BearerServiceCode ::= OCTET STRING(SIZE (1))
+
+END
+
+-- extract from MAP-TS-Code {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-TS-Code(19) version7(7)}
+MAP-TS-Code
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+TeleserviceCode ::= OCTET STRING(SIZE (1))
+
+END
+
+-- extract from MAP-SS-Code {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-SS-Code(15) version7(7)}
+MAP-SS-Code
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+SS-Code ::= OCTET STRING(SIZE (1))
+
+END
+
+-- extract from MAP-LCS-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-LCS-DataTypes(25) version7(7)}
+MAP-LCS-DataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+Ext-GeographicalInformation ::= OCTET STRING(SIZE (1..maxExt-GeographicalInformation))
+
+-- Refers to geographical Information defined in 3G TS 23.032.
+-- This is composed of 1 or more octets with an internal structure according to
+-- 3G TS 23.032
+-- Octet 1: Type of shape, only the following shapes in 3G TS 23.032 are allowed:
+--		(a) Ellipsoid point with uncertainty circle
+--		(b) Ellipsoid point with uncertainty ellipse
+--		(c) Ellipsoid point with altitude and uncertainty ellipsoid
+--		(d) Ellipsoid Arc
+--		(e) Ellipsoid Point
+-- Any other value in octet 1 shall be treated as invalid
+-- Octets 2 to 8 for case (a) - Ellipsoid point with uncertainty circle
+--		Degrees of Latitude				3 octets
+--		Degrees of Longitude				3 octets
+--		Uncertainty code				1 octet
+-- Octets 2 to 11 for case (b) - Ellipsoid point with uncertainty ellipse:
+--		Degrees of Latitude				3 octets
+--		Degrees of Longitude				3 octets
+--		Uncertainty semi-major axis				1 octet
+--		Uncertainty semi-minor axis				1 octet
+--		Angle of major axis				1 octet
+--		Confidence				1 octet
+-- Octets 2 to 14 for case (c) - Ellipsoid point with altitude and uncertainty ellipsoid
+--		Degrees of Latitude				3 octets
+--		Degrees of Longitude				3 octets
+--		Altitude				2 octets
+--		Uncertainty semi-major axis				1 octet
+--		Uncertainty semi-minor axis				1 octet
+--		Angle of major axis				1 octet
+--		Uncertainty altitude				1 octet
+--		Confidence				1 octet
+-- Octets 2 to 13 for case (d) - Ellipsoid Arc
+--		Degrees of Latitude				3 octets
+--		Degrees of Longitude				3 octets
+--		Inner radius				2 octets
+--		Uncertainty radius				1 octet
+--		Offset angle				1 octet
+--		Included angle				1 octet
+--		Confidence				1 octet
+-- Octets 2 to 7 for case (e) - Ellipsoid Point
+--		Degrees of Latitude				3 octets
+--		Degrees of Longitude				3 octets
+--
+-- An Ext-GeographicalInformation parameter comprising more than one octet and
+-- containing any other shape or an incorrect number of octets or coding according
+-- to 3G TS 23.032 shall be treated as invalid data by a receiver.
+--
+-- An Ext-GeographicalInformation parameter comprising one octet shall be discarded
+-- by the receiver if an Add-GeographicalInformation parameter is received 
+-- in the same message.
+--
+-- An Ext-GeographicalInformation parameter comprising one octet shall be treated as
+-- invalid data by the receiver if an Add-GeographicalInformation parameter is not
+-- received in the same message.
+maxExt-GeographicalInformation INTEGER ::= 20
+
+LCSClientType ::= ENUMERATED
+{
+	emergencyServices(0),
+	valueAddedServices(1),
+	plmnOperatorServices(2),
+	lawfulInterceptServices(3),
+	...
+}
+
+LCS-Priority ::= OCTET STRING(SIZE (1))
+
+LocationType ::= SEQUENCE
+{
+  locationEstimateType          [0]  LocationEstimateType,
+  ...,
+  deferredLocationEventType     [1]  DeferredLocationEventType OPTIONAL
+}
+
+LocationEstimateType ::= ENUMERATED
+{
+	currentLocation(0),
+	currentOrLastKnownLocation(1),
+	initialLocation(2),
+	..., 
+	activateDeferredLocation(3),
+	cancelDeferredLocation(4)
+}
+
+--	exception handling:
+--	a ProvideSubscriberLocation-Arg containing an unrecognized LocationEstimateType
+--	shall be rejected by the receiver with a return error cause of unexpected data value
+DeferredLocationEventType ::= BIT STRING {msAvailable(0)}(SIZE (1..16))
+
+END
+
+-- extract from MAP-ER-DataTypes {itu-t identified-organization(4) etsi(0) mobileDomain(0) gsm-Network(1) modules(3) map-ER-DataTypes(17) version7(7)}
+MAP-ER-DataTypes
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+PositionMethodFailure-Diagnostic ::= ENUMERATED
+{
+	congestion(0),
+	insufficientResources(1),
+	insufficientMeasurementData(2),
+	inconsistentMeasurementData(3),
+	locationProcedureNotCompleted(4),
+	locationProcedureNotSupportedByTargetMS(5),
+	qoSNotAttainable(6),
+	positionMethodNotAvailableInNetwork(7),
+	positionMethodNotAvailableInLocationArea(8),
+	...
+}
+
+UnauthorizedLCSClient-Diagnostic ::= ENUMERATED
+{
+	noAdditionalInformation(0),
+	clientNotInMSPrivacyExceptionList(1),
+	callToClientNotSetup(2),
+	privacyOverrideNotApplicable(3),
+	disallowedByLocalRegulatoryRequirements(4),
+	...
+}
+
+END
+

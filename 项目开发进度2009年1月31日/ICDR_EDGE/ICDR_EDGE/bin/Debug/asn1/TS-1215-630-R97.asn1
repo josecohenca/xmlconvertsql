@@ -1,0 +1,413 @@
+--
+-- The ASN.1 syntax has been extracted from 3GPP TS 12.15 V6.3.0 (2002-12)
+--
+
+GPRS-Charging-DataTypes-97 -- uniGone added _97
+
+DEFINITIONS IMPLICIT TAGS	::=
+
+BEGIN
+
+-- EXPORTS everything
+
+IMPORTS	
+
+CellId, Diagnostics, CallDuration, ManagementExtensions, TimeStamp, MSISDN, LocationAreaCode, MessageReference, RecordingEntity, SMSResult, CallEventRecordType
+FROM GSM1205-DataTypes { ccitt (0) identified-organization (4) etsi(0) mobileDomain (0) gsmOperation-Maintenance (3) moduleId (3) gsm-12-05 (5) informationModel (0) asn1Module (2) 1 }
+
+AddressString, ISDN-AddressString, IMSI, IMEI
+FROM MAP-CommonDataTypes { ccitt identified-organization (4) etsi(0) mobileDomain (0) gsmNetworkId (1) moduleId (3) map-CommonDataTypes (18) version2 (2) }
+
+ObjectInstance	
+FROM CMIP-1 {joint-iso-ccitt ms(9) cmip(1) version1 (1) protocol (3)}
+
+ManagementExtension
+FROM Attribute-ASN1Module {joint-iso-ccitt ms(9) smi(3) part2 (2) asn1Module(2) 1};
+
+-- uniGone removed ACSE IMPORTS since unused
+
+------------------------------------------------------------------------------
+--
+--  CALL AND EVENT RECORDS
+--
+------------------------------------------------------------------------------
+
+CallEventRecord	::= CHOICE 
+{
+	sgsnPDPRecord			[0] SGSNPDPRecord,
+	ggsnPDPRecord			[1] GGSNPDPRecord,
+	sgsnMMRecord			[2] SGSNMMRecord,
+	sgsnSMORecord			[3] SGSNSMORecord,
+	sgsnSMTRecord			[4] SGSNSMTRecord
+}
+
+GGSNPDPRecord 	::= SET
+{
+	recordType				[0] CallEventRecordType,
+	networkInitiation		[1] NetworkInitiatedPDPContext OPTIONAL,
+	anonymousAccessIndicator	[2] BOOLEAN OPTIONAL,
+	servedIMSI				[3] IMSI,
+	ggsnAddress				[4] GSNAddress,
+	chargingID				[5] ChargingID,
+	sgsnAddress				[6] SEQUENCE OF GSNAddress,
+	accessPointName			[7] AccessPointName,
+	pdpType					[8] PDPType,
+	servedPDPAddress		[9] PDPAddress,
+	remotePDPAddress		[10] SEQUENCE OF PDPAddress OPTIONAL,
+	dynamicAddressFlag		[11] DynamicAddressFlag OPTIONAL,
+	listOfTrafficVolumes	[12] SEQUENCE OF ChangeOfCharCondition,
+	recordOpeningTime		[13] TimeStamp,
+	duration				[14] CallDuration,
+	causeForRecClosing		[15] CauseForRecClosing,
+	diagnostics				[16] Diagnostics OPTIONAL,
+	recordSequenceNumber	[17] INTEGER OPTIONAL,
+	nodeID					[18] IA5String OPTIONAL,
+	recordExtensions		[19] ManagementExtensions OPTIONAL,
+	sgsnPLMNIdentifier		[27] PLMN-Id
+}
+
+
+SGSNMMRecord	::= SET
+{
+	recordType				[0] CallEventRecordType,
+	servedIMSI				[1] IMSI,
+	servedIMEI				[2] IMEI OPTIONAL,
+	sgsnAddress				[3] GSNAddress,
+--	msClassmark				[4] Classmark OPTIONAL,
+	msClassmark				[4] OCTET STRING OPTIONAL, -- uniGone replaced by OCTET STRING
+	routingArea				[5] RoutingAreaCode OPTIONAL,
+	locationAreaCode		[6] LocationAreaCode OPTIONAL,
+	cellIdentity			[7] CellId OPTIONAL,
+	changeLocation			[8] SEQUENCE OF ChangeLocation OPTIONAL,
+	recordOpeningTime		[9] TimeStamp,
+	duration				[10] CallDuration OPTIONAL, 
+	sgsnChange				[11] SGSNChange OPTIONAL,
+	causeForRecClosing		[12] CauseForRecClosing,
+	diagnostics				[13] Diagnostics OPTIONAL,
+	recordSequenceNumber	[14] INTEGER OPTIONAL,
+	nodeID					[15] IA5String OPTIONAL,
+	recordExtensions		[16] ManagementExtensions OPTIONAL
+}
+
+SGSNPDPRecord 	::= SET
+{
+	recordType				[0] CallEventRecordType,
+	networkInitiation		[1] NetworkInitiatedPDPContext OPTIONAL,
+	anonymousAccessIndicator	[2] BOOLEAN OPTIONAL,
+	servedIMSI				[3] IMSI ,
+	servedIMEI				[4] IMEI OPTIONAL,
+	sgsnAddress				[5] GSNAddress,
+--	msClassmark				[6] Classmark OPTIONAL,
+	msClassmark				[6] OCTET STRING OPTIONAL, -- uniGone replaced by OCTET STRING
+	routingArea				[7] RoutingAreaCode OPTIONAL,
+	locationAreaCode		[8] LocationAreaCode OPTIONAL,
+	cellIdentity			[9] CellId OPTIONAL,
+	chargingID				[10] ChargingID,
+	ggsnAddressUsed			[11] GSNAddress,
+	accessPointName			[12] AccessPointName,
+	pdpType					[13] PDPType,
+	servedPDPAddress		[14] PDPAddress,
+	listOfTrafficVolumes	[15] SEQUENCE OF ChangeOfCharCondition,
+	recordOpeningTime		[16] TimeStamp,
+	duration				[17] CallDuration,
+	sgsnChange				[18] SGSNChange OPTIONAL,
+	causeForRecClosing		[19] CauseForRecClosing,
+	diagnostics				[20] Diagnostics OPTIONAL,
+	recordSequenceNumber	[21] INTEGER OPTIONAL,
+	nodeID					[22] IA5String OPTIONAL,
+	recordExtensions		[23] ManagementExtensions OPTIONAL
+}
+
+SGSNSMORecord	::= SET
+{
+	recordType				[0] CallEventRecordType,
+	servedIMSI				[1] IMSI,
+	servedIMEI				[2] IMEI OPTIONAL,
+	servedMSISDN			[3] MSISDN OPTIONAL,
+--	msClassmark				[4] Classmark,
+	msClassmark				[4] OCTET STRING OPTIONAL, -- uniGone replaced by OCTET STRING
+	serviceCentre			[5] AddressString,
+	recordingEntity			[6] RecordingEntity,
+	locationArea			[7] LocationAreaCode OPTIONAL,
+	routingArea				[8] RoutingAreaCode OPTIONAL,
+	cellIdentity			[9] CellId OPTIONAL,
+	messageReference		[10] MessageReference,
+	originationTime			[11] TimeStamp,
+	smsResult				[12] SMSResult OPTIONAL,
+	recordExtensions		[13] ManagementExtensions OPTIONAL
+}
+
+SGSNSMTRecord	::= SET
+{
+	recordType				[0] CallEventRecordType,
+	servedIMSI				[1] IMSI,
+	servedIMEI				[2] IMEI OPTIONAL,
+	servedMSISDN			[3] MSISDN OPTIONAL,
+--	msClassmark				[4] Classmark,
+	msClassmark				[4] OCTET STRING OPTIONAL, -- uniGone replaced by OCTET STRING
+	serviceCentre			[5] AddressString,
+	recordingEntity			[6] RecordingEntity,
+	locationArea			[7] LocationAreaCode OPTIONAL,
+	routingArea				[8] RoutingAreaCode OPTIONAL,
+	cellIdentity			[9] CellId OPTIONAL,
+	originationTime			[10] TimeStamp,
+	smsResult				[11] SMSResult OPTIONAL,
+	recordExtensions		[12] ManagementExtensions OPTIONAL
+}
+
+------------------------------------------------------------------------------
+--
+--  OBJECT IDENTIFIERS
+--
+------------------------------------------------------------------------------
+
+gsm1205InformationModel	 OBJECT IDENTIFIER	::=
+	{ ccitt (0) identified-organization (4) etsi (0) mobileDomain (0)
+	gsm-Operation-Maintenance (3) gsm-12-05 (5) informationModel (0) }
+
+gsm1205ASN1Module	OBJECT IDENTIFIER	::= 
+	{ gsm1205InformationModel asn1Module(2) }
+
+gsm1205ManagedObjectClass OBJECT IDENTIFIER ::=	 
+	{ gsm1205InformationModel managedObjectClass(3) }
+
+gsm1205Package OBJECT IDENTIFIER ::= 
+	{ gsm1205InformationModel package(4) }
+
+gsm1205NameBinding OBJECT IDENTIFIER ::= 
+	{ gsm1205InformationModel nameBinding(6) }
+
+gsm1205Attribute OBJECT IDENTIFIER ::= 
+	{ gsm1205InformationModel attribute(7) }
+
+gsm1205Action OBJECT IDENTIFIER ::=	
+	{ gsm1205InformationModel action(9) }
+
+gsm1205Notification OBJECT IDENTIFIER	::=	
+	{ gsm1205InformationModel notification(10) }
+
+------------------------------------------------------------------------------
+--
+--  COMMON DATA TYPES
+--
+------------------------------------------------------------------------------
+
+AccessPointName	::= IA5String (SIZE(1..63))
+	--
+	-- logical (domain) name in "dot" representation
+	-- see TS GSM 09.60
+	--
+
+CauseForRecClosing	::= INTEGER
+{
+	--
+	-- in GGSN the value sGSNChange should be used for partial record
+	-- generation due to SGSN Address List Overflow
+	--
+	-- cause codes 0 to 15 are defined in GSM12.05 as ‘CauseForTerm’ (cause for termination)
+	--
+	normalRelease	(0),
+	abnormalRelease	(4),
+	volumeLimit		(16),
+	timeLimit		(17),
+	sGSNChange		(18),
+	maxChangeCond	(19),
+	managementIntervention	(20)
+}
+
+ChangeCondition	::= ENUMERATED
+{
+	qoSChange				(0),
+	tariffTime				(1),
+	recordClosure			(2)
+}
+
+ChangeOfCharCondition	::= SEQUENCE
+	--
+	-- used in PDP context record only
+	--
+{
+	qosRequested			[1] QoSInformation OPTIONAL,
+	qosNegotiated			[2] QoSInformation OPTIONAL,
+	dataVolumeGPRSUplink	[3] DataVolumeGPRS,
+	dataVolumeGPRSDownlink	[4] DataVolumeGPRS,
+	changeCondition			[5] ChangeCondition,
+	changeTime				[6] TimeStamp
+}
+
+ChangeLocation	::= SEQUENCE
+	--
+	-- used in SGSNMMRecord only
+	--
+{
+	locationAreaCode		[0] LocationAreaCode,
+	routingAreaCode			[1] RoutingAreaCode,
+	cellId					[2] CellId OPTIONAL,
+	changeTime				[3] TimeStamp
+}
+
+
+ChargingID	::= INTEGER (0..4294967295)
+	--
+	-- generated in GGSN, part of PDP context, see TS GSM 03.60
+	-- 0..4294967295 is equivalent to 0..2**32-1
+
+DataVolumeGPRS	::= INTEGER
+	--
+	-- The volume of uncompressed data transferred in octets.
+	--
+
+DynamicAddressFlag	::= BOOLEAN
+
+ETSIAddress	::= AddressString
+	--
+	--first octet for nature of address, and numbering plan indicator (3 for X.121)
+	--other octets TBCD
+	-- See TS GSM 09.02
+	--
+
+GSNAddress	::= IPAddress
+
+IPAddress	::= CHOICE
+{
+	iPBinaryAddress	 IPBinaryAddress,
+	iPTextRepresentedAddress	 IPTextRepresentedAddress
+}
+IPBinaryAddress	::= CHOICE
+{
+	iPBinV4Address			[0] OCTET STRING (SIZE(4)),
+	iPBinV6Address			[1] OCTET STRING (SIZE(16))
+}
+IPTextRepresentedAddress	::= CHOICE
+{	--
+	-- IP address in the familiar "dot" notation
+	--
+	iPTextV4Address			[2] IA5String (SIZE(7..15)),
+	iPTextV6Address			[3] IA5String (SIZE(15..45))
+}
+
+NetworkInitiatedPDPContext	::= BOOLEAN
+	--
+	-- Set to true if PDP context was initiated from network side
+	--
+
+NodeID	::= IA5String (SIZE(1..20))
+
+PDPAddress	::= CHOICE
+{
+	iPAddress				[0] IPAddress,
+	eTSIAddress				[1] ETSIAddress
+}
+
+PDPType		::= OCTET STRING (SIZE(2))
+	--
+	--OCTET 1: PDP Type Organization
+	--OCTET 2: PDP Type Number
+	-- See TS GSM 09.60
+	--
+
+PLMN-Id		::= OCTET STRING (SIZE (3))
+	--	This is a 1:1 copy from the Routing Area Identity (RAI) IE specified in TS 09.60
+	--  as follows:
+	--	OCTET 1 of PLMN-Id = OCTET 2 of RAI  
+	--	OCTET 2 of PLMN-Id = OCTET 3 of RAI  
+	--	OCTET 3 of PLMN-Id = OCTET 4 of RAI  
+
+QoSDelay		::= ENUMERATED
+{
+	--
+	-- See Quality of service TS GSM 04.08
+	--
+	delayClass1				(0),
+	delayClass2				(1),
+	delayClass3				(2),
+	delayClass4				(3)
+}
+
+QoSInformation	::=SEQUENCE
+{
+	reliability				[0] QoSReliability,
+	delay					[1] QoSDelay,
+	precedence				[2] QoSPrecedence,
+	peakThroughput			[3] QoSPeakThroughput,
+	meanThroughput			[4] QoSMeanThroughput
+}
+
+QoSMeanThroughput	::= ENUMERATED
+{
+	--
+	-- See Quality of service TS GSM 04.08
+	--
+	bestEffort				(0),
+	mean100octetPh			(1),
+	mean200octetPh			(2),
+	mean500octetPh			(3),
+	mean1000octetPh			(4),
+	mean2000octetPh			(5),
+	mean5000octetPh			(6),
+	mean10000octetPh		(7),
+	mean20000octetPh		(8),
+	mean50000octetPh		(9),
+	mean100000octetPh		(10),
+	mean200000octetPh		(11),
+	mean500000octetPh		(12),
+	mean1000000octetPh		(13),
+	mean2000000octetPh		(14),
+	mean5000000octetPh		(15),
+	mean10000000octetPh		(16),
+	mean20000000octetPh		(17),
+	mean50000000octetPh		(18)
+}
+
+QoSPeakThroughput	::= ENUMERATED
+{
+	--
+	-- See Quality of service TS GSM 04.08
+	--
+	unspecified				(0),
+	upTo100OctetPs			(1),
+	upTo200OctetPs			(2),
+	upTo400OctetPs			(3),
+	upTo800OctetPs			(4),
+	upTo1600OctetPs			(5),
+	upTo3200OctetPs			(6),
+	upTo6400OctetPs			(7),
+	upTo12800OctetPs		(8),
+	upTo25600OctetPs		(9)
+}
+
+QoSPrecedence	::= ENUMERATED
+{
+	--
+	-- See Quality of service TS GSM 04.08
+	--
+	unspecified				(0),
+	highPriority			(1),
+	normalPriority			(2),
+	lowPriority				(3)
+}
+
+QoSReliability	::= ENUMERATED
+{
+	--
+	-- See Quality of service TS GSM 04.08
+	--
+	unspecifiedReliability	(0),
+	acknowledgedGTP			(1),
+	unackGTPAcknowLLC		(2),
+	unackGTPLLCAcknowRLC	(3),
+	unackGTPLLCRLC			(4),
+	unacknowUnprotectedData	(5)
+}
+
+RoutingAreaCode	::= OCTET STRING (SIZE(1))
+	--
+	-- See TS GSM 04.08	--
+	--
+
+SGSNChange	::= BOOLEAN
+	--
+	-- present if first record after inter SGSN routing area update
+	-- in new SGSN
+	--
+END

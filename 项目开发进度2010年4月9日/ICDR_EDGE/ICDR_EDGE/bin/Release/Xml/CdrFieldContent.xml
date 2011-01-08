@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Action>
+<CdrFieldContent>
+<FieldContent FieldName="recordType" Num="18" Content="sgsnPDPRecord  " />
+<FieldContent FieldName="recordType" Num="19" Content="ggsnPDPRecord" />
+<FieldContent FieldName="recordType" Num="20" Content="sgsnMMRecord" />
+<FieldContent FieldName="recordType" Num="21" Content="sgsnSMORecord" />
+<FieldContent FieldName="recordType" Num="22" Content="sgsnSMTRecord" />
+<FieldContent FieldName="changeCondition" Num="0" Content="qoSChange" />
+<FieldContent FieldName="changeCondition" Num="1" Content="tariffTime" />
+<FieldContent FieldName="changeCondition" Num="2" Content="recordClosure" />
+<FieldContent FieldName="causeForRecClosing" Num="0" Content="normalRelease" />
+<FieldContent FieldName="causeForRecClosing" Num="4" Content="abnormalRelease" />
+<FieldContent FieldName="causeForRecClosing" Num="16" Content="volumeLimit" />
+<FieldContent FieldName="causeForRecClosing" Num="17" Content="timeLimit" />
+<FieldContent FieldName="causeForRecClosing" Num="18" Content="sGSNChange" />
+<FieldContent FieldName="causeForRecClosing" Num="19" Content="maxChangeCond" />
+<FieldContent FieldName="diagnostics" Num="0" Content="gsm0408Cause" />
+<FieldContent FieldName="diagnostics" Num="1" Content="gsm0902MapErrorValue" />
+<FieldContent FieldName="apnSelectionMode" Num="0" Content="mSorNetworkProvidedSubscriptionVerified" />
+<FieldContent FieldName="apnSelectionMode" Num="1" Content="mSProvidedSubscriptionNotVerified" />
+<FieldContent FieldName="apnSelectionMode" Num="2" Content="networkProvidedSubscriptionNotVerified " />
+<FieldContent FieldName="consolidationResult" Num="0" Content="normal" />
+<FieldContent FieldName="consolidationResult" Num="1" Content="notNormal" />
+<FieldContent FieldName="consolidationResult" Num="2" Content="forInterSGSNConsolidation" />
+<FieldContent FieldName="consolidationResult" Num="3" Content="reachLimit" />
+<FieldContent FieldName="consolidationResult" Num="4" Content="onlyOneCDRGenerated" />
+</CdrFieldContent>
+</Action>

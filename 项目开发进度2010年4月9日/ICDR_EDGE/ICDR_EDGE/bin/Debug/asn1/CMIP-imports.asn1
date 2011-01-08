@@ -1,0 +1,47 @@
+-- *************************
+-- * uniGone modifications :
+-- *************************
+-- the modifications made by uniGone are prefixed by "uniGone"
+--
+-- in order to minimize the number of types, IMPORTed modules have been locally
+-- defined - in no way ASN.1 definitions have been modified
+--
+-- Module is extracted from CMIP {joint-iso-itu-t ms(9) cmip(1) modules(0) protocol(3)} 
+--                          definitions (X711 standard from ITU-T)
+-- Module Object Identifier has been removed to indicate this is not the 'standard' module.           
+--
+
+CMIP-1
+
+DEFINITIONS ::=
+
+BEGIN
+
+ObjectInstance ::= CHOICE
+{
+  distinguishedName       [2] IMPLICIT DistinguishedName,
+  nonSpecificForm         [3] IMPLICIT OCTET STRING,
+  localDistinguishedName  [4] IMPLICIT RDNSequence
+}
+
+DistinguishedName ::= RDNSequence
+
+RDNSequence ::= SEQUENCE OF RelativeDistinguishedName
+
+RelativeDistinguishedName ::= SET OF AttributeValueAssertion
+
+AttributeValueAssertion ::= SEQUENCE
+{
+  id     CMIP-AVA.&id({AvaSet}),
+  value  CMIP-AVA.&Value({AvaSet}{@.id})
+}
+
+AvaSet CMIP-AVA ::= {...}
+
+CMIP-AVA ::= CLASS
+{
+	&id     OBJECT IDENTIFIER UNIQUE,
+    &Value  
+}
+
+END

@@ -1,0 +1,138 @@
+#*************************************************************************************
+#
+# Configuration file of Asn1Compiler
+# ----------------------------------
+#
+# - IMPORTANT : 
+#   -----------
+#   This file must be edited carefully in accordance with the User Guide included in
+#   Asn1Compiler distribution (configuration chapter).
+#
+#*************************************************************************************
+
+# ---------------
+#
+# Asn1ToXml tool
+#
+# ---------------
+asn1ToXml.compile.debug=0
+
+## base directory for the ASN.1 files
+# - must be absolute or relative to the current directory
+# - default value : the current directory
+asn1ToXml.inputFile.base=CDR_3GPP/asn1
+
+## list of ASN.1 files
+# - files are in %inputFile.base% directory
+# - the index must be incremented manually
+# - mandatory
+asn1ToXml.inputFile.1=CDR-CSd-32205-590-R5.asn1
+asn1ToXml.inputFile.2=CDR-AS-32235-550-R5.asn1
+asn1ToXml.inputFile.3=CDR-PSd-32015-3C0-R99.asn1
+asn1ToXml.inputFile.4=CDR-PSd-32215-590-R5.asn1
+asn1ToXml.inputFile.5=Basic-Service-Elements.asn1
+asn1ToXml.inputFile.6=MAP-imports.asn1
+asn1ToXml.inputFile.7=CMIP-imports.asn1
+asn1ToXml.inputFile.8=SS-imports.asn1
+asn1ToXml.inputFile.9=Attribute-ASN1Module-imports.asn1
+asn1ToXml.inputFile.10=CAP-imports.asn1
+asn1ToXml.inputFile.11=GSM1205-imports.asn1
+asn1ToXml.inputFile.12=TS-1215-770-R98.asn1
+asn1ToXml.inputFile.13=CDR-IMS-32225-5B0-R5.asn1
+asn1ToXml.inputFile.14=TS-1215-630-R97.asn1
+
+## generic name of this Asn1API
+# - every '-' will be automatically replaced by'_'
+# - default value : "MyAsn1API"
+asn1API.name=CDR_3GPP
+
+## Asn1API info
+# - may be used for representing the version of the ASN.1 syntax or any user comment
+# - default value : none
+asn1API.info=
+
+## Asn1API encoding information
+# - encodingRules are specified (',' separated) from the set "BER", "DER", "AlignedBasicPER", "UnalignedBasicPER", "BasicXER", "CanonicalXER", "ExtendedXER".
+asn1API.encodingRules=BER
+#asn1API.encoder.BER.indefiniteLengthForm=true
+
+## Asn1API type information
+#asn1API.type.preEncodingForConstructedOf=true
+#asn1API.type.postDecodingForConstructedOf=true
+
+# -------------------
+#
+# javaGenerator tool
+#
+# -------------------
+javaGenerator.debug=0
+javaGenerator=true
+
+## name of the Java generated package
+# - every '-' will be automatically replaced by'_' for allowing Java compilation
+# - the package is generated in %generationBaseDirectory%
+# - default value %Asn1API.name%
+javaGenerator.generationPackage=
+
+## base directory for the generation
+# - absolute or relative to the current directory
+# - default value : %Asn1API.name%/src
+javaGenerator.generationBaseDirectory=
+
+## additional features
+# ---------------------------------------------------
+# -- for SUN Java platform (jdk1.2 or over) ONLY : --
+# ---------------------------------------------------
+# - tools.jar must be added to the CLASSPATH of Asn1Compiler. 
+# - builds a jar file with the generated classes
+# - jarGenerator section is effective if this is set "true"
+javaGenerator.jarGeneration=false
+
+# -----------------
+# jarGenerator tool
+# -----------------
+jarGenerator.debug=0
+
+## destination class directory
+# - absolute or relative to the current directory
+# - default value : %Asn1API.name%/$class
+jarGenerator.classGenerationDirectory=
+
+## destination jar file
+# - absolute or relative to the current directory
+# - default value : %Asn1API.name%/lib/%Asn1API.name%.jar
+jarGenerator.jarGenerationFile=
+
+# -------------------------
+# javaExampleGenerator tool
+# -------------------------
+javaGenerator.javaExampleGeneration=false
+javaExampleGenerator.forType.1=CallEventRecord;MMO1SRecord;MMO4FRqRecord;MMO4FRsRecord
+
+# --------------------
+# cSharpGenerator tool
+# --------------------
+cSharpGenerator.debug=0
+cSharpGenerator=true
+
+## namespace of generated classes
+# - every '-' will be automatically replaced by'_'
+# - the package is generated in %generationBaseDirectory%
+# - default value %Asn1API.name%
+cSharpGenerator.generationNamespace=
+
+## base directory for the generation
+# - absolute or relative to the current directory
+# - default value : %Asn1API.name%/src
+cSharpGenerator.generationBaseDirectory=
+
+## signature control of the generated assembly
+# - it is the AssemblyKeyFile attribute of generated AssemblyInfo.cs
+# - if not set, AssemblyInfo.cs is generated for an unsigned assembly
+cSharpGenerator.generationAssemblyKeyFile=../../CDR_3GPP.snk
+
+# ---------------------------
+# cSharpExampleGenerator tool
+# ---------------------------
+cSharpGenerator.cSharpExampleGeneration=false
+cSharpExampleGenerator.forType.1=CallEventRecord;MMO1SRecord;MMO4FRqRecord;MMO4FRsRecord

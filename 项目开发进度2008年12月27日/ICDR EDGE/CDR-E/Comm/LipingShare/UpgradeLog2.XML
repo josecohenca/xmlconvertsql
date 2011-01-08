@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LipingShare">
+</Property><Property Name="Solution File" Value="C:\Projects\ASN1Editor\Source\LipingShare.sln">
+</Property><Property Name="User Options File" Value="C:\Projects\ASN1Editor\Source\LipingShare.suo">
+</Property><Property Name="Date" Value="Saturday, January 06, 2007">
+</Property><Property Name="Time" Value="10:45 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="LipingShare.sln" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LipingShare.sln">
+</Event><Event ErrorLevel="0" Project="" Source="LipingShare.suo" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LipingShare.suo">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj" Description="Project file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\LCLib.csproj">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj.user" Description="Project user file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\LCLib.csproj.user">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1ClipboardData.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1ClipboardData.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1Node.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1Node.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1Parser.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1Parser.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1Tag.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1Tag.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1TreeNode.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1TreeNode.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Asn1Util.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Asn1Util.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\BinaryView.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\BinaryView.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\NamespaceDoc.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\NamespaceDoc.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\Oid.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\Oid.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\RelativeOid.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\RelativeOid.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\VersionInfo.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\VersionInfo.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\AssemblyInfo.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\Asn1Processor\QUESTION.ICO" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\LCLib\Asn1Processor\QUESTION.ICO">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LCLib" Source="LCLib\LCLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="Project file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\DataConverter.csproj">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj.user" Description="Project user file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\DataConverter.csproj.user">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\AssemblyInfo.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\FormConvertData.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\FormConvertData.cs">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\App.ico" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\App.ico">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\FormConvertData.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\DataConverter\FormConvertData.resx">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Asn1EditorSetup.vdproj" Source="Asn1EditorSetup\Asn1EditorSetup.vdproj" Description="Project file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1EditorSetup\Asn1EditorSetup.vdproj">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="Project file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\Asn1Editor.csproj">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj.user" Description="Project user file successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\Asn1Editor.csproj.user">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\About.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\About.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\AssemblyInfo.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Configuration.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\Configuration.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormDerEditor.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormDerEditor.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormNodeContentEditor.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormNodeContentEditor.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormViewNodeText.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormViewNodeText.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\HexViewer.cs" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\HexViewer.cs">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\App.ico" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\App.ico">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\OID.txt" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\OID.txt">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\QUESTION.ICO" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\QUESTION.ICO">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\About.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\About.resx">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormDerEditor.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormDerEditor.resx">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormNodeContentEditor.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormNodeContentEditor.resx">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\FormViewNodeText.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\FormViewNodeText.resx">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\HexViewer.resx" Description="File successfully backed up as C:\Projects\ASN1Editor\Source\Backup1\Asn1Editor\HexViewer.resx">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LipingShare.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="LipingShare.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Asn1EditorSetup.vdproj" Source="Asn1EditorSetup\Asn1EditorSetup.vdproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Asn1EditorSetup.vdproj" Source="Asn1EditorSetup\Asn1EditorSetup.vdproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

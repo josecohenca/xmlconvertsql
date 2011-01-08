@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ICDRgprs
+</name>
+</assembly>
+<members>
+<member name="P:ICDRgprs.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存 ResourceManager 实例。
+</summary>
+</member><member name="P:ICDRgprs.My.Resources.Resources.Culture">
+	<summary>
+  为使用此强类型资源类的所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:ICDRgprs.My.Resources.Resources">
+	<summary>
+  强类型资源类，用于查找本地化字符串等。
+</summary>
+</member><member name="M:ICDRgprs.iCDR.CheckRegHead(System.String,System.String)">
+	<summary> 
+ 校验注册码头两端是否正确 
+ </summary>
+	<param name="machineCode">机器码</param>
+	<param name="regCode">注册码</param>
+	<returns></returns>
+</member><member name="M:ICDRgprs.iCDR.GetRegTail3ByMac(System.String)">
+	<summary> 
+ 通过网卡号和序列号重新获取注册码后三段。此函数给程序用来抗破解之用 
+ </summary>
+	<returns></returns>
+</member><member name="M:ICDRgprs.iCDR.GetRegTail3(System.String)">
+	<summary> 
+ 获取注册码的后三段。此函数不能流失出去 
+ </summary>
+	<param name="machineCode"></param>
+	<returns></returns>
+</member><member name="M:ICDRgprs.iCDR.GetRegHead2(System.String)">
+	<summary> 
+ 获取注册码的头两端。用来做注册码正确性的简单判断，判断失败会给提示。 
+ </summary>
+	<param name="machineCode"></param>
+	<returns></returns>
+</member><member name="M:ICDRgprs.iCDR.GetMachineCode(System.String)">
+	<summary> 
+ 获取机器码 
+ </summary>
+	<param name="seriesNum"></param>
+	<returns>带“-”的四段数字</returns>
+</member><member name="M:ICDRgprs.iCDR.GetCode(System.String,System.Int32)">
+	<summary> 
+ 得到以“-”分隔，每段5个字母的编码 
+ </summary>
+	<param name="src"></param>
+	<param name="num"></param>
+	<returns></returns>
+</member>
+</members>
+</doc>

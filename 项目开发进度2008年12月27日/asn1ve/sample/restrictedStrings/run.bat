@@ -1,0 +1,1 @@
+..\\..\\bin\\asn2xml message.dat -schema Test.asn -o message.xml

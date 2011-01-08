@@ -1,0 +1,96 @@
+MakeCallArgument DEFINITIONS ::= BEGIN
+
+-- makeCall		OPERATION
+-- 	ARGUMENT	MakeCallArgument
+-- 	RESULT	MakeCallResult
+-- 	ERRORS	{universalFailure}
+-- ::= 10
+
+MakeCallArgument ::=
+	SEQUENCE
+	{callingDevice		DeviceID,
+	 calledDirectoryNumber	CalledDeviceID,
+	 deviceProfile		DeviceProfile			OPTIONAL,
+	 accountCode		[0] IMPLICIT AccountInfo	OPTIONAL,
+	 authCode		[1] IMPLICIT AuthCode		OPTIONAL,
+	 correlatorData		[2] IMPLICIT CorrelatorData	OPTIONAL,
+	 extensions		CSTACommonArguments		OPTIONAL}
+
+-- Defined types used in the make call argument
+
+AccountInfo ::= OCTET STRING
+
+AuthCode ::= OCTET STRING
+
+CalledDeviceID ::= [APPLICATION 2] CHOICE
+	{deviceIdentifier       ExtendedDeviceID,
+	 notKnown		[7] IMPLICIT	NULL,
+	 notRequired		[8] IMPLICIT	NULL}
+
+CorrelatorData ::= OCTET STRING
+
+CSTACommonArguments ::= [APPLICATION 30] IMPLICIT SEQUENCE
+	{security	[0] IMPLICIT	CSTASecurityData OPTIONAL,
+	 privateData	[1] IMPLICIT	SEQUENCE OF CSTAPrivateData OPTIONAL }
+
+CSTAPrivateData ::= OCTET STRING
+
+CSTASecurityData ::= SEQUENCE
+	{messageSequenceNumber	INTEGER			OPTIONAL,
+	 timeStamp		UTCTime			OPTIONAL,
+	 seal			Seal			OPTIONAL	}
+
+DeviceClass ::= BIT STRING
+	{	voice	(0),
+		data	(1),
+		image	(2),
+		audio	(4),
+		other	(3)	}
+
+DeviceID ::= CHOICE
+	{dialingNumber		[0] IMPLICIT	NumberDigits,
+	 deviceNumber		[1] IMPLICIT	DeviceNumber}
+
+DeviceNumber ::= INTEGER
+
+DeviceProfile ::= SEQUENCE
+	{deviceClass	        DeviceClass,
+	 iSDNSetup	        SetupValues	OPTIONAL}
+
+ExtendedDeviceID ::= CHOICE
+	{deviceIdentifier	DeviceID,
+	 implicitPublic		[2] IMPLICIT	NumberDigits,
+	 explicitPublic		[3]		PublicTON,
+	 implicitPrivate	[4] IMPLICIT	NumberDigits,
+	 explicitPrivate	[5]		PrivateTON,
+	 other			[6] IMPLICIT	OtherPlan}
+
+NumberDigits ::= IA5String
+
+OtherPlan ::= OCTET STRING
+
+PublicTON ::= CHOICE
+	{unknown		[0] IMPLICIT	IA5String,
+	 international	        [1] IMPLICIT	IA5String,
+	 national	        [2] IMPLICIT	IA5String,
+	 networkspecific	[3] IMPLICIT	IA5String,
+	 subscriber	        [4] IMPLICIT	IA5String,
+	 abbreviated	        [5] IMPLICIT	IA5String}
+
+PrivateTON ::= CHOICE
+	{unknown	        [0] IMPLICIT	IA5String,
+	 level3RegionalNumber	[1] IMPLICIT	IA5String,
+	 level2RegionalNumber	[2] IMPLICIT	IA5String,
+	 level1RegionalNumber	[3] IMPLICIT	IA5String,
+	 pTNSpecificNumber	[4] IMPLICIT	IA5String,
+	 localNumber		[5] IMPLICIT	IA5String,
+	 abbreviated		[6] IMPLICIT	IA5String}
+
+Seal ::= SEQUENCE
+	{algorithmIdentifier	OBJECT IDENTIFIER,
+	 keyIdentifier		OCTET STRING,
+	 seal			OCTET STRING	}
+
+SetupValues ::= OCTET STRING
+
+END

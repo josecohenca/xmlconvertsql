@@ -1,0 +1,10 @@
+Real DEFINITIONS ::= BEGIN
+
+FloatingPoint ::= REAL
+
+PersonnelRecord ::= [APPLICATION 0] IMPLICIT SEQUENCE {
+   bits BIT STRING,
+   fp FloatingPoint,
+   name VisibleString
+   }
+END

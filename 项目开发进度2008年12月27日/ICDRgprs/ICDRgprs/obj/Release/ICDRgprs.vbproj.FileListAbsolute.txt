@@ -1,0 +1,16 @@
+F:\ICDRgprs\ICDRgprs\bin\Release\ICDRgprs.exe.manifest
+F:\ICDRgprs\ICDRgprs\bin\Release\ICDRgprs.application
+F:\ICDRgprs\ICDRgprs\bin\Release\ICDRgprs.exe
+F:\ICDRgprs\ICDRgprs\bin\Release\ICDRgprs.pdb
+F:\ICDRgprs\ICDRgprs\bin\Release\ICDRgprs.xml
+F:\ICDRgprs\ICDRgprs\bin\Release\Interop.ADODB.dll
+F:\ICDRgprs\ICDRgprs\obj\Release\ResolveAssemblyReference.cache
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.iCDR.resources
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.Resources.resources
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.vbproj.GenerateResource.Cache
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.TrustInfo.xml
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.exe.manifest
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.application
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.exe
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.xml
+F:\ICDRgprs\ICDRgprs\obj\Release\ICDRgprs.pdb

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataConverter</name>
+    </assembly>
+    <members>
+        <member name="T:DerEditor.FormConvertData">
+            <summary>
+            Summary description for FormConvertData.
+            </summary>
+        </member>
+        <member name="M:DerEditor.FormConvertData.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:DerEditor.FormConvertData.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

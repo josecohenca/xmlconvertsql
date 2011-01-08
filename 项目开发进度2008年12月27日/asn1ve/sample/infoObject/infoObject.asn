@@ -1,0 +1,86 @@
+InfoObject DEFINITIONS AUTOMATIC TAGS ::=
+BEGIN
+
+maxProtocolIEs  INTEGER ::= 65535
+
+ProtocolIE-ID   ::= INTEGER (0..65535)
+
+Criticality	::= ENUMERATED { reject, ignore, notify }
+
+Presence	::= ENUMERATED { optional, conditional, mandatory }
+
+Iu-ReleaseCommand ::= SEQUENCE {
+   protocolIEs	ProtocolIE-Container { {Iu-ReleaseCommandIEs} },
+   -- protocolExtensions ProtocolExtensionContainer { {Iu-ReleaseCommandExtensions} }  OPTIONAL,
+   ...
+}
+
+Iu-ReleaseCommandIEs RANAP-PROTOCOL-IES ::= {{
+   ID           id-Cause
+   CRITICALITY  ignore
+   TYPE         Cause
+   PRESENCE     mandatory
+},
+...
+}
+
+id-Cause ProtocolIE-ID ::= 12
+
+ProtocolIE-Container {RANAP-PROTOCOL-IES : IEsSetParam} ::=
+   SEQUENCE (SIZE (0..maxProtocolIEs)) OF ProtocolIE-Field {{IEsSetParam}}
+
+ProtocolIE-Field {RANAP-PROTOCOL-IES : IEsSetParam} ::= SEQUENCE {
+   id		RANAP-PROTOCOL-IES.&id           ({IEsSetParam}),
+   criticality	RANAP-PROTOCOL-IES.&criticality	 ({IEsSetParam}{@id}),
+   value	RANAP-PROTOCOL-IES.&Value        ({IEsSetParam}{@id})
+}
+
+RANAP-PROTOCOL-IES ::= CLASS {
+	&id				ProtocolIE-ID 					UNIQUE,
+	&criticality			Criticality,
+	&Value,
+	&presence			Presence
+}
+WITH SYNTAX {
+	ID				&id
+	CRITICALITY			&criticality
+	TYPE				&Value
+	PRESENCE			&presence
+}
+
+Cause ::= CHOICE {
+	radioNetwork			CauseRadioNetwork,
+        ...
+}
+
+CauseRadioNetwork ::= INTEGER {
+	rab-pre-empted (1),
+	trelocoverall-expiry (2),
+	trelocprep-expiry (3),
+	treloccomplete-expiry (4),
+	tqueing-expiry (5),
+	relocation-triggered (6),
+	unable-to-establish-during-relocation (8),
+	unknown-target-rnc (9),
+	relocation-cancelled (10),
+	successful-relocation (11),
+	requested-ciphering-and-or-integrity-protection-algorithms-not-supported (12),
+	ciphering-and-or-integrity-protection-already-active (13),
+	failure-in-the-radio-interface-procedure (14),
+	release-due-to-utran-generated-reason (15),
+	user-inactivity (16),
+	time-critical-relocation (17),
+	requested-traffic-class-not-available (18),
+	invalid-rab-parameters-value (19),
+	requested-maximum-bit-rate-not-available (20),
+	requested-guaranteed-bit-rate-not-available (21),
+	requested-transfer-delay-not-achievable (22),
+	invalid-rab-parameters-combination (23),
+	condition-violation-for-sdu-parameters (24),
+	condition-violation-for-traffic-handling-priority (25),
+	condition-violation-for-guaranteed-bit-rate (26),
+	user-plane-versions-not-supported (27),
+	iu-up-failure (28)
+} (1..64)
+
+END

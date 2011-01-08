@@ -1,0 +1,7 @@
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\bin\Release\DataConverter.exe
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\bin\Release\LipingShare.LCLib.dll
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\bin\Release\LipingShare.LCLib.xml
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\obj\Release\ResolveAssemblyReference.cache
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\obj\Release\LipingShare.DataConverter.FormConvertData.resources
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\obj\Release\DataConverter.csproj.GenerateResource.Cache
+E:\90\CDR-E\CDR-E\Comm\LipingShare\DataConverter\obj\Release\DataConverter.exe

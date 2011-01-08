@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LipingShare">
+</Property><Property Name="解决方案文件" Value="E:\90\CDR-E\CDR-E\Comm\LipingShare\LipingShare.sln">
+</Property><Property Name="Date" Value="2008年11月25日">
+</Property><Property Name="Time" Value="18:03">
+</Property><Property Name="日志号" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="LCLib" Source="LCLib\LCLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LipingShare.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="LipingShare.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCLib" Source="LCLib\LCLib.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DataConverter" Source="DataConverter\DataConverter.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="Asn1Editor" Source="Asn1Editor\Asn1Editor.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

@@ -1,0 +1,48 @@
+E:\90\LAY3-T\LAY3-R\bin\Release\LAY3-R.exe
+E:\90\LAY3-T\LAY3-R\bin\Release\LAY3-R.pdb
+E:\90\LAY3-T\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+E:\90\LAY3-T\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+E:\90\LAY3-T\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+E:\90\LAY3-T\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache
+E:\90\LAY3-T\LAY3-R\obj\Release\LAY3-R.exe
+E:\90\LAY3-T\LAY3-R\obj\Release\LAY3-R.pdb
+H:\LAY3-T\LAY3-R\bin\Release\LAY3-R.exe
+H:\LAY3-T\LAY3-R\bin\Release\LAY3-R.pdb
+H:\LAY3-T\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+H:\LAY3-T\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+H:\LAY3-T\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+H:\LAY3-T\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache
+H:\LAY3-T\LAY3-R\obj\Release\LAY3-R.exe
+H:\LAY3-T\LAY3-R\obj\Release\LAY3-R.pdb
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\LAY3-R.exe
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\LAY3-R.pdb
+F:\项目开发进度\LAY3-T\LAY3-R\bin\Release\LAY3-R.exe
+F:\项目开发进度\LAY3-T\LAY3-R\bin\Release\LAY3-R.pdb
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+F:\项目开发进度\LAY3-T\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache
+F:\LAY3-T\LAY3-R\bin\Release\LAY3-R.exe
+F:\LAY3-T\LAY3-R\bin\Release\LAY3-R.pdb
+F:\LAY3-T\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+F:\LAY3-T\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+F:\LAY3-T\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+F:\LAY3-T\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache
+F:\LAY3-T\LAY3-R\obj\Release\LAY3-R.exe
+F:\LAY3-T\LAY3-R\obj\Release\LAY3-R.pdb
+F:\ICDRgprs\LAY3-R\bin\Release\LAY3-R.exe
+F:\ICDRgprs\LAY3-R\bin\Release\LAY3-R.pdb
+F:\ICDRgprs\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+F:\ICDRgprs\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+F:\ICDRgprs\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+F:\ICDRgprs\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache
+F:\ICDRgprs\LAY3-R\obj\Release\LAY3-R.exe
+F:\ICDRgprs\LAY3-R\obj\Release\LAY3-R.pdb
+D:\ICDR EDGE\LAY3-R\obj\Release\LAY3-R.exe
+D:\ICDR EDGE\LAY3-R\obj\Release\LAY3-R.pdb
+D:\ICDR EDGE\LAY3-R\bin\Release\LAY3-R.exe
+D:\ICDR EDGE\LAY3-R\bin\Release\LAY3-R.pdb
+D:\ICDR EDGE\LAY3-R\obj\Release\ResolveAssemblyReference.cache
+D:\ICDR EDGE\LAY3-R\obj\Release\LAY3_R.frmRegister.resources
+D:\ICDR EDGE\LAY3-R\obj\Release\LAY3_R.Properties.Resources.resources
+D:\ICDR EDGE\LAY3-R\obj\Release\LAY3-R.csproj.GenerateResource.Cache

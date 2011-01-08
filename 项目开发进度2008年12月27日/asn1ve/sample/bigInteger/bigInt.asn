@@ -1,0 +1,11 @@
+BigInt DEFINITIONS ::= BEGIN
+
+BigIntType ::= INTEGER
+
+Dss-Parms  ::= SEQUENCE  {
+     p             INTEGER,
+     q             INTEGER,
+     g             INTEGER  
+}
+
+END

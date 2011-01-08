@@ -1,0 +1,14 @@
+Test DEFINITIONS ::= BEGIN
+
+IMPORTS ;
+
+PduType ::= SEQUENCE {
+   utf8strs Type1,
+   bmpstrs  Type2 OPTIONAL
+}
+
+Type1 ::= SEQUENCE OF elem UTF8String
+
+Type2 ::= SEQUENCE OF elem BMPString
+
+END

@@ -1,0 +1,208 @@
+-- Module InformationFramework (X.501 TC2:08/1997)
+
+InformationFramework {joint-iso-itu-t ds(5) module(1) informationFramework(1) 
+  3} DEFINITIONS ::=
+BEGIN
+
+-- EXPORTS All -
+-- The types and values defined in this module are exported for use in the other ASN.1 modules contained 
+-- within the Directory Specifications, and for the use of other applications which will use them to access 
+-- Directory services. Other applications may use them for their own purposes, but this will not constrain
+-- extensions and modifications needed to maintain or improve the Directory service.
+IMPORTS
+  id-at, id-mr
+    FROM UsefulDefinitions {joint-iso-itu-t ds(5) module(1)
+      usefulDefinitions(0) 3};
+
+-- attribute data types 
+Attribute ::= SEQUENCE {
+  type               ATTRIBUTE.&id({SupportedAttributes}),
+  values
+    SET SIZE (0..MAX) OF ATTRIBUTE.&Type({SupportedAttributes}{@type}),
+  valuesWithContext
+    SET SIZE (1..MAX) OF
+      SEQUENCE {value        ATTRIBUTE.&Type({SupportedAttributes}{@type}),
+                contextList  SET SIZE (1..MAX) OF Context} OPTIONAL
+}
+
+AttributeType ::= ATTRIBUTE.&id
+
+AttributeValue ::= ATTRIBUTE.&Type
+
+Context ::= SEQUENCE {
+  contextType    CONTEXT.&id({SupportedContexts}),
+  contextValues
+    SET SIZE (1..MAX) OF CONTEXT.&Type({SupportedContexts}{@contextType}),
+  fallback       BOOLEAN DEFAULT FALSE
+}
+
+-- Definition of the following information object set is deferred, perhaps to standardized
+-- profiles or to protocol implementation conformance statements. The set is required to
+-- specify a table constraint on the values component of Attribute, the value component 
+-- of AttributeTypeAndValue, and the assertion component of AttributeValueAssertion.
+SupportedAttributes ATTRIBUTE ::=
+  {objectClass | aliasedEntryName, ...}
+
+-- Definition of the following information object set is deferred, perhaps to standardized
+-- profiles or to protocol implementation conformance statements. The set is required to
+-- specify a table constraint on the context specifications
+SupportedContexts CONTEXT ::=
+  {...}
+
+-- naming data types 
+Name ::= CHOICE { -- only one possibility for now --rdnSequence  RDNSequence
+}
+
+RDNSequence ::= SEQUENCE OF RelativeDistinguishedName
+
+DistinguishedName ::= RDNSequence
+
+RelativeDistinguishedName ::=
+  SET SIZE (1..MAX) OF AttributeTypeAndDistinguishedValue
+
+AttributeTypeAndDistinguishedValue ::= SEQUENCE {
+  type                  ATTRIBUTE.&id({SupportedAttributes}),
+  value                 ATTRIBUTE.&Type({SupportedAttributes}{@type}),
+  primaryDistinguished  BOOLEAN DEFAULT TRUE,
+  valuesWithContext
+    SET SIZE (1..MAX) OF
+      SEQUENCE {distingAttrValue
+                  [0]  ATTRIBUTE.&Type({SupportedAttributes}{@type}) OPTIONAL,
+                contextList       SET SIZE (1..MAX) OF Context} OPTIONAL
+}
+
+
+-- OBJECT-CLASS information object class specification 
+OBJECT-CLASS ::= CLASS {
+  &Superclasses         OBJECT-CLASS OPTIONAL,
+  &kind                 ObjectClassKind DEFAULT structural,
+  &MandatoryAttributes  ATTRIBUTE OPTIONAL,
+  &OptionalAttributes   ATTRIBUTE OPTIONAL,
+  &id                   OBJECT IDENTIFIER UNIQUE
+}
+WITH SYNTAX {
+  [SUBCLASS OF &Superclasses]
+  [KIND &kind]
+  [MUST CONTAIN &MandatoryAttributes]
+  [MAY CONTAIN &OptionalAttributes]
+  ID &id
+}
+
+ObjectClassKind ::= ENUMERATED {abstract(0), structural(1), auxiliary(2)}
+
+-- ATTRIBUTE information object class specification 
+ATTRIBUTE ::= CLASS {
+  &derivation            ATTRIBUTE OPTIONAL,
+  &Type                  OPTIONAL, -- either &Type or &derivation required 
+  &equality-match        MATCHING-RULE OPTIONAL,
+  &ordering-match        MATCHING-RULE OPTIONAL,
+  &substrings-match      MATCHING-RULE OPTIONAL,
+  &single-valued         BOOLEAN DEFAULT FALSE,
+  &collective            BOOLEAN DEFAULT FALSE,
+  -- operational extensions 
+  &no-user-modification  BOOLEAN DEFAULT FALSE,
+  &usage                 AttributeUsage DEFAULT userApplications,
+  &id                    OBJECT IDENTIFIER UNIQUE
+}
+WITH SYNTAX {
+  [SUBTYPE OF &derivation]
+  [WITH SYNTAX &Type]
+  [EQUALITY MATCHING RULE &equality-match]
+  [ORDERING MATCHING RULE &ordering-match]
+  [SUBSTRINGS MATCHING RULE &substrings-match]
+  [SINGLE VALUE &single-valued]
+  [COLLECTIVE &collective]
+  [NO USER MODIFICATION &no-user-modification]
+  [USAGE &usage]
+  ID &id
+}
+
+AttributeUsage ::= ENUMERATED {
+  userApplications(0), directoryOperation(1), distributedOperation(2),
+  dSAOperation(3)}
+
+-- attributes 
+objectClass ATTRIBUTE ::= {
+  WITH SYNTAX             OBJECT IDENTIFIER
+  EQUALITY MATCHING RULE  objectIdentifierMatch
+  ID                      id-at-objectClass
+}
+
+aliasedEntryName ATTRIBUTE ::= {
+  WITH SYNTAX             DistinguishedName
+  EQUALITY MATCHING RULE  distinguishedNameMatch
+  SINGLE VALUE            TRUE
+  ID                      id-at-aliasedEntryName
+}
+
+-- MATCHING-RULE information object class specification 
+MATCHING-RULE ::= CLASS {
+  &ParentMatchingRules   MATCHING-RULE.&id OPTIONAL,
+  &AssertionType         OPTIONAL,
+  &uniqueMatchIndicator  ATTRIBUTE.&id OPTIONAL,
+  &id                    OBJECT IDENTIFIER UNIQUE
+}
+WITH SYNTAX {
+  [PARENT &ParentMatchingRules]
+  [SYNTAX &AssertionType]
+  [UNIQUE-MATCH-INDICATOR &uniqueMatchIndicator]
+  ID &id
+}
+
+-- matching rules 
+objectIdentifierMatch MATCHING-RULE ::= {
+  SYNTAX  OBJECT IDENTIFIER
+  ID      id-mr-objectIdentifierMatch
+}
+
+distinguishedNameMatch MATCHING-RULE ::= {
+  SYNTAX  DistinguishedName
+  ID      id-mr-distinguishedNameMatch
+}
+
+-- NAME-FORM information object class specification 
+NAME-FORM ::= CLASS {
+  &namedObjectClass     OBJECT-CLASS,
+  &MandatoryAttributes  ATTRIBUTE,
+  &OptionalAttributes   ATTRIBUTE OPTIONAL,
+  &id                   OBJECT IDENTIFIER UNIQUE
+}
+WITH SYNTAX {
+  NAMES &namedObjectClass
+  WITH ATTRIBUTES &MandatoryAttributes
+  [AND OPTIONALLY &OptionalAttributes]
+  ID &id
+}
+
+DITStructureRule ::= SEQUENCE {
+  ruleIdentifier          RuleIdentifier,
+  -- must be unique within the scope of the subschema
+  nameForm                NAME-FORM.&id,
+  superiorStructureRules  SET SIZE (1..MAX) OF RuleIdentifier OPTIONAL
+}
+
+RuleIdentifier ::= INTEGER
+
+CONTEXT ::= CLASS {
+  &Type       ,
+  &Assertion  OPTIONAL,
+  &id         OBJECT IDENTIFIER UNIQUE
+}WITH SYNTAX {WITH SYNTAX &Type
+              [ASSERTED AS &Assertion]
+              ID &id
+}
+
+-- attributes
+id-at-objectClass OBJECT IDENTIFIER ::= {id-at 0}
+
+id-at-aliasedEntryName OBJECT IDENTIFIER ::= {id-at 1}
+
+-- matching rules 
+id-mr-objectIdentifierMatch OBJECT IDENTIFIER ::= {id-mr 0}
+
+id-mr-distinguishedNameMatch OBJECT IDENTIFIER ::= {id-mr 1}
+
+END -- InformationFramework
+
+-- Generated by Asnp, the ASN.1 pretty-printer of France Telecom R&D
+

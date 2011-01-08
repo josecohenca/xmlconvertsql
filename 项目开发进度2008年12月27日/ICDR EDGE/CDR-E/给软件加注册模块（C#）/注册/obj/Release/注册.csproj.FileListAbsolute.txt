@@ -1,0 +1,8 @@
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\bin\注册.exe
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\bin\注册.pdb
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\ResolveAssemblyReference.cache
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\注册.Form1.resources
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\注册.Properties.Resources.resources
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\注册.csproj.GenerateResource.Cache
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\注册.exe
+E:\90\CDR-E\CDR-E\给软件加注册模块（C#）\注册\obj\Release\注册.pdb

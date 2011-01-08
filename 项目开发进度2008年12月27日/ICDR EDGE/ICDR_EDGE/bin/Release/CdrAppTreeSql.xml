@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Action>
+	<CdrAppTreeSql>
+		<CdrApp Id="1" AppName="recordType" SqlString="select recordType,count(*) from sgsnpdp group by recordType order by 2 desc"/>
+		<CdrApp Id="2" AppName="networkInitiation" SqlString="select networkInitiation,count(*) from sgsnpdp group by networkInitiation order by 2 desc"/>
+		<CdrApp Id="3" AppName="servedIMSI" SqlString="select servedIMSI,count(*) from sgsnpdp group by servedIMSI order by 2 desc"/>
+		<CdrApp Id="4" AppName="servedIMEI" SqlString="select servedIMEI,count(*) from sgsnpdp group by servedIMEI order by 2 desc"/>
+		<CdrApp Id="5" AppName="sgsnAddress" SqlString="select sgsnAddress,count(*) from sgsnpdp group by sgsnAddress order by 2 desc"/>
+		<CdrApp Id="6" AppName="msNetworkCapability" SqlString="select msNetworkCapability,count(*) from sgsnpdp group by msNetworkCapability order by 2 desc"/>
+		<CdrApp Id="7" AppName="routingArea" SqlString="select routingArea,count(*) from sgsnpdp group by routingArea order by 2 desc"/>
+		<CdrApp Id="8" AppName="locationAreaCode" SqlString="select locationAreaCode,count(*) from sgsnpdp group by locationAreaCode order by 2 desc"/>
+		<CdrApp Id="9" AppName="cellIdentifier" SqlString="select cellIdentifier,count(*) from sgsnpdp group by cellIdentifier order by 2 desc"/>
+		<CdrApp Id="10" AppName="chargingID" SqlString="select chargingID,count(*) from sgsnpdp group by chargingID order by 2 desc"/>
+		<CdrApp Id="11" AppName="ggsnAddressUsed" SqlString="select ggsnAddressUsed,count(*) from sgsnpdp group by ggsnAddressUsed order by 2 desc"/>
+		<CdrApp Id="12" AppName="accessPointNameNI" SqlString="select accessPointNameNI,count(*) from sgsnpdp group by accessPointNameNI order by 2 desc"/>
+		<CdrApp Id="13" AppName="pdpType" SqlString="select pdpType,count(*) from sgsnpdp group by pdpType order by 2 desc"/>
+		<CdrApp Id="14" AppName="servedPDPAddress" SqlString="select servedPDPAddress,count(*) from sgsnpdp group by servedPDPAddress order by 2 desc"/>
+		<CdrApp Id="15" AppName="listOfTrafficVolumes" SqlString="select listOfTrafficVolumes,count(*) from sgsnpdp group by listOfTrafficVolumes order by 2 desc"/>
+		<CdrApp Id="16" AppName="recordOpeningTime" SqlString="select recordOpeningTime,count(*) from sgsnpdp group by recordOpeningTime order by 2 desc"/>
+		<CdrApp Id="17" AppName="duration" SqlString="select duration,count(*) from sgsnpdp group by duration order by 2 desc"/>
+		<CdrApp Id="18" AppName="sgsnChange" SqlString="select sgsnChange,count(*) from sgsnpdp group by sgsnChange order by 2 desc"/>
+		<CdrApp Id="19" AppName="causeForRecClosing" SqlString="select causeForRecClosing,count(*) from sgsnpdp group by causeForRecClosing order by 2 desc"/>
+		<CdrApp Id="20" AppName="diagnostics" SqlString="select diagnostics,count(*) from sgsnpdp group by diagnostics order by 2 desc"/>
+		<CdrApp Id="21" AppName="recordSequenceNumber" SqlString="select recordSequenceNumber,count(*) from sgsnpdp group by recordSequenceNumber order by 2 desc"/>
+		<CdrApp Id="22" AppName="nodeID" SqlString="select nodeID,count(*) from sgsnpdp group by nodeID order by 2 desc"/>
+		<CdrApp Id="23" AppName="recordExtensions" SqlString="select recordExtensions,count(*) from sgsnpdp group by recordExtensions order by 2 desc"/>
+		<CdrApp Id="24" AppName="localSequenceNumber" SqlString="select localSequenceNumber,count(*) from sgsnpdp group by localSequenceNumber order by 2 desc"/>
+		<CdrApp Id="25" AppName="apnSelectionMode" SqlString="select apnSelectionMode,count(*) from sgsnpdp group by apnSelectionMode order by 2 desc"/>
+		<CdrApp Id="26" AppName="accessPointNameOI" SqlString="select accessPointNameOI,count(*) from sgsnpdp group by accessPointNameOI order by 2 desc"/>
+		<CdrApp Id="27" AppName="servedMSISDN" SqlString="select servedMSISDN,count(*) from sgsnpdp group by servedMSISDN order by 2 desc"/>
+		<CdrApp Id="28" AppName="chargingCharacteristics" SqlString="select chargingCharacteristics,count(*) from sgsnpdp group by chargingCharacteristics order by 2 desc"/>
+		<CdrApp Id="29" AppName="systemType" SqlString="select systemType,count(*) from sgsnpdp group by systemType order by 2 desc"/>
+		<CdrApp Id="30" AppName="cAMELInformationPDP" SqlString="select cAMELInformationPDP,count(*) from sgsnpdp group by cAMELInformationPDP order by 2 desc"/>
+		<CdrApp Id="31" AppName="rNCUnsentDownlinkVolume" SqlString="select rNCUnsentDownlinkVolume,count(*) from sgsnpdp group by rNCUnsentDownlinkVolume order by 2 desc"/>
+		<CdrApp Id="32" AppName="chChSelectionMode" SqlString="select chChSelectionMode,count(*) from sgsnpdp group by chChSelectionMode order by 2 desc"/>
+		<CdrApp Id="33" AppName="dynamicAddressFlag" SqlString="select dynamicAddressFlag,count(*) from sgsnpdp group by dynamicAddressFlag order by 2 desc"/>
+		<CdrApp Id="34" AppName="qosRequested" SqlString="select qosRequested,count(*) from sgsnpdp group by qosRequested order by 2 desc"/>
+		<CdrApp Id="35" AppName="qosNegotiated" SqlString="select qosNegotiated,count(*) from sgsnpdp group by qosNegotiated order by 2 desc"/>
+		<CdrApp Id="36" AppName="dataVolumeGPRSUplink" SqlString="select dataVolumeGPRSUplink,count(*) from sgsnpdp group by dataVolumeGPRSUplink order by 2 desc"/>
+		<CdrApp Id="37" AppName="dataVolumeGPRSDownlink" SqlString="select dataVolumeGPRSDownlink,count(*) from sgsnpdp group by dataVolumeGPRSDownlink order by 2 desc"/>
+		<CdrApp Id="38" AppName="changeCondition" SqlString="select changeCondition,count(*) from sgsnpdp group by changeCondition order by 2 desc"/>
+		<CdrApp Id="39" AppName="changeTime" SqlString="select changeTime,count(*) from sgsnpdp group by changeTime order by 2 desc"/>
+	</CdrAppTreeSql>
+</Action>

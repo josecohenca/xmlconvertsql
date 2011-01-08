@@ -1,0 +1,80 @@
+-- This is a rather simple definition of the headers used in the ROSE 
+-- protocol.  Different implementations exist in which some of these 
+-- types are defined slightly differently.  But this should provide a 
+-- good overall illustration as to what is being added to messages when 
+-- the ROSE protocol is used..
+
+SimpleROSE DEFINITIONS IMPLICIT TAGS ::= BEGIN
+EXPORTS RosePDU;
+
+   RosePDU ::= CHOICE {
+      [1] InvokePDU,
+      [2] ReturnResultPDU,
+      [3] ReturnErrorPDU,
+      [4] RejectPDU 
+   }
+
+   InvokeIDType ::= INTEGER
+
+   InvokePDU ::= SEQUENCE {
+      invokeID          InvokeIDType,
+      linkedID	        [0] IMPLICIT INTEGER OPTIONAL,
+      operationValue    INTEGER,  -- Note: some implementations use 
+                                  -- global/local value for this
+      argument          ANY DEFINED BY operationValue OPTIONAL
+   }
+
+   ReturnResultPDU ::= SEQUENCE {
+      invokeID          InvokeIDType,
+      SEQUENCE {
+         operationValue INTEGER,
+         result         ANY DEFINED BY operationValue
+      } OPTIONAL
+   }
+
+   ReturnErrorPDU ::= SEQUENCE {
+      invokeID		InvokeIDType,
+      errorValue	INTEGER,
+      parameter	        ANY DEFINED BY errorValue OPTIONAL 
+   }
+
+   RejectPDU ::= SEQUENCE { 
+      invokedID        CHOICE { InvokeIDType, NULL },
+      problem          CHOICE {
+                          [0] IMPLICIT GeneralProblem,
+                          [1] IMPLICIT InvokeProblem,
+                          [2] IMPLICIT ReturnResultProblem,
+                          [3] IMPLICIT ReturnErrorProblem 
+                       } 
+   }
+
+   GeneralProblem     ::= INTEGER {
+                               unrecognisedAPDU(0),
+                               mistypedAPDU(1),
+                               badlyStructuredAPDU(2) }
+
+   InvokeProblem      ::= INTEGER {
+                               duplicateInvocation(0),
+                               unrecognisedOperation(1),
+                               mistypedArgument(2),
+                               resourceLimitation(3),
+                               initiatorReleasing(4),
+                               unrecognisedLinkedID(5),
+                               linkResponseUnexpected(6),
+                               unexpectedChildOperation(7) }
+
+   ReturnResultProblem   ::= INTEGER {
+                               unrecognisedInvocation(0),
+                               resultResponseUnexpected(1),
+                               mistypedResult(2) }
+
+   ReturnErrorProblem    ::= INTEGER {
+                               unrecognisedInvocation(0),
+                               errorResponseUnexpected(1),
+                               unrecognisedError(2),
+                               unexpectedError(3),
+                               mistypedParameter(4) }
+
+
+END
+

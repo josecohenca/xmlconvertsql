@@ -1,0 +1,12 @@
+TimeString DEFINITIONS ::= BEGIN
+
+GenTime ::= GeneralizedTime
+
+UtcTime ::= UTCTime
+
+TimesSeq ::= SEQUENCE {
+   genTime GenTime,
+   utcTime UtcTime
+}
+
+END

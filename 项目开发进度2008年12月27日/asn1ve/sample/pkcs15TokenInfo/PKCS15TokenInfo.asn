@@ -1,0 +1,155 @@
+PKCS15TokenInfo DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+-- Constants
+
+pkcs15-ub-identifier          INTEGER ::= 255
+pkcs15-ub-reference           INTEGER ::= 255
+pkcs15-ub-index               INTEGER ::= 65535
+pkcs15-ub-label               INTEGER ::= pkcs15-ub-identifier
+pkcs15-lb-minPinLength        INTEGER ::= 4
+pkcs15-ub-minPinLength        INTEGER ::= 8
+pkcs15-ub-storedPinLength     INTEGER ::= 64
+pkcs15-ub-recordLength        INTEGER ::= 16383
+pkcs15-ub-userConsent         INTEGER ::= 15
+pkcs15-ub-securityConditions  INTEGER ::= 255
+pkcs15-ub-seInfo              INTEGER ::= 255
+
+-- TokenInfo and supporting types
+
+TokenInfo ::= SEQUENCE {
+    version             INTEGER {v1(0)} (v1,...),
+    serialNumber        OCTET STRING,
+    manufacturerID      Label OPTIONAL,
+    label               [0] Label OPTIONAL,
+    tokenflags          TokenFlags,
+    seInfo              SEQUENCE OF SecurityEnvironmentInfo OPTIONAL,
+    recordInfo          [1] RecordInfo OPTIONAL,
+    supportedAlgorithms [2] SEQUENCE OF AlgorithmInfo OPTIONAL,
+    ...,
+    issuerId            [3] Label OPTIONAL,
+    holderId            [4] Label OPTIONAL,
+    lastUpdate          [5] LastUpdate OPTIONAL,
+    preferredLanguage   PrintableString OPTIONAL -- In accordance with
+    -- IETF RFC 1766 
+} (CONSTRAINED BY { -- Each AlgorithmInfo.reference value must be unique --})
+
+TokenFlags ::= BIT STRING {
+    readonly            (0),
+    loginRequired       (1),
+    prnGeneration       (2),
+    eidCompliant        (3)
+}
+
+SecurityEnvironmentInfo ::= SEQUENCE {
+    se          INTEGER (0..pkcs15-ub-seInfo),
+    owner       OBJECT IDENTIFIER,
+    ... -- For future extensions
+}
+
+RecordInfo ::= SEQUENCE {
+    oDFRecordLength     [0] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    prKDFRecordLength   [1] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    puKDFRecordLength   [2] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    sKDFRecordLength    [3] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    cDFRecordLength     [4] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    dODFRecordLength    [5] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL,
+    aODFRecordLength    [6] INTEGER (0..pkcs15-ub-recordLength) OPTIONAL
+}
+
+AlgorithmInfo ::= SEQUENCE {
+    reference   Reference,
+    algorithm   PKCS15-ALGORITHM.&id({AlgorithmSet}),
+    parameters  PKCS15-ALGORITHM.&Parameters({AlgorithmSet}{@algorithm}),
+    supportedOperations
+                PKCS15-ALGORITHM.&Operations({AlgorithmSet}{@algorithm}),
+    algId       PKCS15-ALGORITHM.&objectIdentifier({AlgorithmSet}{@algorithm})
+                    OPTIONAL, 
+    algRef      Reference OPTIONAL
+}
+
+PKCS15-ALGORITHM ::= CLASS {
+        &id INTEGER UNIQUE,
+        &Parameters,
+        &Operations Operations,
+        &objectIdentifier OBJECT IDENTIFIER OPTIONAL
+} WITH SYNTAX {
+  PARAMETERS &Parameters OPERATIONS &Operations ID &id [OID &objectIdentifier]}
+
+AlgorithmSet PKCS15-ALGORITHM ::= { 
+        ... -- See PKCS #11 for values for the &id field (and parameters)
+        }
+
+Operations ::= BIT STRING {
+        compute-checksum  (0), -- H/W computation of checksum
+        compute-signature (1), -- H/W computation of signature
+        verify-checksum   (2), -- H/W verification of checksum
+        verify-signature  (3), -- H/W verification of signature
+        encipher          (4), -- H/W encryption of data
+        decipher          (5), -- H/W decryption of data
+        hash              (6), -- H/W hashing
+        generate-key      (7)  -- H/W key generation
+        }
+
+Identifier ::= OCTET STRING (SIZE (0..pkcs15-ub-identifier))
+
+Reference ::= INTEGER (0..pkcs15-ub-reference)
+
+Label ::= UTF8String (SIZE(0..pkcs15-ub-label))
+
+LastUpdate ::= CHOICE {
+        generalizedTime GeneralizedTime,
+        referencedTime ReferencedValue {GeneralizedTime},
+        ... -- For future extensions
+        }
+
+ReferencedValue {Type} ::= CHOICE {
+    path        Path,
+    url         URL
+} (CONSTRAINED BY {-- 'path' or 'url' shall point to an object of
+   -- type -- Type}) 
+
+URL ::= CHOICE {
+    url         PrintableString,
+    urlWithDigest [3] SEQUENCE {
+        url     IA5String,
+        digest  DigestInfoWithDefault
+        }
+}
+
+Path ::= SEQUENCE {
+    path        OCTET STRING,
+    index       INTEGER (0..pkcs15-ub-index) OPTIONAL,
+    length      [0] INTEGER (0..pkcs15-ub-index) OPTIONAL
+    }( WITH COMPONENTS {..., index PRESENT, length PRESENT}| 
+       WITH COMPONENTS {..., index ABSENT, length ABSENT})
+
+DigestInfoWithDefault ::= SEQUENCE {
+    digestAlg   AlgorithmIdentifier {{DigestAlgorithms}} DEFAULT alg-id-sha1,
+    digest      OCTET STRING (SIZE(8..128))
+}
+
+alg-id-sha1 AlgorithmIdentifier {{DigestAlgorithms}} ::= {
+    algorithm  sha-1, 
+    parameters SHA1Parameters : NULL} 
+
+sha-1 OBJECT IDENTIFIER ::=
+  {iso(1) identified-organization(3) oiw(14) secsig(3) algorithm(2) 26}
+
+SHA1Parameters ::= NULL
+
+-- The following types were pulled from PKCS-5 (ED, 2/28/01)
+
+AlgorithmIdentifier { ALGORITHM-IDENTIFIER:InfoObjectSet } ::= 
+SEQUENCE {
+  algorithm ALGORITHM-IDENTIFIER.&id({InfoObjectSet}),
+  parameters ALGORITHM-IDENTIFIER.&Type({InfoObjectSet}
+    {@algorithm}) OPTIONAL }
+
+ALGORITHM-IDENTIFIER ::= TYPE-IDENTIFIER
+
+DigestAlgorithms ALGORITHM-IDENTIFIER ::= {
+    {NULL IDENTIFIED BY sha-1},
+    ... -- For future extensions
+}
+
+END

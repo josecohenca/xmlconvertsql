@@ -1,0 +1,17 @@
+# Objective Systems products license file.
+#
+# This file must be present in one of the following directories on your
+# PC or server:
+#
+# 1. In any directory within your PATH
+# 2. In a directory pointed to by the OSLICDIR environment variable
+# 3. In the directory in which product executable file is installed
+#
+Product: ASN1VE
+Version: 1.5-1.6
+Expiration: Thu Jan 15 00:00:01 2009
+Key:
+ae76f2b02c9bb2b42d87183258692bdb63013d6b6b595a30893dfc15fd6c1b9b
+60437e6bea903a0dca1268665c6ad4985499f34cb9e5001a230de6d758ee7269
+
+

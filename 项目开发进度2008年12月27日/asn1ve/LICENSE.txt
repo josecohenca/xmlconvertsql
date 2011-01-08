@@ -1,0 +1,107 @@
+		ASN.1 VIEWER/EDITOR LICENSE AGREEMENT
+
+Objective Systems, Inc. hereby grants the Licensee a non-exclusive 
+and non-transferable license to use the ASN.1 Viewer/Editor (ASN1VE) 
+software.  The following conditions apply to the use of this software:
+
+1.  THE SOFTWARE.  The Software to which this license applies 
+(the "Software"), is ASN1VE (ASN.1 Viewer/Editor).
+
+2.  OWNERSHIP.  Objective Systems, Inc. ("OSys") is the owner of 
+the Software and all copyrights in the Software.  The Software is 
+protected by title 17 of the United States Code (the Copyright Act), 
+and you must honor all rights established by the Copyright Act with 
+respect to the Software.  The Software embodies substantial creative 
+efforts and confidential information, ideas, and structure, which 
+have not been revealed to the public.  
+
+3.  USE OF SOFTWARE.  The Software is licensed on a per-user basis.  
+The user to whom the license is issued may use the Software on any 
+number of computers which they either a) own, b) lease, or c) 
+have been assigned for their use by their employer.  The user may 
+not modify, decompile, disassemble, reverse engineer, nor create 
+derivative works from the Software nor merge it into any other 
+program, nor allow any other person, including employees, to do 
+any of these things.
+
+4.  NO ASSIGNMENT.  The user may not transfer, lease, assign, nor 
+sublicense this license or the Software without the prior written 
+consent of OSys.
+
+5.  REVISIONS.  From time to time OSys may issue revisions of the 
+Software.  You will have the right to receive free-of-charge such 
+revisions if you are a registered user of the Software with active 
+support at the time such revisions are issued.  If you receive a 
+revision, you acknowledge that the revision will be governed by 
+the terms of this License Agreement.
+
+6.  WARRANTY.  OSys warrants to you that the Software, if properly 
+installed and operated on a computer for which it is designed, will 
+perform substantially in accordance with the specifications set forth 
+in the manual provided with the Software.
+
+  6.1  Warranty Obligations.  During the warranty period, OSys will 
+repair or replace, at its sole option, without charge to you, any 
+portion of the Software which does not meet the requirements of 
+this warranty.  To obtain service, you must notify OSys by sending 
+an e-mail message to support@obj-sys.com.  Any correspondence 
+requesting warranty service must originate from the E-mail address 
+that was provided at the time the license was purchased.  At its 
+option, OSys may refund the purchase price for the Software instead 
+of repairing or replacing the Software.
+
+  6.2  Warranty Period.  The warranty period shall commence on the 
+date the Software is purchased and continue for 365 days thereafter.  
+All requests for warranty service must be received by OSys during the 
+warranty period.
+
+  6.3  Your Responsibilities.  All warranties of the Software are 
+contingent on proper use of the Software by you and do not cover 
+damage due to accident, unusual physical, electrical, or 
+electromechanical stress, neglect, misuse, failure of electric 
+power, environmental condition, transportation, operation with 
+operating systems, media, other software, or hardware not approved 
+by OSys, or tampering with or altering of the Software.  In addition, 
+you assume responsibility for the selection of the Software to achieve 
+your intended results and for the installation, use, and results 
+obtained from the Software.
+
+  6.4  Limits of Liability.  The remedies described in this Section 
+6 are exclusive of any other remedies which you might otherwise claim.  
+
+OSys SHALL NOT BE LIABLE FOR LOSS OF DATA, LOSS 
+OF PROFITS, LOST SAVINGS, SPECIAL, INCIDENTAL, 
+CONSEQUENTIAL, INDIRECT OR OTHER SIMILAR DAMAGES 
+ARISING FROM BREACH OF WARRANTY, BREACH OF CONTRACT, 
+NEGLIGENCE, OR OTHER LEGAL THEORY EVEN IF THE 
+COMPANY OR ITS AGENT HAS BEEN ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY 
+ANY OTHER PARTY.  EXCEPT AS EXPRESSLY SET FORTH 
+HEREIN, THE SOFTWARE IS LICENSED ON AN "AS IS" BASIS, 
+WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE.
+
+Some states do not allow the exclusion or limitation of liability 
+contained herein, so the above limitations or exclusions may not 
+apply to you.
+
+7.  DEFAULT AND REMEDIES.  If you or any of your employees or agents 
+violates or attempts to violate any provision of this Agreement or any 
+copyright laws with respect to the Software, the license of the Software 
+to you shall automatically terminate.  Furthermore, OSys shall be 
+entitled to all legal and equitable remedies including an injunction of 
+any actions prohibited hereby, specific performance of your obligations 
+hereunder, remedies set forth in 17 U.S.C. 501, et seq., and recovery of 
+the costs of enforcing this Agreement including attorney's fees, 
+expert witness fees and costs.  If any provision hereof is deemed to 
+be unenforceable, then the remainder of this Agreement shall not be 
+affected, and shall be enforced as if the unenforceable provision were 
+not included herein.  This license agreement will be governed by 
+the laws of Pennsylvania except as to matter preempted by United States law.  
+In the event of any dispute involving this license, you agree to exclusive 
+jurisdiction and venue in either state or federal courts in Pennsylvania and 
+agree that the prevailing party shall be entitled to its attorney fees 
+and costs.
+

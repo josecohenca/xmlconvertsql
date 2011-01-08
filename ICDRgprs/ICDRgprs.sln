@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ICDRgprs", "ICDRgprs\ICDRgprs.vbproj", "{86EF81A9-05D2-4A80-9D0D-21759E0390F9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{B93B7225-DCA3-47AB-8A7E-725B43AA5106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAY3-R", "LAY3-R\LAY3-R.csproj", "{8EE9394E-51CE-4DDB-8DCE-5DBA15F85408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uninstall", "Uninstall\Uninstall.csproj", "{E9F0ECCF-4C12-4BD4-B8BC-282F7E9C5A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86EF81A9-05D2-4A80-9D0D-21759E0390F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EF81A9-05D2-4A80-9D0D-21759E0390F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EF81A9-05D2-4A80-9D0D-21759E0390F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EF81A9-05D2-4A80-9D0D-21759E0390F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93B7225-DCA3-47AB-8A7E-725B43AA5106}.Debug|Any CPU.ActiveCfg = Debug
+		{B93B7225-DCA3-47AB-8A7E-725B43AA5106}.Release|Any CPU.ActiveCfg = Release
+		{B93B7225-DCA3-47AB-8A7E-725B43AA5106}.Release|Any CPU.Build.0 = Release
+		{8EE9394E-51CE-4DDB-8DCE-5DBA15F85408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE9394E-51CE-4DDB-8DCE-5DBA15F85408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE9394E-51CE-4DDB-8DCE-5DBA15F85408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE9394E-51CE-4DDB-8DCE-5DBA15F85408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F0ECCF-4C12-4BD4-B8BC-282F7E9C5A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F0ECCF-4C12-4BD4-B8BC-282F7E9C5A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F0ECCF-4C12-4BD4-B8BC-282F7E9C5A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F0ECCF-4C12-4BD4-B8BC-282F7E9C5A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
